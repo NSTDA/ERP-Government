@@ -14,3 +14,282 @@
     - ocb $ODOO_VERSION
     # Example of a merge of the PR with the number <PR>
     # - oca refs/pull/<PR>/head
+
+account-analytic:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/account-analytic.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/498/head # [15.0][mig] analytic_tag_dimension_enhanced
+
+account-budgeting:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/account-budgeting.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/64/head # [15.0][ADD] budget_control
+
+account-financial-reporting:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/account-financial-reporting.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+account-financial-tools:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/account-financial-tools.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/1507/head # [15.0][MIG] account_asset_transfer
+    - origin refs/pull/1519/head # [15.0][MIG] account_asset_number
+    - origin refs/pull/1528/head # [15.0][MIG] account_asset_low_value
+
+account-invoicing:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/account-invoicing.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/1288/head # [15.0][MIG] account_invoice_payment_retention
+
+account-payment:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/account-payment.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/561/head # [15.0][MIG] account_payment_multi_deduction
+
+account-reconcile:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/account-reconcile.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+bank-statement-import:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/bank-statement-import.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+budgeting:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/ecosoft-odoo/budgeting.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+contract:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/contract.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ecosoft-addons:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/ecosoft-odoo/ecosoft-addons.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+hr:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/hr.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+hr-expense:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/hr-expense.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/129/head # [15.0][MIG] hr_expense_payment_widget_amount
+    - origin refs/pull/138/head # [15.0][MIG] hr_expense_advance_clearing_sequence
+    - origin refs/pull/151/head # [15.0][MIG] hr_expense_pay_to_vendor
+    - origin refs/pull/153/head # [15.0][MIG] hr_expense_tier_validation
+
+l10n-thailand:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/l10n-thailand.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/305/head # [15.0][MIG/REF] l10n_th_account_wht_cert_form
+    - origin refs/pull/323/head # [15.0][MIG/REF] l10n_th_account_tax_multi
+    - origin refs/pull/325/head # [15.0][MIG] l10n_th_gov_purchase_guarantee
+    - origin refs/pull/328/head # [15.0][MIG] l10n_th_account_asset_management
+    - origin refs/pull/329/head # [15.0][MIG/REF] l10n_th_account_tax_expense
+    - origin refs/pull/330/head # [15.0][MIG/REF] l10n_th_account_tax_report
+    - origin refs/pull/331/head # [15.0][MIG/REF] l10n_th_bank_payment_export
+
+mis-builder:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/mis-builder.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+operating-unit:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/operating-unit.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/443/head # [15.0][MIG] purchase_operating_unit
+    - origin refs/pull/444/head # [15.0][MIG] hr_operating_unit
+    - origin refs/pull/446/head # [15.0][MIG] contract_operating_unit
+    - origin refs/pull/493/head # [15.0][MIG] purchase_request_operating_unit
+    - origin refs/pull/522/head # [15.0][MIG] account_operating_unit
+
+partner-contact:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/partner-contact.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+purchase-workflow:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/purchase-workflow.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/1555/head # [15.0][MIG] purchase_work_acceptance
+    - origin refs/pull/1596/head # [15.0][MIG] purchase_invoice_plan
+    - origin refs/pull/1637/head # [15.0][MIG] purchase_request_exception
+    - origin refs/pull/1638/head # [15.0][MIG] purchase_request_substate
+
+queue:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/queue.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+reporting-engine:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/reporting-engine.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+sale-workflow:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/sale-workflow.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+server-tools:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/server-tools.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/2329/head # [15.0][MIG] excel_import_export, excel_import_export_demo
+    # - origin refs/pull/2357/head # [WIP][15.0][MIG] base_name_search_improved
+
+server-ux:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/server-ux.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/567/head # [15.0][MIG] base_tier_validation_report
+
+stock-logistics-reporting:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/stock-logistics-reporting.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+stock-logistics-warehouse:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/stock-logistics-warehouse.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    # - origin refs/pull/1396/head # [15.0][MIG] stock_request_direction
+    # - origin refs/pull/1397/head # [15.0][MIG] stock_request_picking_type
+    - origin refs/pull/1469/head # [15.0][MIG] stock_request_mrp
+    - origin refs/pull/1587/head # [15.0][MIG] stock_request_analytic
+    - origin refs/pull/1594/head # [15.0][MIG] stock_request_submit
+    - origin refs/pull/1595/head # [15.0][MIG] stock_request_tier_validation
+
+stock-logistics-workflow:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/stock-logistics-workflow.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+web:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/web.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION

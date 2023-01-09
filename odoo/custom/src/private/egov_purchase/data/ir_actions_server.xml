@@ -1,0 +1,22 @@
+<odoo>
+    <!-- For Tier Validation -->
+    <record id="ir_server_action_purchase_approve" model="ir.actions.server">
+        <field name="name">Purchase Order: Approved</field>
+        <field name="model_id" ref="purchase.model_purchase_order" />
+        <field name="state">code</field>
+        <field name="code">
+if record.validated:
+    action = record.sudo().button_approve()
+        </field>
+    </record>
+
+    <record id="ir_server_action_purchase_reject" model="ir.actions.server">
+        <field name="name">Purchase Order: Rejected</field>
+        <field name="model_id" ref="purchase.model_purchase_order" />
+        <field name="state">code</field>
+        <field name="code">
+if record.rejected:
+    action = record.sudo().button_cancel()
+        </field>
+    </record>
+</odoo>

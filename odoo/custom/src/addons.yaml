@@ -1,0 +1,251 @@
+account-analytic:
+  - analytic_base_department
+  - analytic_tag_dimension
+  - analytic_tag_dimension_enhanced
+
+account-budgeting:
+  - budget_control
+  - budget_control_advance_clearing
+  - budget_control_expense
+  - budget_control_purchase
+  - budget_control_purchase_request
+  - budget_plan
+
+account-financial-reporting:
+  - account_financial_report
+
+account-financial-tools:
+  # - account_asset_compute_batch
+  # - account_asset_compute_batch_job
+  # - account_asset_from_expense
+  - account_asset_low_value
+  - account_asset_management
+  - account_asset_number
+  - account_asset_transfer
+  - account_lock_date_update
+  - account_usability
+  # - account_spread_cost_revenue
+  # - account_spread_cost_revenue_enhanced
+
+account-invoicing:
+  - account_invoice_payment_retention
+
+account-payment:
+  - account_payment_multi_deduction
+
+account-reconcile:
+  - account_reconciliation_widget
+
+bank-statement-import:
+  - account_statement_import
+  - account_statement_import_txt_xlsx
+
+budgeting:
+  # - account_asset_fund
+  # - account_asset_transfer_allocation_dimension
+  # - account_asset_transfer_fund
+  # - account_asset_transfer_operating_unit
+  # - account_invoice_payment_retention_budget
+  # - account_invoice_payment_retention_fund
+  # - account_payment_multi_deduction_activity
+  # - account_payment_multi_deduction_dimension
+  # - account_payment_multi_deduction_fund
+  # - base_budget_account_payment_multi_deduction
+  - budget_activity
+  - budget_activity_advance_clearing
+  # - budget_activity_contract
+  - budget_activity_expense
+  - budget_activity_purchase
+  - budget_activity_purchase_request
+  # - budget_activity_purchase_requisition
+  - budget_allocation
+  # - budget_allocation_constraint_revision
+  # - budget_allocation_dimension
+  # - budget_allocation_dimension_fund
+  # - budget_allocation_dimension_advance_clearing
+  # - budget_allocation_dimension_contract
+  # - budget_allocation_dimension_expense
+  # - budget_allocation_dimension_purchase
+  # - budget_allocation_dimension_purchase_request
+  # - budget_allocation_fund
+  # - budget_allocation_fund_department
+  # - budget_allocation_fund_operating_unit
+  # - budget_allocation_fund_operating_unit_access_all
+  # - budget_allocation_fund_revision
+  # - budget_allocation_plan_revision
+  # - budget_control_contract
+  # - budget_control_department
+  # - budget_control_operating_unit
+  # - budget_control_operating_unit_access_all
+  # - budget_control_purchase_requisition
+  # - budget_control_revision
+  # - budget_control_revision_department
+  # - budget_control_revision_project
+  # - budget_control_revision_plan_readonly
+  # - budget_control_revision_operating_unit
+  # - budget_control_revision_operating_unit_access_all
+  # - budget_constraint
+  # - budget_generate_analytic
+  # - budget_plan_revision
+  # - budget_source_fund
+  # - budget_source_fund_advance_clearing
+  # - budget_source_fund_contract
+  # - budget_source_fund_expense
+  # - budget_source_fund_purchase
+  # - budget_source_fund_purchase_request
+  # - budget_source_fund_purchase_requisition
+  # - purchase_work_acceptance_late_fines_budget
+  # - purchase_work_acceptance_late_fines_fund
+  # - purchase_work_acceptance_late_fines_operating_unit
+  - res_project
+  # - res_project_analytic
+  # - res_project_monitoring
+
+contract:
+  - agreement
+  - agreement_legal
+  # - agreement_legal_contract
+  - contract
+  # - contract_invoice_plan
+  # - contract_invoice_plan_selection
+
+ecosoft-addons:
+  - account_financial_report_extension
+  - base_report_extension
+
+hr:
+  - hr_department_code
+
+hr-expense:
+  - hr_expense_advance_clearing
+  - hr_expense_advance_clearing_sequence
+  - hr_expense_cancel
+  - hr_expense_exception
+  - hr_expense_pay_to_vendor
+  - hr_expense_payment
+  - hr_expense_payment_widget_amount
+  - hr_expense_sequence
+  - hr_expense_tier_validation
+
+l10n-thailand:
+  - l10n_th_account_asset_management
+  - l10n_th_account_tax
+  - l10n_th_account_tax_expense
+  - l10n_th_account_tax_multi
+  - l10n_th_account_tax_report
+  - l10n_th_account_wht_cert_form
+  - l10n_th_amount_to_text
+  - l10n_th_bank_payment_export
+  # - l10n_th_bank_payment_export_bbl
+  - l10n_th_bank_payment_export_ktb
+  - l10n_th_fonts
+  # - l10n_th_gov_purchase_agreement
+  - l10n_th_gov_purchase_guarantee
+  # - l10n_th_gov_purchase_request
+  # - l10n_th_gov_work_acceptance
+  - l10n_th_partner
+
+mis-builder:
+  - mis_builder
+
+operating-unit:
+  # - account_asset_operating_unit
+  # - account_asset_operating_unit_access_all
+  # - account_financial_report_operating_unit
+  - account_operating_unit
+  # - account_operating_unit_access_all
+  # - account_payment_multi_deduction_operating_unit
+  # - agreement_operating_unit
+  # - agreement_operating_unit_access_all
+  - analytic_operating_unit
+  # - analytic_operating_unit_access_all
+  - contract_operating_unit
+  # - contract_operating_unit_access_all
+  # - hr_expense_operating_unit
+  # - hr_expense_operating_unit_access_all
+  - hr_operating_unit
+  # - hr_operating_unit_access_all
+  # - mis_builder_operating_unit
+  # - mis_builder_operating_unit_access_all
+  - operating_unit
+  - operating_unit_access_all
+  # - purchase_deposit_operating_unit
+  - purchase_operating_unit
+  # - purchase_operating_unit_access_all
+  - purchase_request_operating_unit
+  # - purchase_request_operating_unit_access_all
+  # - purchase_request_to_requisition_operating_unit
+  # - purchase_requisition_operating_unit
+  # - purchase_requisition_operating_unit_access_all
+  - stock_operating_unit
+  # - stock_operating_unit_access_all
+
+partner-contact:
+  - partner_bank_code
+  - partner_company_type
+  - partner_firstname
+
+purchase-workflow:
+  - purchase_deposit
+  - purchase_invoice_plan
+  # - purchase_invoice_plan_deposit
+  # - purchase_invoice_plan_retention
+  - purchase_open_qty
+  - purchase_request
+  - purchase_request_exception
+  - purchase_request_substate
+  - purchase_request_to_requisition
+  - purchase_request_tier_validation
+  - purchase_tier_validation
+  - purchase_work_acceptance
+  # - purchase_work_acceptance_evaluation
+  # - purchase_work_acceptance_invoice_plan
+  # - purchase_work_acceptance_late_fines
+  # - purchase_work_acceptance_tier_validation
+
+queue:
+  - queue_job
+
+reporting-engine:
+  - report_xlsx
+  - report_xlsx_helper
+
+sale-workflow:
+  - sale_invoice_plan
+
+server-tools:
+  - base_exception
+  # - base_name_search_improved
+  - excel_import_export
+
+server-ux:
+  - base_revision
+  - base_substate
+  - base_tier_validation
+  - base_tier_validation_formula
+  - base_tier_validation_forward
+  - base_tier_validation_report
+  # - base_tier_validation_server_action
+  - date_range
+  - multi_step_wizard
+
+stock-logistics-reporting:
+  - stock_card_report
+
+stock-logistics-warehouse:
+  - stock_request
+  - stock_request_analytic
+  # - stock_request_direction
+  - stock_request_kanban
+  - stock_request_mrp
+  # - stock_request_picking_type
+  - stock_request_purchase
+  - stock_request_submit
+  - stock_request_tier_validation
+
+stock-logistics-workflow:
+  - stock_no_negative
+
+web:
+  - web_widget_dropdown_dynamic
+  - web_widget_x2many_2d_matrix
