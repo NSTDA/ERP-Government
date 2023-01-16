@@ -85,6 +85,15 @@ account-reconcile:
   merges:
     - origin $ODOO_VERSION
 
+agreement:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/agreement.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 bank-statement-import:
   defaults:
     depth: $DEPTH_MERGE
@@ -112,14 +121,14 @@ contract:
   merges:
     - origin $ODOO_VERSION
 
-ecosoft-addons:
-  defaults:
-    depth: $DEPTH_MERGE
-  remotes:
-    origin: https://github.com/ecosoft-odoo/ecosoft-addons.git
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
+# ecosoft-addons:
+#   defaults:
+#     depth: $DEPTH_MERGE
+#   remotes:
+#     origin: https://github.com/ecosoft-odoo/ecosoft-addons.git
+#   target: origin $ODOO_VERSION
+#   merges:
+#     - origin $ODOO_VERSION
 
 hr:
   defaults:
@@ -158,6 +167,8 @@ l10n-thailand:
     - origin refs/pull/329/head # [15.0][MIG/REF] l10n_th_account_tax_expense
     - origin refs/pull/330/head # [15.0][MIG/REF] l10n_th_account_tax_report
     - origin refs/pull/331/head # [15.0][MIG/REF] l10n_th_bank_payment_export
+    - origin refs/pull/332/head # [15.0][MIG] l10n_th_gov_purchase_agreement
+    - origin refs/pull/333/head # [15.0][MIG] l10n_th_gov_purchase_request
 
 mis-builder:
   defaults:
@@ -180,7 +191,6 @@ operating-unit:
     - origin refs/pull/444/head # [15.0][MIG] hr_operating_unit
     - origin refs/pull/446/head # [15.0][MIG] contract_operating_unit
     - origin refs/pull/493/head # [15.0][MIG] purchase_request_operating_unit
-    - origin refs/pull/522/head # [15.0][MIG] account_operating_unit
 
 partner-contact:
   defaults:
@@ -203,6 +213,7 @@ purchase-workflow:
     - origin refs/pull/1596/head # [15.0][MIG] purchase_invoice_plan
     - origin refs/pull/1637/head # [15.0][MIG] purchase_request_exception
     - origin refs/pull/1638/head # [15.0][MIG] purchase_request_substate
+    - origin refs/pull/1639/head # [15.0][MIG] purchase_request_to_requisition
 
 queue:
   defaults:
@@ -239,7 +250,6 @@ server-tools:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/2329/head # [15.0][MIG] excel_import_export, excel_import_export_demo
     # - origin refs/pull/2357/head # [WIP][15.0][MIG] base_name_search_improved
 
 server-ux:
@@ -271,7 +281,7 @@ stock-logistics-warehouse:
     - origin $ODOO_VERSION
     # - origin refs/pull/1396/head # [15.0][MIG] stock_request_direction
     # - origin refs/pull/1397/head # [15.0][MIG] stock_request_picking_type
-    - origin refs/pull/1469/head # [15.0][MIG] stock_request_mrp
+    # - origin refs/pull/1469/head # [15.0][MIG] stock_request_mrp
     - origin refs/pull/1587/head # [15.0][MIG] stock_request_analytic
     - origin refs/pull/1594/head # [15.0][MIG] stock_request_submit
     - origin refs/pull/1595/head # [15.0][MIG] stock_request_tier_validation

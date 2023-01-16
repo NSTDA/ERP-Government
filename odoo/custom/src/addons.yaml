@@ -36,6 +36,11 @@ account-payment:
 account-reconcile:
   - account_reconciliation_widget
 
+agreement:
+  - agreement
+  - agreement_legal
+  # - agreement_legal_contract
+
 bank-statement-import:
   - account_statement_import
   - account_statement_import_txt_xlsx
@@ -60,22 +65,18 @@ budgeting:
   # - budget_activity_purchase_requisition
   - budget_allocation
   # - budget_allocation_constraint_revision
-  # - budget_allocation_dimension
-  # - budget_allocation_dimension_fund
-  # - budget_allocation_dimension_advance_clearing
-  # - budget_allocation_dimension_contract
-  # - budget_allocation_dimension_expense
-  # - budget_allocation_dimension_purchase
-  # - budget_allocation_dimension_purchase_request
-  # - budget_allocation_fund
-  # - budget_allocation_fund_department
-  # - budget_allocation_fund_operating_unit
-  # - budget_allocation_fund_operating_unit_access_all
-  # - budget_allocation_fund_revision
+  - budget_allocation_advance_clearing
+  # - budget_allocation_contract
+  - budget_allocation_department
+  - budget_allocation_expense
+  - budget_allocation_operating_unit
+  # - budget_allocation_operating_unit_access_all
+  - budget_allocation_purchase
+  # - budget_allocation_purchase_request
+  # - budget_allocation_revision
   # - budget_allocation_plan_revision
   # - budget_control_contract
-  # - budget_control_department
-  # - budget_control_operating_unit
+  - budget_control_operating_unit
   # - budget_control_operating_unit_access_all
   # - budget_control_purchase_requisition
   # - budget_control_revision
@@ -87,31 +88,21 @@ budgeting:
   # - budget_constraint
   # - budget_generate_analytic
   # - budget_plan_revision
-  # - budget_source_fund
-  # - budget_source_fund_advance_clearing
-  # - budget_source_fund_contract
-  # - budget_source_fund_expense
-  # - budget_source_fund_purchase
-  # - budget_source_fund_purchase_request
-  # - budget_source_fund_purchase_requisition
+  - budget_res_project_department
   # - purchase_work_acceptance_late_fines_budget
   # - purchase_work_acceptance_late_fines_fund
   # - purchase_work_acceptance_late_fines_operating_unit
   - res_project
-  # - res_project_analytic
-  # - res_project_monitoring
+  - res_project_sequence
 
 contract:
-  - agreement
-  - agreement_legal
-  # - agreement_legal_contract
   - contract
   # - contract_invoice_plan
   # - contract_invoice_plan_selection
 
-ecosoft-addons:
-  - account_financial_report_extension
-  - base_report_extension
+# ecosoft-addons:
+#   - account_financial_report_extension
+#   - base_report_extension
 
 hr:
   - hr_department_code
@@ -139,9 +130,9 @@ l10n-thailand:
   # - l10n_th_bank_payment_export_bbl
   - l10n_th_bank_payment_export_ktb
   - l10n_th_fonts
-  # - l10n_th_gov_purchase_agreement
+  - l10n_th_gov_purchase_agreement
   - l10n_th_gov_purchase_guarantee
-  # - l10n_th_gov_purchase_request
+  - l10n_th_gov_purchase_request
   # - l10n_th_gov_work_acceptance
   - l10n_th_partner
 
@@ -237,7 +228,7 @@ stock-logistics-warehouse:
   - stock_request_analytic
   # - stock_request_direction
   - stock_request_kanban
-  - stock_request_mrp
+  # - stock_request_mrp
   # - stock_request_picking_type
   - stock_request_purchase
   - stock_request_submit
