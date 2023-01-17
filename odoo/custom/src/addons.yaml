@@ -72,22 +72,18 @@ budgeting:
   - budget_allocation_operating_unit
   # - budget_allocation_operating_unit_access_all
   - budget_allocation_purchase
-  # - budget_allocation_purchase_request
+  - budget_allocation_purchase_request
   # - budget_allocation_revision
   # - budget_allocation_plan_revision
   # - budget_control_contract
   - budget_control_operating_unit
   # - budget_control_operating_unit_access_all
   # - budget_control_purchase_requisition
-  # - budget_control_revision
-  # - budget_control_revision_department
-  # - budget_control_revision_project
+  - budget_control_revision
   # - budget_control_revision_plan_readonly
   # - budget_control_revision_operating_unit
   # - budget_control_revision_operating_unit_access_all
-  # - budget_constraint
-  # - budget_generate_analytic
-  # - budget_plan_revision
+  - budget_plan_revision
   - budget_res_project_department
   # - purchase_work_acceptance_late_fines_budget
   # - purchase_work_acceptance_late_fines_fund
@@ -142,21 +138,21 @@ mis-builder:
 operating-unit:
   # - account_asset_operating_unit
   # - account_asset_operating_unit_access_all
-  # - account_financial_report_operating_unit
+  - account_financial_report_operating_unit
   - account_operating_unit
-  # - account_operating_unit_access_all
+  - account_operating_unit_access_all
   # - account_payment_multi_deduction_operating_unit
   # - agreement_operating_unit
   # - agreement_operating_unit_access_all
   - analytic_operating_unit
-  # - analytic_operating_unit_access_all
+  - analytic_operating_unit_access_all
   - contract_operating_unit
   # - contract_operating_unit_access_all
   # - hr_expense_operating_unit
   # - hr_expense_operating_unit_access_all
   - hr_operating_unit
   # - hr_operating_unit_access_all
-  # - mis_builder_operating_unit
+  - mis_builder_operating_unit
   # - mis_builder_operating_unit_access_all
   - operating_unit
   - operating_unit_access_all
@@ -169,7 +165,7 @@ operating-unit:
   # - purchase_requisition_operating_unit
   # - purchase_requisition_operating_unit_access_all
   - stock_operating_unit
-  # - stock_operating_unit_access_all
+  - stock_operating_unit_access_all
 
 partner-contact:
   - partner_bank_code
