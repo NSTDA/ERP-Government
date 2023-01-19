@@ -189,13 +189,16 @@ operating-unit:
     - origin $ODOO_VERSION
     - origin refs/pull/443/head # [15.0][MIG] purchase_operating_unit
     - origin refs/pull/444/head # [15.0][MIG] hr_operating_unit
-    - origin refs/pull/446/head # [15.0][MIG] contract_operating_unit
+    - origin refs/pull/449/head # [15.0][MIG] hr_expense_operating_unit
+    - origin refs/pull/452/head # [15.0][MIG] hr_expense_operating_unit_access_all
     - origin refs/pull/453/head # [15.0][MIG] stock_operating_unit_access_all
     - origin refs/pull/454/head # [15.0][MIG] mis_builder_operating_unit
     - origin refs/pull/493/head # [15.0][MIG] purchase_request_operating_unit
     - origin refs/pull/529/head # [15.0][MIG] account_operating_unit_access_all
     - origin refs/pull/531/head # [15.0][MIG] account_financial_report_operating_unit
     - origin refs/pull/532/head # [15.0][MIG] analytic_operating_unit_access_all
+    - origin refs/pull/536/head # [15.0][MIG] contract_operating_unit_access_all
+    - origin refs/pull/537/head # [15.0][MIG] contract_operating_unit
 
 partner-contact:
   defaults:
