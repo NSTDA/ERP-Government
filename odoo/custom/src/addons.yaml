@@ -147,9 +147,9 @@ operating-unit:
   - analytic_operating_unit
   - analytic_operating_unit_access_all
   - contract_operating_unit
-  # - contract_operating_unit_access_all
-  # - hr_expense_operating_unit
-  # - hr_expense_operating_unit_access_all
+  - contract_operating_unit_access_all
+  - hr_expense_operating_unit
+  - hr_expense_operating_unit_access_all
   - hr_operating_unit
   # - hr_operating_unit_access_all
   - mis_builder_operating_unit
