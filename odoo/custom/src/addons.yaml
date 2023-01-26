@@ -164,6 +164,10 @@ operating-unit:
   # - purchase_request_to_requisition_operating_unit
   # - purchase_requisition_operating_unit
   # - purchase_requisition_operating_unit_access_all
+  - sale_operating_unit
+  # - sale_operating_unit_access_all
+  - sale_stock_operating_unit
+  - sales_team_operating_unit
   - stock_operating_unit
   - stock_operating_unit_access_all
 

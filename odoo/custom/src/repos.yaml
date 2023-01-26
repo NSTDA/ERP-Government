@@ -55,6 +55,7 @@ account-financial-tools:
     - origin refs/pull/1507/head # [15.0][MIG] account_asset_transfer
     - origin refs/pull/1519/head # [15.0][MIG] account_asset_number
     - origin refs/pull/1528/head # [15.0][MIG] account_asset_low_value
+    - origin refs/pull/1567/head # [15.0][ENH] account_asset_management: default salvage value
 
 account-invoicing:
   defaults:
@@ -193,6 +194,8 @@ operating-unit:
     - origin refs/pull/452/head # [15.0][MIG] hr_expense_operating_unit_access_all
     - origin refs/pull/453/head # [15.0][MIG] stock_operating_unit_access_all
     - origin refs/pull/454/head # [15.0][MIG] mis_builder_operating_unit
+    - origin refs/pull/479/head # [15.0][MIG] sale_operating_unit
+    - origin refs/pull/480/head # [15.0][MIG] sale_stock_operating_unit
     - origin refs/pull/493/head # [15.0][MIG] purchase_request_operating_unit
     - origin refs/pull/529/head # [15.0][MIG] account_operating_unit_access_all
     - origin refs/pull/531/head # [15.0][MIG] account_financial_report_operating_unit

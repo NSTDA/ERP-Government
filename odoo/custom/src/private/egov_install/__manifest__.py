@@ -46,6 +46,10 @@
         # "purchase_requisition_operating_unit",
         # "purchase_requisition_operating_unit_access_all",
         # "purchase_work_acceptance_late_fines_operating_unit",
+        "sale_operating_unit",
+        # "sale_operating_unit_access_all",
+        "sale_stock_operating_unit",
+        "sales_team_operating_unit",
         "stock_operating_unit",
         "stock_operating_unit_access_all",
         # Budgeting
