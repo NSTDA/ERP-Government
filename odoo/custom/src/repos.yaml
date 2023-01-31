@@ -170,6 +170,8 @@ l10n-thailand:
     - origin refs/pull/331/head # [15.0][MIG/REF] l10n_th_bank_payment_export
     - origin refs/pull/332/head # [15.0][MIG] l10n_th_gov_purchase_agreement
     - origin refs/pull/333/head # [15.0][MIG] l10n_th_gov_purchase_request
+    - origin refs/pull/335/head # [15.0][ADD] l10n_th_gov_account_asset_management
+    - origin refs/pull/336/head # [15.0][ADD] l10n_th_gov_hr_expense
 
 mis-builder:
   defaults:
@@ -225,6 +227,9 @@ purchase-workflow:
     - origin refs/pull/1637/head # [15.0][MIG] purchase_request_exception
     - origin refs/pull/1638/head # [15.0][MIG] purchase_request_substate
     - origin refs/pull/1639/head # [15.0][MIG] purchase_request_to_requisition
+    - origin refs/pull/1733/head # [15.0][MIG] purchase_work_acceptance_evaluation
+    - origin refs/pull/1734/head # [15.0][MIG] purchase_work_acceptance_late_fines
+    - origin refs/pull/1737/head # [15.0][MIG] purchase_invoice_plan_retention
 
 queue:
   defaults:
@@ -272,6 +277,7 @@ server-ux:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/567/head # [15.0][MIG] base_tier_validation_report
+    - origin refs/pull/584/head # [15.0][MIG] base_tier_validation_server_action
 
 stock-logistics-reporting:
   defaults:
@@ -296,6 +302,7 @@ stock-logistics-warehouse:
     - origin refs/pull/1587/head # [15.0][MIG] stock_request_analytic
     - origin refs/pull/1594/head # [15.0][MIG] stock_request_submit
     - origin refs/pull/1595/head # [15.0][MIG] stock_request_tier_validation
+    - origin refs/pull/1621/head # [15.0][ADD] stock_request_separate_pickings
 
 stock-logistics-workflow:
   defaults:

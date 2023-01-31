@@ -56,33 +56,30 @@ budgeting:
   # - account_payment_multi_deduction_dimension
   # - account_payment_multi_deduction_fund
   # - base_budget_account_payment_multi_deduction
+  - base_tier_validation_check_budget
   - budget_activity
   - budget_activity_advance_clearing
-  # - budget_activity_contract
+  - budget_activity_contract
   - budget_activity_expense
   - budget_activity_purchase
   - budget_activity_purchase_request
-  # - budget_activity_purchase_requisition
+  - budget_activity_purchase_requisition
   - budget_allocation
-  # - budget_allocation_constraint_revision
   - budget_allocation_advance_clearing
-  # - budget_allocation_contract
+  - budget_allocation_contract
   - budget_allocation_department
   - budget_allocation_expense
   - budget_allocation_operating_unit
-  # - budget_allocation_operating_unit_access_all
+  - budget_allocation_operating_unit_access_all
   - budget_allocation_purchase
   - budget_allocation_purchase_request
-  # - budget_allocation_revision
-  # - budget_allocation_plan_revision
-  # - budget_control_contract
+  - budget_allocation_revision
+  - budget_control_contract
   - budget_control_operating_unit
-  # - budget_control_operating_unit_access_all
-  # - budget_control_purchase_requisition
+  - budget_control_operating_unit_access_all
+  - budget_control_purchase_requisition
   - budget_control_revision
-  # - budget_control_revision_plan_readonly
-  # - budget_control_revision_operating_unit
-  # - budget_control_revision_operating_unit_access_all
+  - budget_control_revision_lock_amount
   - budget_plan_revision
   - budget_res_project_department
   # - purchase_work_acceptance_late_fines_budget
@@ -126,6 +123,8 @@ l10n-thailand:
   # - l10n_th_bank_payment_export_bbl
   - l10n_th_bank_payment_export_ktb
   - l10n_th_fonts
+  - l10n_th_gov_account_asset_management
+  - l10n_th_gov_hr_expense
   - l10n_th_gov_purchase_agreement
   - l10n_th_gov_purchase_guarantee
   - l10n_th_gov_purchase_request
@@ -178,9 +177,10 @@ partner-contact:
 
 purchase-workflow:
   - purchase_deposit
+  - purchase_exception
   - purchase_invoice_plan
   # - purchase_invoice_plan_deposit
-  # - purchase_invoice_plan_retention
+  - purchase_invoice_plan_retention
   - purchase_open_qty
   - purchase_request
   - purchase_request_exception
@@ -189,9 +189,9 @@ purchase-workflow:
   - purchase_request_tier_validation
   - purchase_tier_validation
   - purchase_work_acceptance
-  # - purchase_work_acceptance_evaluation
+  - purchase_work_acceptance_evaluation
   # - purchase_work_acceptance_invoice_plan
-  # - purchase_work_acceptance_late_fines
+  - purchase_work_acceptance_late_fines
   # - purchase_work_acceptance_tier_validation
 
 queue:
@@ -216,7 +216,7 @@ server-ux:
   - base_tier_validation_formula
   - base_tier_validation_forward
   - base_tier_validation_report
-  # - base_tier_validation_server_action
+  - base_tier_validation_server_action
   - date_range
   - multi_step_wizard
 
@@ -231,6 +231,7 @@ stock-logistics-warehouse:
   # - stock_request_mrp
   # - stock_request_picking_type
   - stock_request_purchase
+  - stock_request_separate_pickings
   - stock_request_submit
   - stock_request_tier_validation
 
