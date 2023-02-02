@@ -1,0 +1,3 @@
+id,code,name,operating_unit_id/id
+base.stock_warehouse_01,OUA,Operating Unit A,base.operating_unit_01
+base.stock_warehouse_02,OUB,Operating Unit B,base.operating_unit_02

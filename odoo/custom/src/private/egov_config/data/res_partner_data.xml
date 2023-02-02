@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="base.main_partner" model="res.partner">
+        <field name="name">Goverment</field>
+        <field name="property_stock_customer" ref="stock.stock_location_customers" />
+        <field name="property_stock_supplier" ref="stock.stock_location_suppliers" />
+    </record>
+</odoo>

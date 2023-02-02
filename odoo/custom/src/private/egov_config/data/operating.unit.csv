@@ -1,0 +1,3 @@
+id,name,code,partner_id/id
+base.operating_unit_01,Operating Unit A,OUA,base.main_partner
+base.operating_unit_02,Operating Unit B,OUB,base.main_partner

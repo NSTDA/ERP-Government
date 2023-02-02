@@ -1,0 +1,2 @@
+id,name,account_id:id,amount
+base.account_wht_001,Withholding tax 1%,l10n_th.1_a_wht,1

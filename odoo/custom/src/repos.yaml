@@ -191,7 +191,6 @@ operating-unit:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/443/head # [15.0][MIG] purchase_operating_unit
-    - origin refs/pull/444/head # [15.0][MIG] hr_operating_unit
     - origin refs/pull/449/head # [15.0][MIG] hr_expense_operating_unit
     - origin refs/pull/452/head # [15.0][MIG] hr_expense_operating_unit_access_all
     - origin refs/pull/453/head # [15.0][MIG] stock_operating_unit_access_all
@@ -204,6 +203,15 @@ operating-unit:
     - origin refs/pull/532/head # [15.0][MIG] analytic_operating_unit_access_all
     - origin refs/pull/536/head # [15.0][MIG] contract_operating_unit_access_all
     - origin refs/pull/537/head # [15.0][MIG] contract_operating_unit
+    - origin refs/pull/549/head # [15.0][ADD] hr_operating_unit_access_all
+    - origin refs/pull/550/head # [15.0][MIG] purchase_operating_unit_access_all
+    - origin refs/pull/551/head # [15.0][MIG] purchase_request_operating_unit_access_all
+    - origin refs/pull/552/head # [15.0][MIG] purchase_requisition_operating_unit
+    - origin refs/pull/553/head # [15.0][MIG] purchase_requisition_operating_unit_access_all
+    - origin refs/pull/554/head # [15.0][MIG] purchase_request_to_requisition_operating_unit
+    - origin refs/pull/555/head # [15.0][MIG] account_asset_operating_unit
+    - origin refs/pull/556/head # [15.0][MIG] account_asset_operating_unit_access_all
+    - origin refs/pull/557/head # [15.0][ADD] purchase_deposit_operating_unit
 
 partner-contact:
   defaults:
@@ -254,6 +262,16 @@ sale-workflow:
     depth: $DEPTH_MERGE
   remotes:
     origin: https://github.com/OCA/sale-workflow.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    - origin refs/pull/2351/head # [15.0][ADD] sale_invoice_plan_retention
+
+server-backend:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/OCA/server-backend.git
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION

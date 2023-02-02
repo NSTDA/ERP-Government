@@ -1,0 +1,14 @@
+"id","name","kpi_id","account_id"
+"base.budget_activity_001","ครุภันฑ์","ครุภัณฑ์",130000
+"base.budget_activity_002","ต้นทุนสินค้า","ค่าใช้จ่ายอื่น",510000
+"base.budget_activity_003","เงินเดือน","ค่าจ้าง",520100
+"base.budget_activity_004","สวัสดิการพนักงาน","ค่าจ้าง",520100
+"base.budget_activity_005","ค่าที่พัก","ค่าใช้จ่ายอื่น",520200
+"base.budget_activity_006","ค่าเช่าอาคาร","ค่าวัสดุ",520200
+"base.budget_activity_007","ค่าเช่ายานพาหนะ","ค่าวัสดุ",520200
+"base.budget_activity_008","ค่าวัสดุ","ค่าวัสดุ",520300
+"base.budget_activity_009","ดอกเบี้ยจ่าย","ค่าใช้จ่ายอื่น",530000
+"base.budget_activity_010","ค่าบริการ","ค่าใช้จ่ายอื่น",550000
+"base.budget_activity_011","ค่ารับรอง","ค่าใช้จ่ายอื่น",550000
+"base.budget_activity_012","รายได้","รายได้",410000
+"base.budget_activity_013","รายรับทางบัญชี","รายได้",420000

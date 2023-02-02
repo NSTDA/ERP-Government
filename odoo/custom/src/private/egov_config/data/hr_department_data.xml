@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="base.hr_department_a1" model="hr.department">
+        <field name="manager_id" ref="base.hr_employee_002" />
+    </record>
+    <record id="base.hr_department_a2" model="hr.department">
+        <field name="manager_id" ref="base.hr_employee_004" />
+    </record>
+    <record id="base.hr_department_a3" model="hr.department">
+        <field name="manager_id" ref="base.hr_employee_006" />
+    </record>
+    <record id="base.hr_department_b1" model="hr.department">
+        <field name="manager_id" ref="base.hr_employee_008" />
+    </record>
+    <record id="base.hr_department_b2" model="hr.department">
+        <field name="manager_id" ref="base.hr_employee_010" />
+    </record>
+    <record id="base.hr_department_b3" model="hr.department">
+        <field name="manager_id" ref="base.hr_employee_012" />
+    </record>
+</odoo>

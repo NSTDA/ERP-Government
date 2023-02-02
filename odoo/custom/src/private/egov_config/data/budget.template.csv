@@ -1,0 +1,6 @@
+"id","name","line_ids/id","line_ids/kpi_id"
+"base.egov_budget_template_01","KPI","base.egov_budget_template_line_01","ครุภัณฑ์"
+,,"base.egov_budget_template_line_02","ค่าวัสดุ"
+,,"base.egov_budget_template_line_03","ค่าจ้าง"
+,,"base.egov_budget_template_line_04","ค่าใช้จ่ายอื่น"
+,,"base.egov_budget_template_line_05","รายได้"
