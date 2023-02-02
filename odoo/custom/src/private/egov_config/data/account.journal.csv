@@ -1,0 +1,3 @@
+"id","name","type","code","default_account_id"
+"base.account_journal_asset_transfer","Asset Transfer","general","ASTR",
+"base.account_journal_depreciation","Asset","general","DP",

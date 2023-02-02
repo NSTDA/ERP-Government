@@ -135,8 +135,8 @@ mis-builder:
   - mis_builder
 
 operating-unit:
-  # - account_asset_operating_unit
-  # - account_asset_operating_unit_access_all
+  - account_asset_operating_unit
+  - account_asset_operating_unit_access_all
   - account_financial_report_operating_unit
   - account_operating_unit
   - account_operating_unit_access_all
@@ -150,19 +150,19 @@ operating-unit:
   - hr_expense_operating_unit
   - hr_expense_operating_unit_access_all
   - hr_operating_unit
-  # - hr_operating_unit_access_all
+  - hr_operating_unit_access_all
   - mis_builder_operating_unit
   # - mis_builder_operating_unit_access_all
   - operating_unit
   - operating_unit_access_all
-  # - purchase_deposit_operating_unit
+  - purchase_deposit_operating_unit
   - purchase_operating_unit
-  # - purchase_operating_unit_access_all
+  - purchase_operating_unit_access_all
   - purchase_request_operating_unit
-  # - purchase_request_operating_unit_access_all
-  # - purchase_request_to_requisition_operating_unit
-  # - purchase_requisition_operating_unit
-  # - purchase_requisition_operating_unit_access_all
+  - purchase_request_operating_unit_access_all
+  - purchase_request_to_requisition_operating_unit
+  - purchase_requisition_operating_unit
+  - purchase_requisition_operating_unit_access_all
   - sale_operating_unit
   # - sale_operating_unit_access_all
   - sale_stock_operating_unit
@@ -203,6 +203,10 @@ reporting-engine:
 
 sale-workflow:
   - sale_invoice_plan
+  - sale_invoice_plan_retention
+
+server-backend:
+  - base_user_role
 
 server-tools:
   - base_exception
