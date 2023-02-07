@@ -219,6 +219,7 @@ server-tools:
   - excel_import_export
 
 server-ux:
+  - base_cancel_confirm
   - base_revision
   - base_substate
   - base_tier_validation
