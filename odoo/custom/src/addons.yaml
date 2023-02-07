@@ -141,8 +141,9 @@ operating-unit:
   - account_operating_unit
   - account_operating_unit_access_all
   # - account_payment_multi_deduction_operating_unit
-  # - agreement_operating_unit
-  # - agreement_operating_unit_access_all
+  - agreement_legal_operating_unit
+  - agreement_operating_unit
+  - agreement_operating_unit_access_all
   - analytic_operating_unit
   - analytic_operating_unit_access_all
   - contract_operating_unit
@@ -205,6 +206,7 @@ reporting-engine:
 sale-workflow:
   - sale_invoice_plan
   - sale_invoice_plan_retention
+  - sale_tax_adjust
 
 server-backend:
   - base_user_role
