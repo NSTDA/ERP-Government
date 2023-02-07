@@ -103,6 +103,7 @@
         "purchase_invoice_plan_retention",
         "purchase_request",
         "purchase_request_tier_validation",
+        "purchase_tax_adjust",
         "purchase_tier_validation",
         "purchase_work_acceptance",
         "purchase_work_acceptance_evaluation",
