@@ -172,6 +172,7 @@ l10n-thailand:
     - origin refs/pull/333/head # [15.0][MIG] l10n_th_gov_purchase_request
     - origin refs/pull/335/head # [15.0][ADD] l10n_th_gov_account_asset_management
     - origin refs/pull/336/head # [15.0][ADD] l10n_th_gov_hr_expense
+    - origin refs/pull/337/head # [15.0][MIG] l10n_th_gov_work_acceptance
 
 mis-builder:
   defaults:
@@ -238,6 +239,8 @@ purchase-workflow:
     - origin refs/pull/1733/head # [15.0][MIG] purchase_work_acceptance_evaluation
     - origin refs/pull/1734/head # [15.0][MIG] purchase_work_acceptance_late_fines
     - origin refs/pull/1737/head # [15.0][MIG] purchase_invoice_plan_retention
+    - origin refs/pull/1749/head # [15.0][MIG] purchase_work_acceptance_tier_validation
+    - origin refs/pull/1750/head # [15.0][MIG] purchase_work_acceptance_invoice_plan
 
 queue:
   defaults:
