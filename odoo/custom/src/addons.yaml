@@ -90,8 +90,8 @@ budgeting:
 
 contract:
   - contract
-  # - contract_invoice_plan
-  # - contract_invoice_plan_selection
+  - contract_invoice_plan
+  - contract_invoice_plan_selection
 
 # ecosoft-addons:
 #   - account_financial_report_extension
@@ -184,7 +184,9 @@ purchase-workflow:
   - purchase_invoice_plan_retention
   - purchase_open_qty
   - purchase_request
+  - purchase_request_cancel_confirm
   - purchase_request_exception
+  - purchase_request_manual_currency
   - purchase_request_substate
   - purchase_request_to_requisition
   - purchase_request_tier_validation

@@ -121,6 +121,7 @@ contract:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    - origin refs/pull/927/head # [15.0][ADD] contract_invoice_plan, contract_invoice_plan_selection
 
 # ecosoft-addons:
 #   defaults:
@@ -240,10 +241,12 @@ purchase-workflow:
     - origin refs/pull/1639/head # [15.0][MIG] purchase_request_to_requisition
     - origin refs/pull/1723/head # [15.0][FIX] purchase_request: analytic_tag widget many2many_tags
     - origin refs/pull/1727/head # [15.0][IMP] purchase_request - multi currency
+    - origin refs/pull/1728/head # [15.0][ADD] purchase_request_manual_currency
     - origin refs/pull/1733/head # [15.0][MIG] purchase_work_acceptance_evaluation
     - origin refs/pull/1734/head # [15.0][MIG] purchase_work_acceptance_late_fines
     - origin refs/pull/1737/head # [15.0][MIG] purchase_invoice_plan_retention
     - origin refs/pull/1744/head # [15.0][ADD] purchase_tax_adjust
+    - origin refs/pull/1748/head # [15.0][MIG] purchase_request_cancel_confirm
     - origin refs/pull/1749/head # [15.0][MIG] purchase_work_acceptance_tier_validation
     - origin refs/pull/1750/head # [15.0][MIG] purchase_work_acceptance_invoice_plan
 
