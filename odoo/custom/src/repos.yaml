@@ -239,6 +239,7 @@ purchase-workflow:
     - origin refs/pull/1733/head # [15.0][MIG] purchase_work_acceptance_evaluation
     - origin refs/pull/1734/head # [15.0][MIG] purchase_work_acceptance_late_fines
     - origin refs/pull/1737/head # [15.0][MIG] purchase_invoice_plan_retention
+    - origin refs/pull/1744/head # [15.0][ADD] purchase_tax_adjust
     - origin refs/pull/1749/head # [15.0][MIG] purchase_work_acceptance_tier_validation
     - origin refs/pull/1750/head # [15.0][MIG] purchase_work_acceptance_invoice_plan
 
