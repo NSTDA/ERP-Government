@@ -77,6 +77,7 @@
         "budget_allocation_expense",
         "budget_allocation_purchase",
         "budget_allocation_purchase_request",
+        "budget_allocation_purchase_requisition",
         "budget_allocation_revision",
         "budget_control",
         "budget_control_advance_clearing",
