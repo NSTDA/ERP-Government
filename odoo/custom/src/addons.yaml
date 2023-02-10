@@ -73,6 +73,7 @@ budgeting:
   - budget_allocation_operating_unit_access_all
   - budget_allocation_purchase
   - budget_allocation_purchase_request
+  - budget_allocation_purchase_requisition
   - budget_allocation_revision
   - budget_control_contract
   - budget_control_operating_unit
