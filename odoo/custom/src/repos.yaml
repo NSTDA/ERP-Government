@@ -53,8 +53,6 @@ account-financial-tools:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/1507/head # [15.0][MIG] account_asset_transfer
-    - origin refs/pull/1519/head # [15.0][MIG] account_asset_number
-    - origin refs/pull/1528/head # [15.0][MIG] account_asset_low_value
     - origin refs/pull/1567/head # [15.0][ENH] account_asset_management: default salvage value
 
 account-invoicing:
@@ -162,13 +160,9 @@ l10n-thailand:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/305/head # [15.0][MIG/REF] l10n_th_account_wht_cert_form
     - origin refs/pull/323/head # [15.0][MIG/REF] l10n_th_account_tax_multi
-    - origin refs/pull/325/head # [15.0][MIG] l10n_th_gov_purchase_guarantee
     - origin refs/pull/328/head # [15.0][MIG] l10n_th_account_asset_management
-    - origin refs/pull/329/head # [15.0][MIG/REF] l10n_th_account_tax_expense
     - origin refs/pull/330/head # [15.0][MIG/REF] l10n_th_account_tax_report
-    - origin refs/pull/331/head # [15.0][MIG/REF] l10n_th_bank_payment_export
     - origin refs/pull/332/head # [15.0][MIG] l10n_th_gov_purchase_agreement
     - origin refs/pull/333/head # [15.0][MIG] l10n_th_gov_purchase_request
     - origin refs/pull/335/head # [15.0][ADD] l10n_th_gov_account_asset_management
@@ -234,20 +228,15 @@ purchase-workflow:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/1555/head # [15.0][MIG] purchase_work_acceptance
-    - origin refs/pull/1596/head # [15.0][MIG] purchase_invoice_plan
     - origin refs/pull/1637/head # [15.0][MIG] purchase_request_exception
     - origin refs/pull/1638/head # [15.0][MIG] purchase_request_substate
     - origin refs/pull/1639/head # [15.0][MIG] purchase_request_to_requisition
-    - origin refs/pull/1723/head # [15.0][FIX] purchase_request: analytic_tag widget many2many_tags
+    - origin refs/pull/1717/head # [15.0][MIG] purchase_manual_currency
     - origin refs/pull/1727/head # [15.0][IMP] purchase_request - multi currency
     - origin refs/pull/1728/head # [15.0][ADD] purchase_request_manual_currency
-    - origin refs/pull/1733/head # [15.0][MIG] purchase_work_acceptance_evaluation
-    - origin refs/pull/1734/head # [15.0][MIG] purchase_work_acceptance_late_fines
     - origin refs/pull/1737/head # [15.0][MIG] purchase_invoice_plan_retention
     - origin refs/pull/1744/head # [15.0][ADD] purchase_tax_adjust
     - origin refs/pull/1748/head # [15.0][MIG] purchase_request_cancel_confirm
-    - origin refs/pull/1749/head # [15.0][MIG] purchase_work_acceptance_tier_validation
     - origin refs/pull/1750/head # [15.0][MIG] purchase_work_acceptance_invoice_plan
 
 queue:
@@ -296,7 +285,6 @@ server-tools:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    # - origin refs/pull/2357/head # [WIP][15.0][MIG] base_name_search_improved
 
 server-ux:
   defaults:

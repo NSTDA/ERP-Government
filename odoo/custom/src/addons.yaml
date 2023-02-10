@@ -77,6 +77,7 @@ budgeting:
   - budget_control_contract
   - budget_control_operating_unit
   - budget_control_operating_unit_access_all
+  - budget_control_purchase_manual_currency
   - budget_control_purchase_requisition
   - budget_control_revision
   - budget_control_revision_lock_amount
@@ -182,6 +183,7 @@ purchase-workflow:
   - purchase_invoice_plan
   # - purchase_invoice_plan_deposit
   - purchase_invoice_plan_retention
+  - purchase_manual_currency
   - purchase_open_qty
   - purchase_request
   - purchase_request_cancel_confirm
@@ -215,7 +217,6 @@ server-backend:
 
 server-tools:
   - base_exception
-  # - base_name_search_improved
   - excel_import_export
 
 server-ux:
