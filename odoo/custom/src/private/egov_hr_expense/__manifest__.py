@@ -8,6 +8,7 @@
     "category": "EGOV",
     "license": "AGPL-3",
     "depends": [
+        "base_tier_validation_check_budget",
         "base_tier_validation_server_action",
         "hr_expense_tier_validation",
     ],

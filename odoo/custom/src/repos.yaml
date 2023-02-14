@@ -210,6 +210,7 @@ operating-unit:
     - origin refs/pull/557/head # [15.0][ADD] purchase_deposit_operating_unit
     - origin refs/pull/560/head # [15.0][MIG][REF] agreement_operating_unit, agreement_legal_operating_unit and agreement_serviceprofile_operating_unit
     - origin refs/pull/561/head # [15.0][ADD] agreement_operating_unit_access_all
+    - origin refs/pull/562/head # [15.0][ENH] hr_operating_unit: add OU to department
 
 partner-contact:
   defaults:
