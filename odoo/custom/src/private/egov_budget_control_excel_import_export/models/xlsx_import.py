@@ -19,7 +19,7 @@ class XLSXImport(models.AbstractModel):
     @api.model
     def import_xlsx(self, import_file, template, res_model=False, res_id=False):
         if self._context.get("is_budget_control_sheet"):
-            import_file = self._transform_budget_control_sheet(import_file)
+            import_file = self.sudo()._transform_budget_control_sheet(import_file)
         record = super().import_xlsx(
             import_file, template, res_model=res_model, res_id=res_id
         )
