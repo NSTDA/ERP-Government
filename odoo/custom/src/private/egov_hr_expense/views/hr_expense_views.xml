@@ -11,6 +11,9 @@
             <xpath expr="//field[@name='tax_ids']" position="attributes">
                 <attribute name="groups" />
             </xpath>
+            <xpath expr="//field[@name='reference']" position="attributes">
+                <attribute name="groups" />
+            </xpath>
         </field>
     </record>
 
@@ -20,6 +23,9 @@
         <field name="inherit_id" ref="hr_expense.hr_expense_view_form" />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='tax_ids']" position="attributes">
+                <attribute name="groups" />
+            </xpath>
+            <xpath expr="//field[@name='reference']" position="attributes">
                 <attribute name="groups" />
             </xpath>
         </field>
@@ -32,6 +38,12 @@
         <field name="arch" type="xml">
             <xpath
                 expr="//field[@name='expense_line_ids']/tree/field[@name='tax_ids']"
+                position="attributes"
+            >
+                <attribute name="groups" />
+            </xpath>
+            <xpath
+                expr="//field[@name='expense_line_ids']/tree/field[@name='reference']"
                 position="attributes"
             >
                 <attribute name="groups" />

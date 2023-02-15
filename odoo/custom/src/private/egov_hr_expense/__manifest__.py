@@ -14,7 +14,7 @@
     ],
     "data": [
         "data/ir_actions_server.xml",
-        "views/hr_expense_views.xml",
+        # "views/hr_expense_views.xml",  # Waiting feedback
     ],
     "installable": True,
 }
