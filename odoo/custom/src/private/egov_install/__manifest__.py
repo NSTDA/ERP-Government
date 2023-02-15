@@ -92,6 +92,7 @@
         "budget_plan",
         "budget_plan_revision",
         "budget_res_project_department",
+        "l10n_th_gov_budget_purchase_agreement",
         "mis_builder",
         "res_project",
         "res_project_sequence",

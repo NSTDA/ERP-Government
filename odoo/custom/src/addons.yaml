@@ -84,6 +84,7 @@ budgeting:
   - budget_control_revision_lock_amount
   - budget_plan_revision
   - budget_res_project_department
+  - l10n_th_gov_budget_purchase_agreement
   # - purchase_work_acceptance_late_fines_budget
   # - purchase_work_acceptance_late_fines_fund
   # - purchase_work_acceptance_late_fines_operating_unit
