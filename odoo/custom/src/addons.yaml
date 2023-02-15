@@ -244,7 +244,7 @@ stock-logistics-warehouse:
   # - stock_request_mrp
   # - stock_request_picking_type
   - stock_request_purchase
-  - stock_request_separate_pickings
+  - stock_request_separate_picking
   - stock_request_submit
   - stock_request_tier_validation
 
