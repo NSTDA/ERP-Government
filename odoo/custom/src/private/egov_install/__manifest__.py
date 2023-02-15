@@ -172,7 +172,7 @@
         "stock_card_report",
         "stock_no_negative",
         "stock_request",
-        "stock_request_separate_pickings",
+        "stock_request_separate_picking",
         # Optional
         "egov_hr_expense",
         "egov_purchase",
