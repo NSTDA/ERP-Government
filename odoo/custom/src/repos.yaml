@@ -151,6 +151,7 @@ hr-expense:
     - origin refs/pull/138/head # [15.0][MIG] hr_expense_advance_clearing_sequence
     - origin refs/pull/151/head # [15.0][MIG] hr_expense_pay_to_vendor
     - origin refs/pull/153/head # [15.0][MIG] hr_expense_tier_validation
+    - origin refs/pull/162/head # [15.0][FIX] hr_expense_advance_clearing: zero unit price
 
 l10n-thailand:
   defaults:
@@ -232,7 +233,6 @@ purchase-workflow:
     - origin refs/pull/1637/head # [15.0][MIG] purchase_request_exception
     - origin refs/pull/1638/head # [15.0][MIG] purchase_request_substate
     - origin refs/pull/1639/head # [15.0][MIG] purchase_request_to_requisition
-    - origin refs/pull/1717/head # [15.0][MIG] purchase_manual_currency
     - origin refs/pull/1727/head # [15.0][IMP] purchase_request - multi currency
     - origin refs/pull/1728/head # [15.0][ADD] purchase_request_manual_currency
     - origin refs/pull/1737/head # [15.0][MIG] purchase_invoice_plan_retention
@@ -240,6 +240,7 @@ purchase-workflow:
     - origin refs/pull/1748/head # [15.0][MIG] purchase_request_cancel_confirm
     - origin refs/pull/1750/head # [15.0][MIG] purchase_work_acceptance_invoice_plan
     - origin refs/pull/1763/head # [15.0][ENH] purchase_work_acceptance_late_fines, option to create fines as refund
+    - origin refs/pull/1765/head # [15.0][MIG] purchase_manual_currency
 
 queue:
   defaults:
