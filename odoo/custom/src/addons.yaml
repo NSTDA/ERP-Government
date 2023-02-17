@@ -15,8 +15,8 @@ account-financial-reporting:
   - account_financial_report
 
 account-financial-tools:
-  # - account_asset_compute_batch
-  # - account_asset_compute_batch_job
+  - account_asset_compute_batch
+  - account_asset_compute_batch_job
   # - account_asset_from_expense
   - account_asset_low_value
   - account_asset_management
@@ -46,7 +46,7 @@ bank-statement-import:
   - account_statement_import_txt_xlsx
 
 budgeting:
-  # - account_asset_fund
+  - account_asset_fund
   # - account_asset_transfer_allocation_dimension
   # - account_asset_transfer_fund
   # - account_asset_transfer_operating_unit
@@ -75,6 +75,7 @@ budgeting:
   - budget_allocation_purchase_request
   - budget_allocation_purchase_requisition
   - budget_allocation_revision
+  - budget_control_account_asset_management
   - budget_control_contract
   - budget_control_operating_unit
   - budget_control_operating_unit_access_all
