@@ -53,6 +53,7 @@
         "stock_operating_unit",
         "stock_operating_unit_access_all",
         # Budgeting
+        "account_asset_fund",
         # "account_asset_transfer_allocation_dimension",
         # "account_asset_transfer_fund",
         # "account_asset_transfer_operating_unit",
@@ -80,6 +81,7 @@
         "budget_allocation_purchase_requisition",
         "budget_allocation_revision",
         "budget_control",
+        "budget_control_account_asset_management",
         "budget_control_advance_clearing",
         "budget_control_contract",
         "budget_control_expense",
@@ -160,8 +162,8 @@
         "contract_invoice_plan",
         "contract_invoice_plan_selection",
         # Asset
-        # "account_asset_compute_batch",
-        # "account_asset_compute_batch_job",
+        "account_asset_compute_batch",
+        "account_asset_compute_batch_job",
         # "account_asset_from_expense",
         "account_asset_low_value",
         "account_asset_management",
