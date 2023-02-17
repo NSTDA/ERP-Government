@@ -13,6 +13,7 @@
         # Structure
         "account_asset_operating_unit",
         "account_asset_operating_unit_access_all",
+        "account_asset_transfer_operating_unit",
         "account_financial_report_operating_unit",
         "account_operating_unit",
         "account_operating_unit_access_all",
@@ -54,9 +55,8 @@
         "stock_operating_unit_access_all",
         # Budgeting
         "account_asset_fund",
-        # "account_asset_transfer_allocation_dimension",
+        "account_asset_transfer_budget_allocation",
         # "account_asset_transfer_fund",
-        # "account_asset_transfer_operating_unit",
         # "account_invoice_payment_retention_budget",
         # "account_invoice_payment_retention_fund",
         # "account_payment_multi_deduction_activity",
@@ -134,6 +134,7 @@
         "hr_expense_advance_clearing",
         "hr_expense_advance_clearing_sequence",
         "hr_expense_cancel",
+        "hr_expense_excluded_tax",
         "hr_expense_exception",
         "hr_expense_pay_to_vendor",
         "hr_expense_payment",

@@ -154,6 +154,7 @@ hr-expense:
     - origin refs/pull/151/head # [15.0][MIG] hr_expense_pay_to_vendor
     - origin refs/pull/153/head # [15.0][MIG] hr_expense_tier_validation
     - origin refs/pull/162/head # [15.0][FIX] hr_expense_advance_clearing: zero unit price
+    - origin refs/pull/163/head # [15.0][ADD] hr_expense_excluded_tax
 
 l10n-thailand:
   defaults:
@@ -214,6 +215,7 @@ operating-unit:
     - origin refs/pull/560/head # [15.0][MIG][REF] agreement_operating_unit, agreement_legal_operating_unit and agreement_serviceprofile_operating_unit
     - origin refs/pull/561/head # [15.0][ADD] agreement_operating_unit_access_all
     - origin refs/pull/562/head # [15.0][ENH] hr_operating_unit: add OU to department
+    - origin refs/pull/564/head # [15.0][ADD] account_asset_transfer_operating_unit
 
 partner-contact:
   defaults:
