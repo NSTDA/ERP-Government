@@ -96,9 +96,9 @@ contract:
   - contract_invoice_plan
   - contract_invoice_plan_selection
 
-# ecosoft-addons:
-#   - account_financial_report_extension
-#   - base_report_extension
+ecosoft-addons:
+  - account_financial_report_extension
+  - base_report_extension
 
 hr:
   - hr_department_code
@@ -185,7 +185,7 @@ purchase-workflow:
   - purchase_deposit
   - purchase_exception
   - purchase_invoice_plan
-  # - purchase_invoice_plan_deposit
+  - purchase_invoice_plan_deposit
   - purchase_invoice_plan_retention
   - purchase_manual_currency
   - purchase_open_qty

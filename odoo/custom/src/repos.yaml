@@ -123,14 +123,14 @@ contract:
     - origin $ODOO_VERSION
     - origin refs/pull/927/head # [15.0][ADD] contract_invoice_plan, contract_invoice_plan_selection
 
-# ecosoft-addons:
-#   defaults:
-#     depth: $DEPTH_MERGE
-#   remotes:
-#     origin: https://github.com/ecosoft-odoo/ecosoft-addons.git
-#   target: origin $ODOO_VERSION
-#   merges:
-#     - origin $ODOO_VERSION
+ecosoft-addons:
+  defaults:
+    depth: $DEPTH_MERGE
+  remotes:
+    origin: https://github.com/ecosoft-odoo/ecosoft-addons.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
 
 hr:
   defaults:
@@ -155,6 +155,7 @@ hr-expense:
     - origin refs/pull/153/head # [15.0][MIG] hr_expense_tier_validation
     - origin refs/pull/162/head # [15.0][FIX] hr_expense_advance_clearing: zero unit price
     - origin refs/pull/163/head # [15.0][ADD] hr_expense_excluded_tax
+    - origin refs/pull/165/head # [15.0][IMP] hr_expense_cancel: cancel without delete payment/journal entries
 
 l10n-thailand:
   defaults:
@@ -245,6 +246,7 @@ purchase-workflow:
     - origin refs/pull/1750/head # [15.0][MIG] purchase_work_acceptance_invoice_plan
     - origin refs/pull/1763/head # [15.0][ENH] purchase_work_acceptance_late_fines, option to create fines as refund
     - origin refs/pull/1765/head # [15.0][MIG] purchase_manual_currency
+    - origin refs/pull/1768/head # [15.0][MIG] purchase_invoice_plan_deposit
 
 queue:
   defaults:
