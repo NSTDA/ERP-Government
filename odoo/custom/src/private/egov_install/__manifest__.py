@@ -105,7 +105,7 @@
         "l10n_th_gov_work_acceptance",
         "purchase_deposit",
         "purchase_invoice_plan",
-        # "purchase_invoice_plan_deposit",
+        "purchase_invoice_plan_deposit",
         "purchase_invoice_plan_retention",
         "purchase_manual_currency",
         "purchase_request",
@@ -123,7 +123,7 @@
         # "purchase_work_acceptance_late_fines_fund",
         # Accounting
         "account_financial_report",
-        # "account_financial_report_extension",
+        "account_financial_report_extension",
         "account_lock_date_update",
         "account_payment_multi_deduction",
         "account_reconciliation_widget",
