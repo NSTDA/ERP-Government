@@ -1,5 +1,5 @@
-"id","name","work_email","user_id/id","address_home_id/id","department_id/id","default_operating_unit_id/id,"operating_unit_ids/id"
-"base.hr_employee_001","Director","director@egov.or.th","base.res_user_001","base.res_user_001_res_partner",,"base.operating_unit_01","base.operating_unit_01, base.operating_unit_02"
+"id","name","work_email","user_id/id","address_home_id/id","department_id/id","default_operating_unit_id/id","operating_unit_ids/id"
+"base.hr_employee_001","Director","director@egov.or.th","base.res_user_001","base.res_user_001_res_partner",,"base.operating_unit_01","base.operating_unit_01,base.operating_unit_02"
 "base.hr_employee_002","Manager A1","mng_a1@egov.or.th","base.res_user_002","base.res_user_002_res_partner","base.hr_department_a1","base.operating_unit_01","base.operating_unit_01"
 "base.hr_employee_003","Employee A1","emp_a1@egov.or.th","base.res_user_003","base.res_user_003_res_partner","base.hr_department_a1","base.operating_unit_01","base.operating_unit_01"
 "base.hr_employee_004","Manager A2","mng_a2@egov.or.th","base.res_user_004","base.res_user_004_res_partner","base.hr_department_a2","base.operating_unit_01","base.operating_unit_01"

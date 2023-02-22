@@ -71,6 +71,7 @@ budgeting:
   - budget_allocation_operating_unit
   - budget_allocation_operating_unit_access_all
   - budget_allocation_purchase
+  - budget_allocation_purchase_deposit
   - budget_allocation_purchase_request
   - budget_allocation_purchase_requisition
   - budget_allocation_revision
@@ -183,6 +184,7 @@ partner-contact:
 
 purchase-workflow:
   - purchase_deposit
+  - purchase_deposit_analytic
   - purchase_exception
   - purchase_invoice_plan
   - purchase_invoice_plan_deposit
