@@ -247,6 +247,8 @@ purchase-workflow:
     - origin refs/pull/1763/head # [15.0][ENH] purchase_work_acceptance_late_fines, option to create fines as refund
     - origin refs/pull/1765/head # [15.0][MIG] purchase_manual_currency
     - origin refs/pull/1768/head # [15.0][MIG] purchase_invoice_plan_deposit
+    - origin refs/pull/1773/head # [15.0][FIX] purchase_deposit: split function _prepare_advance_purchase_line for hook
+    - origin refs/pull/1774/head # [15.0][ADD] purchase_deposit_analytic
 
 queue:
   defaults:
