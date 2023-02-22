@@ -22,8 +22,8 @@ def update_data_hooks(cr, registry):
                 "no_space_title_name": True,
                 # Tax Thai Format
                 "wht_form_preprint": False,
-                # "tax_report_format": "rd",
-                # "wht_report_format": "rd",
+                "tax_report_format": "rd",
+                "wht_report_format": "rd",
             }
         )
         # Archive demo data

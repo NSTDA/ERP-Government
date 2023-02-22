@@ -133,7 +133,7 @@
         "account_usability",
         "hr_expense_advance_clearing",
         "hr_expense_advance_clearing_sequence",
-        "hr_expense_cancel",
+        "hr_expense_cancel_policy",
         "hr_expense_excluded_tax",
         "hr_expense_exception",
         "hr_expense_pay_to_vendor",
