@@ -155,7 +155,7 @@ hr-expense:
     - origin refs/pull/153/head # [15.0][MIG] hr_expense_tier_validation
     - origin refs/pull/162/head # [15.0][FIX] hr_expense_advance_clearing: zero unit price
     - origin refs/pull/163/head # [15.0][ADD] hr_expense_excluded_tax
-    - origin refs/pull/165/head # [15.0][IMP] hr_expense_cancel: cancel without delete payment/journal entries
+    - origin refs/pull/167/head # [15.0][ADD] hr_expense_cancel_policy
 
 l10n-thailand:
   defaults:
