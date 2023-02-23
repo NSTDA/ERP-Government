@@ -69,6 +69,7 @@
         "budget_activity_contract",
         "budget_activity_expense",
         "budget_activity_purchase",
+        "budget_activity_purchase_deposit",
         "budget_activity_purchase_request",
         "budget_activity_purchase_requisition",
         "budget_allocation",
