@@ -13,8 +13,9 @@
         "hr_expense_tier_validation",
     ],
     "data": [
+        "security/ir.model.access.csv",
         "data/ir_actions_server.xml",
-        # "views/hr_expense_views.xml",  # Waiting feedback
+        "views/hr_expense_views.xml",
     ],
     "installable": True,
 }
