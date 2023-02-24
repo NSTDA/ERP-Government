@@ -43,6 +43,7 @@ agreement:
 
 bank-statement-import:
   - account_statement_import
+  - account_statement_import_base
   - account_statement_import_txt_xlsx
 
 budgeting:
