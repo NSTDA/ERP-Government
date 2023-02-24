@@ -172,6 +172,7 @@ l10n-thailand:
     - origin refs/pull/335/head # [15.0][ADD] l10n_th_gov_account_asset_management
     - origin refs/pull/336/head # [15.0][ADD] l10n_th_gov_hr_expense
     - origin refs/pull/337/head # [15.0][MIG] l10n_th_gov_work_acceptance
+    - origin refs/pull/344/head # [15.0][ENH] l10n_th_account_asset_management: allow to link journal entry to an asset
 
 mis-builder:
   defaults:
