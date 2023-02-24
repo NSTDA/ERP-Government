@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <record id="hr_expense_view_expenses_analysis_tree" model="ir.ui.view">
+    <!-- <record id="hr_expense_view_expenses_analysis_tree" model="ir.ui.view">
         <field name="name">hr.expense.tree</field>
         <field name="model">hr.expense</field>
         <field
@@ -29,7 +29,7 @@
                 <attribute name="groups" />
             </xpath>
         </field>
-    </record>
+    </record> -->
 
     <record id="view_hr_expense_sheet_form" model="ir.ui.view">
         <field name="name">view.hr.expense.sheet.form</field>
@@ -37,6 +37,18 @@
         <field name="inherit_id" ref="hr_expense.view_hr_expense_sheet_form" />
         <field name="arch" type="xml">
             <xpath
+                expr="//header/button[@name='reset_expense_sheets']"
+                position="before"
+            >
+                <button
+                    name="%(hr_expense.hr_expense_refuse_wizard_action)d"
+                    states="draft"
+                    context="{'hr_expense_refuse_model':'hr.expense.sheet', 'self_refuse': 1}"
+                    string="Refuse"
+                    type="action"
+                />
+            </xpath>
+            <!-- <xpath
                 expr="//field[@name='expense_line_ids']/tree/field[@name='tax_ids']"
                 position="attributes"
             >
@@ -47,7 +59,7 @@
                 position="attributes"
             >
                 <attribute name="groups" />
-            </xpath>
+            </xpath> -->
         </field>
     </record>
 
