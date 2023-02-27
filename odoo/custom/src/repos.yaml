@@ -201,7 +201,7 @@ operating-unit:
     - origin refs/pull/454/head # [15.0][MIG] mis_builder_operating_unit
     - origin refs/pull/479/head # [15.0][MIG] sale_operating_unit
     - origin refs/pull/480/head # [15.0][MIG] sale_stock_operating_unit
-    - origin refs/pull/493/head # [15.0][MIG] purchase_request_operating_unit
+    # - origin refs/pull/493/head # [15.0][MIG] purchase_request_operating_unit  # Waiting apply purchase-workflow#1727
     - origin refs/pull/529/head # [15.0][MIG] account_operating_unit_access_all
     - origin refs/pull/531/head # [15.0][MIG] account_financial_report_operating_unit
     - origin refs/pull/532/head # [15.0][MIG] analytic_operating_unit_access_all
@@ -241,7 +241,6 @@ purchase-workflow:
     - origin refs/pull/1637/head # [15.0][MIG] purchase_request_exception
     - origin refs/pull/1638/head # [15.0][MIG] purchase_request_substate
     - origin refs/pull/1639/head # [15.0][MIG] purchase_request_to_requisition
-    - origin refs/pull/1727/head # [15.0][IMP] purchase_request - multi currency
     - origin refs/pull/1728/head # [15.0][ADD] purchase_request_manual_currency
     - origin refs/pull/1737/head # [15.0][MIG] purchase_invoice_plan_retention
     - origin refs/pull/1744/head # [15.0][ADD] purchase_tax_adjust
