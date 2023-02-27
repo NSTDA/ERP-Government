@@ -155,6 +155,7 @@ hr-expense:
     - origin refs/pull/162/head # [15.0][FIX] hr_expense_advance_clearing: zero unit price
     - origin refs/pull/163/head # [15.0][ADD] hr_expense_excluded_tax
     - origin refs/pull/167/head # [15.0][ADD] hr_expense_cancel_policy
+    - origin refs/pull/168/head # [15.0][ADD] hr_expense_cancel_confirm
 
 l10n-thailand:
   defaults:
@@ -166,13 +167,11 @@ l10n-thailand:
     - origin $ODOO_VERSION
     - origin refs/pull/323/head # [15.0][MIG/REF] l10n_th_account_tax_multi
     - origin refs/pull/328/head # [15.0][MIG] l10n_th_account_asset_management
-    - origin refs/pull/330/head # [15.0][MIG/REF] l10n_th_account_tax_report
     - origin refs/pull/332/head # [15.0][MIG] l10n_th_gov_purchase_agreement
     - origin refs/pull/333/head # [15.0][MIG] l10n_th_gov_purchase_request
     - origin refs/pull/335/head # [15.0][ADD] l10n_th_gov_account_asset_management
     - origin refs/pull/336/head # [15.0][ADD] l10n_th_gov_hr_expense
     - origin refs/pull/337/head # [15.0][MIG] l10n_th_gov_work_acceptance
-    - origin refs/pull/339/head # [15.0][FIX] l10n_th_account_tax: compute report date and refactor new menu
     - origin refs/pull/340/head # [15.0][FIX] l10n_th_partner: filter instead of search compute field
     - origin refs/pull/341/head # [15.0][FIX] l10n_th_gov_purchase_guarantee: compute_sudo for avoid inconsistent
     - origin refs/pull/344/head # [15.0][ENH] l10n_th_account_asset_management: allow to link journal entry to an asset
