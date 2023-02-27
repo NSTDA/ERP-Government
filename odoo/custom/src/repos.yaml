@@ -172,7 +172,7 @@ l10n-thailand:
     - origin refs/pull/335/head # [15.0][ADD] l10n_th_gov_account_asset_management
     - origin refs/pull/336/head # [15.0][ADD] l10n_th_gov_hr_expense
     - origin refs/pull/337/head # [15.0][MIG] l10n_th_gov_work_acceptance
-    # - origin refs/pull/339/head # [15.0][FIX] l10n_th_account_tax: compute report date and refactor new menu
+    - origin refs/pull/339/head # [15.0][FIX] l10n_th_account_tax: compute report date and refactor new menu
     - origin refs/pull/340/head # [15.0][FIX] l10n_th_partner: filter instead of search compute field
     - origin refs/pull/341/head # [15.0][FIX] l10n_th_gov_purchase_guarantee: compute_sudo for avoid inconsistent
     - origin refs/pull/344/head # [15.0][ENH] l10n_th_account_asset_management: allow to link journal entry to an asset
@@ -240,7 +240,6 @@ purchase-workflow:
     - origin $ODOO_VERSION
     - origin refs/pull/1637/head # [15.0][MIG] purchase_request_exception
     - origin refs/pull/1638/head # [15.0][MIG] purchase_request_substate
-    - origin refs/pull/1639/head # [15.0][MIG] purchase_request_to_requisition
     - origin refs/pull/1728/head # [15.0][ADD] purchase_request_manual_currency
     - origin refs/pull/1737/head # [15.0][MIG] purchase_invoice_plan_retention
     - origin refs/pull/1744/head # [15.0][ADD] purchase_tax_adjust
