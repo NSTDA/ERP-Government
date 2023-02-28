@@ -220,6 +220,7 @@ operating-unit:
     - origin refs/pull/562/head # [15.0][ENH] hr_operating_unit: add OU to department
     - origin refs/pull/564/head # [15.0][ADD] account_asset_transfer_operating_unit
     - origin refs/pull/565/head # [15.0][FIX] account_operating_unit: re reconcile payment for case self balance only
+    - origin refs/pull/566/head # [15.0][ADD] account_payment_multi_deduction_operating_unit
 
 partner-contact:
   defaults:

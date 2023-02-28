@@ -49,13 +49,10 @@ bank-statement-import:
 budgeting:
   - account_asset_fund
   - account_asset_transfer_budget_allocation
-  # - account_asset_transfer_fund
   # - account_invoice_payment_retention_budget
   # - account_invoice_payment_retention_fund
-  # - account_payment_multi_deduction_activity
-  # - account_payment_multi_deduction_dimension
-  # - account_payment_multi_deduction_fund
-  # - base_budget_account_payment_multi_deduction
+  - account_payment_multi_deduction_activity
+  - account_payment_multi_deduction_budget_allocation
   - base_tier_validation_check_budget
   - budget_activity
   - budget_activity_advance_clearing
@@ -85,6 +82,7 @@ budgeting:
   - budget_control_purchase_requisition
   - budget_control_revision
   - budget_control_revision_lock_amount
+  - budget_control_tier_validation
   - budget_plan_revision
   - budget_res_project_department
   - l10n_th_gov_budget_purchase_agreement
@@ -152,7 +150,7 @@ operating-unit:
   - account_financial_report_operating_unit
   - account_operating_unit
   - account_operating_unit_access_all
-  # - account_payment_multi_deduction_operating_unit
+  - account_payment_multi_deduction_operating_unit
   - agreement_legal_operating_unit
   - agreement_operating_unit
   - agreement_operating_unit_access_all
