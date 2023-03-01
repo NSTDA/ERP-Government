@@ -23,6 +23,7 @@
         "agreement_operating_unit_access_all",
         "analytic_operating_unit",
         "analytic_operating_unit_access_all",
+        "base_tier_validation_report",
         "base_user_role",
         "budget_allocation_operating_unit",
         "budget_allocation_operating_unit_access_all",
@@ -158,6 +159,8 @@
         "sale_invoice_plan",
         "sale_invoice_plan_retention",
         "sale_management",
+        "sale_order_line_analytic",
+        "sale_order_line_stock_analytic",
         "sale_tax_adjust",
         # Agreement & Contract
         "agreement",
@@ -176,6 +179,7 @@
         "l10n_th_account_asset_management",
         "l10n_th_gov_account_asset_management",
         # Inventory
+        "stock_analytic",
         "stock_card_report",
         "stock_no_negative",
         "stock_request",
