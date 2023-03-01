@@ -177,6 +177,7 @@ l10n-thailand:
     - origin refs/pull/340/head # [15.0][FIX] l10n_th_partner: filter instead of search compute field
     - origin refs/pull/341/head # [15.0][FIX] l10n_th_gov_purchase_guarantee: compute_sudo for avoid inconsistent
     - origin refs/pull/344/head # [15.0][ENH] l10n_th_account_asset_management: allow to link journal entry to an asset
+    - origin refs/pull/345/head # [15.0][FIX] l10n_th_account_tax_expense: show Bill Reference
 
 mis-builder:
   defaults:
