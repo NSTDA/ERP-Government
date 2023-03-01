@@ -2,6 +2,9 @@ account-analytic:
   - analytic_base_department
   - analytic_tag_dimension
   - analytic_tag_dimension_enhanced
+  - sale_order_line_analytic
+  - sale_order_line_stock_analytic
+  - stock_analytic
 
 account-budgeting:
   - budget_control

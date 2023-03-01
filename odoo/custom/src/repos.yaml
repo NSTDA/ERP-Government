@@ -23,6 +23,8 @@ account-analytic:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/498/head # [15.0][mig] analytic_tag_dimension_enhanced
+    - origin refs/pull/529/head # [15.0][ADD] sale_order_line_analytic
+    - origin refs/pull/530/head # [15.0][ADD] sale_order_line_stock_analytic
 
 account-budgeting:
   defaults:
