@@ -99,6 +99,7 @@
         "l10n_th_gov_purchase_guarantee_budget",
         "l10n_th_gov_purchase_guarantee_operating_unit",
         "mis_builder",
+        "purchase_stock_budget_allocation",
         "res_project",
         "res_project_sequence",
         # Procurement
@@ -116,6 +117,7 @@
         "purchase_request_cancel_confirm",
         "purchase_request_manual_currency",
         "purchase_request_tier_validation",
+        "purchase_stock_analytic",
         "purchase_tax_adjust",
         "purchase_tier_validation",
         "purchase_work_acceptance",
