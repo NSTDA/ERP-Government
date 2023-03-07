@@ -24,8 +24,10 @@ account-analytic:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/498/head # [15.0][mig] analytic_tag_dimension_enhanced
+    - origin refs/pull/519/head # [15.0][MIG] purchase_stock_analytic: Migration to 15.0
     - origin refs/pull/529/head # [15.0][ADD] sale_order_line_analytic
     - origin refs/pull/530/head # [15.0][ADD] sale_order_line_stock_analytic
+    - origin refs/pull/544/head # [15.0][FIX] stock_analytic: add analytic tags in stock.move.line
 
 account-budgeting:
   defaults:
@@ -225,6 +227,7 @@ operating-unit:
     - origin refs/pull/564/head # [15.0][ADD] account_asset_transfer_operating_unit
     - origin refs/pull/565/head # [15.0][FIX] account_operating_unit: re reconcile payment for case self balance only
     - origin refs/pull/566/head # [15.0][ADD] account_payment_multi_deduction_operating_unit
+    - origin refs/pull/567/head # [15.0][FIX] stock_operating_unit: filter domain users out
 
 partner-contact:
   defaults:

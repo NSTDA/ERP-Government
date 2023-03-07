@@ -2,6 +2,7 @@ account-analytic:
   - analytic_base_department
   - analytic_tag_dimension
   - analytic_tag_dimension_enhanced
+  - purchase_stock_analytic
   - sale_order_line_analytic
   - sale_order_line_stock_analytic
   - stock_analytic
@@ -92,6 +93,7 @@ budgeting:
   - l10n_th_gov_purchase_guarantee_activity
   - l10n_th_gov_purchase_guarantee_budget
   - l10n_th_gov_purchase_guarantee_operating_unit
+  - purchase_stock_budget_allocation
   # - purchase_work_acceptance_late_fines_budget
   # - purchase_work_acceptance_late_fines_fund
   # - purchase_work_acceptance_late_fines_operating_unit
