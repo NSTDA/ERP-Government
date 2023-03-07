@@ -52,6 +52,7 @@
         # "sale_operating_unit_access_all",
         "sale_stock_operating_unit",
         "sales_team_operating_unit",
+        "stock_account_operating_unit",
         "stock_operating_unit",
         "stock_operating_unit_access_all",
         # Budgeting
