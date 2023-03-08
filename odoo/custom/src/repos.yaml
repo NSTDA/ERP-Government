@@ -289,6 +289,7 @@ sale-workflow:
     - origin $ODOO_VERSION
     - origin refs/pull/2351/head # [15.0][ADD] sale_invoice_plan_retention
     - origin refs/pull/2362/head # [15.0][ADD] sale_tax_adjust
+    - origin refs/pull/2408/head # [15.0][FIX] sale_invoice_plan: hide create invoice button
 
 server-backend:
   defaults:
