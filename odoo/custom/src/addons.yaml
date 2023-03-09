@@ -90,6 +90,7 @@ budgeting:
   - budget_plan_revision
   - budget_res_project_department
   - l10n_th_gov_budget_purchase_agreement
+  - l10n_th_gov_hr_expense_activity
   - l10n_th_gov_purchase_guarantee_activity
   - l10n_th_gov_purchase_guarantee_budget
   - l10n_th_gov_purchase_guarantee_operating_unit
@@ -267,5 +268,6 @@ stock-logistics-workflow:
   - stock_no_negative
 
 web:
+  - web_tree_image_tooltip
   - web_widget_dropdown_dynamic
   - web_widget_x2many_2d_matrix
