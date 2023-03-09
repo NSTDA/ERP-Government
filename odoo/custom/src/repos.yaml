@@ -229,6 +229,7 @@ operating-unit:
     - origin refs/pull/566/head # [15.0][ADD] account_payment_multi_deduction_operating_unit
     - origin refs/pull/568/head # [15.0][ADD] purchase_stock_operating_unit
     - origin refs/pull/569/head # [15.0][MIG] purchase_operating_unit
+    - origin refs/pull/572/head # [15.0][FIX] stock_operating_unit: remove domain of operation type
 
 partner-contact:
   defaults:
