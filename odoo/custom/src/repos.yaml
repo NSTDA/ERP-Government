@@ -157,6 +157,7 @@ hr-expense:
     - origin refs/pull/138/head # [15.0][MIG] hr_expense_advance_clearing_sequence
     - origin refs/pull/151/head # [15.0][MIG] hr_expense_pay_to_vendor
     - origin refs/pull/153/head # [15.0][MIG] hr_expense_tier_validation
+    - origin refs/pull/154/head # [15.0][MIG] hr_expense_widget_o2m
     - origin refs/pull/162/head # [15.0][FIX] hr_expense_advance_clearing: zero unit price
     - origin refs/pull/163/head # [15.0][ADD] hr_expense_excluded_tax
     - origin refs/pull/167/head # [15.0][ADD] hr_expense_cancel_policy
