@@ -125,6 +125,7 @@ hr-expense:
   - hr_expense_payment_widget_amount
   - hr_expense_sequence
   - hr_expense_tier_validation
+  - hr_expense_widget_o2m
 
 l10n-thailand:
   - l10n_th_account_asset_management
@@ -253,6 +254,7 @@ stock-logistics-reporting:
   - stock_card_report
 
 stock-logistics-warehouse:
+  - account_move_line_stock_info
   - stock_request
   - stock_request_analytic
   # - stock_request_direction
