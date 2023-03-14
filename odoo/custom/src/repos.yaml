@@ -183,6 +183,7 @@ l10n-thailand:
     - origin refs/pull/344/head # [15.0][ENH] l10n_th_account_asset_management: allow to link journal entry to an asset
     - origin refs/pull/345/head # [15.0][FIX] l10n_th_account_tax_expense: show Bill Reference
     - origin refs/pull/346/head # [15.0][FIX] l10n_th_account_asset_management: fix size image tree view
+    - origin refs/pull/347/head # [15.0][ADD] l10n_th_gov_stock_request
 
 mis-builder:
   defaults:

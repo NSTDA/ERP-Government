@@ -188,6 +188,7 @@
         "l10n_th_account_asset_management",
         "l10n_th_gov_account_asset_management",
         # Inventory
+        "l10n_th_gov_stock_request",
         "stock_analytic",
         "stock_card_report",
         "stock_no_negative",
