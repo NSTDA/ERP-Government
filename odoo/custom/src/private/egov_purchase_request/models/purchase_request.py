@@ -10,6 +10,14 @@ class PurchaseRequest(models.Model):
     _state_from = ["to_approve"]  # Change state from - to for tier validation
     _state_to = ["approved"]
 
+    def action_to_substate(self):
+        res = super().action_to_substate()
+        sequence = self.env.context.get("to_substate_sequence", 0)
+        # Request Validation after Verify
+        if sequence == 20 and self.need_validation:
+            self.request_validation()
+        return res
+
     def request_validation(self):
         # Only verified document can start tier
         for rec in self.filtered("substate_id"):
