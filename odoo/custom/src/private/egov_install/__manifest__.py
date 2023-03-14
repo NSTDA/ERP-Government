@@ -151,6 +151,7 @@
         "hr_expense_payment",
         "hr_expense_payment_widget_amount",
         "hr_expense_sequence",
+        "hr_expense_tax_adjust",
         "hr_expense_tier_validation",
         "hr_expense_widget_o2m",
         "l10n_th_account_tax",
@@ -181,7 +182,7 @@
         # Asset
         "account_asset_compute_batch",
         "account_asset_compute_batch_job",
-        # "account_asset_from_expense",
+        "account_asset_from_expense",
         "account_asset_low_value",
         "account_asset_management",
         "account_asset_transfer",

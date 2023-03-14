@@ -60,6 +60,7 @@ account-financial-tools:
     - origin refs/pull/1567/head # [15.0][ENH] account_asset_management: default salvage value
     - origin refs/pull/1590/head # [15.0][MIG] account_asset_compute_batch
     - origin refs/pull/1591/head # [15.0][MIG] account_asset_compute_batch_job
+    - origin refs/pull/1613/head # [15.0][MIG] account_asset_from_expense
 
 account-invoicing:
   defaults:
@@ -162,6 +163,7 @@ hr-expense:
     - origin refs/pull/163/head # [15.0][ADD] hr_expense_excluded_tax
     - origin refs/pull/167/head # [15.0][ADD] hr_expense_cancel_policy
     - origin refs/pull/168/head # [15.0][ADD] hr_expense_cancel_confirm
+    - origin refs/pull/172/head # [15.0][ADD] hr_expense_tax_adjust
 
 l10n-thailand:
   defaults:
@@ -184,6 +186,7 @@ l10n-thailand:
     - origin refs/pull/345/head # [15.0][FIX] l10n_th_account_tax_expense: show Bill Reference
     - origin refs/pull/346/head # [15.0][FIX] l10n_th_account_asset_management: fix size image tree view
     - origin refs/pull/347/head # [15.0][ADD] l10n_th_gov_stock_request
+    - origin refs/pull/348/head # [15.0][FIX] l10n_th_gov_purchase_agreement: fix agreement report
 
 mis-builder:
   defaults:
