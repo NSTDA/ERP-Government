@@ -32,6 +32,7 @@ account-financial-tools:
   # - account_spread_cost_revenue_enhanced
 
 account-invoicing:
+  - account_invoice_fixed_discount
   - account_invoice_payment_retention
 
 account-payment:
@@ -138,6 +139,7 @@ l10n-thailand:
   - l10n_th_bank_payment_export
   # - l10n_th_bank_payment_export_bbl
   - l10n_th_bank_payment_export_ktb
+  - l10n_th_base_location
   - l10n_th_fonts
   - l10n_th_gov_account_asset_management
   - l10n_th_gov_hr_expense
@@ -191,6 +193,8 @@ operating-unit:
   - stock_operating_unit_access_all
 
 partner-contact:
+  - base_location
+  - base_location_geonames_import
   - partner_bank_code
   - partner_company_type
   - partner_firstname
@@ -227,6 +231,7 @@ reporting-engine:
   - report_xlsx_helper
 
 sale-workflow:
+  # - sale_fixed_discount
   - sale_invoice_plan
   - sale_invoice_plan_retention
   - sale_tax_adjust

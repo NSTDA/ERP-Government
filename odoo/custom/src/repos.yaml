@@ -231,6 +231,7 @@ operating-unit:
     - origin refs/pull/568/head # [15.0][ADD] purchase_stock_operating_unit
     - origin refs/pull/569/head # [15.0][MIG] purchase_operating_unit
     - origin refs/pull/572/head # [15.0][FIX] stock_operating_unit: remove domain of operation type
+    - origin refs/pull/573/head # [15.0][FIX] account_operating_unit: add OU to tree view of account.move.line
 
 partner-contact:
   defaults:
@@ -290,6 +291,7 @@ sale-workflow:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    # - origin refs/pull/2269/head # [15.0][MIG] sale_fixed_discount
     - origin refs/pull/2351/head # [15.0][ADD] sale_invoice_plan_retention
     - origin refs/pull/2362/head # [15.0][ADD] sale_tax_adjust
     - origin refs/pull/2408/head # [15.0][FIX] sale_invoice_plan: hide create invoice button
