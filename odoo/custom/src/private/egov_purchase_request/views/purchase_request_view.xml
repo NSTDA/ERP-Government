@@ -18,6 +18,9 @@
             ref="l10n_th_gov_purchase_request.view_purchase_request_form"
         />
         <field name="arch" type="xml">
+            <xpath expr="//button[@name='button_approved']" position="before">
+                <field name="review_ids" invisible="1" />
+            </xpath>
             <xpath expr="//button[@name='button_approved']" position="attributes">
                 <attribute
                     name="attrs"
