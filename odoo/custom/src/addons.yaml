@@ -185,7 +185,7 @@ operating-unit:
   - purchase_deposit_operating_unit
   - purchase_operating_unit
   - purchase_operating_unit_access_all
-  # - purchase_request_operating_unit  # Waiting apply purchase-workflow#1727
+  - purchase_request_operating_unit
   - purchase_request_operating_unit_access_all
   - purchase_request_to_requisition_operating_unit
   - purchase_requisition_operating_unit
