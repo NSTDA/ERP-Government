@@ -164,6 +164,7 @@ hr-expense:
     - origin refs/pull/167/head # [15.0][ADD] hr_expense_cancel_policy
     - origin refs/pull/168/head # [15.0][ADD] hr_expense_cancel_confirm
     - origin refs/pull/172/head # [15.0][ADD] hr_expense_tax_adjust
+    - origin refs/pull/173/head # [15.0][ADD] hr_expense_disable_confirm_duplicate
 
 l10n-thailand:
   defaults:
@@ -187,6 +188,8 @@ l10n-thailand:
     - origin refs/pull/346/head # [15.0][FIX] l10n_th_account_asset_management: fix size image tree view
     - origin refs/pull/347/head # [15.0][ADD] l10n_th_gov_stock_request
     - origin refs/pull/348/head # [15.0][FIX] l10n_th_gov_purchase_agreement: fix agreement report
+    - origin refs/pull/349/head # [15.0][FIX] l10n_th_account_tax_expense: add hook function wht move line
+    - origin refs/pull/350/head # [15.0][ADD] l10n_th_account_tax_expense_operating_unit
 
 mis-builder:
   defaults:

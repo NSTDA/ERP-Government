@@ -1,6 +1,7 @@
 git+https://github.com/OCA/openupgradelib.git@master
-unicodecsv
-unidecode
+num2words==0.5.12
 numpy
 openpyxl
 pandas
+unicodecsv
+unidecode

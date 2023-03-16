@@ -18,13 +18,10 @@
             ref="l10n_th_gov_purchase_request.view_purchase_request_form"
         />
         <field name="arch" type="xml">
-            <xpath expr="//button[@name='button_approved']" position="before">
-                <field name="need_validation" invisible="1" />
-            </xpath>
             <xpath expr="//button[@name='button_approved']" position="attributes">
                 <attribute
                     name="attrs"
-                >{'invisible': ['|', '|', ('substate_sequence', '!=', 20), ('state', '!=', 'to_approve'), ('need_validation', '=', True)]}</attribute>
+                >{'invisible': ['|', '|', ('substate_sequence', '!=', 20), ('state', '!=', 'to_approve'), ('review_ids', '!=', [])]}</attribute>
             </xpath>
         </field>
     </record>
