@@ -17,6 +17,13 @@ class HrExpense(models.Model):
 class HrExpenseSheet(models.Model):
     _inherit = "hr.expense.sheet"
 
+    def action_submit_sheet(self):
+        res = super().action_submit_sheet()
+        # Request Validation after Submit to Manager
+        if self.need_validation:
+            self.request_validation()
+        return res
+
     def refuse_sheet(self, reason):
         """Allow refuse with state draft, no permission"""
         if self._context.get("self_refuse", False):

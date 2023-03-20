@@ -126,6 +126,8 @@
         "purchase_request_cancel_confirm",
         "purchase_request_manual_currency",
         "purchase_request_tier_validation",
+        "purchase_request_to_requisition_manual_currency",
+        "purchase_requisition_manual_currency",
         "purchase_stock_analytic",
         "purchase_tax_adjust",
         "purchase_tier_validation",
