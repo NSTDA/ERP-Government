@@ -275,6 +275,7 @@ purchase-workflow:
     - origin refs/pull/1774/head # [15.0][ADD] purchase_deposit_analytic
     - origin refs/pull/1775/head # [15.0][FIX] purchase_invoice_plan: change qty after create invoiced will error
     - origin refs/pull/1782/head # [15.0][FIX] purchase_request_to_requisition: send currency to requisition
+    - origin refs/pull/1807/head # [15.0][IMP] purchase_work_acceptance: add purchase in wa view
     - origin refs/pull/1808/head # [15.0][ADD] purchase_requisition_manual_currency
     - origin refs/pull/1809/head # [15.0][ADD] purchase_request_to_requisition_manual_currency
 
