@@ -145,7 +145,7 @@
         "account_move_line_stock_info",
         "account_payment_multi_deduction",
         "account_reconciliation_widget",
-        "account_sequence_option",
+        # "account_sequence_option",
         # "account_spread_cost_revenue",
         # "account_spread_cost_revenue_enhanced",
         "account_statement_import_txt_xlsx",

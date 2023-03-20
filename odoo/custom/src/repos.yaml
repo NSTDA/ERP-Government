@@ -56,7 +56,7 @@ account-financial-tools:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/1455/head # [15.0][MIG] account_sequence_option
+    # - origin refs/pull/1455/head # [15.0][MIG] account_sequence_option
     - origin refs/pull/1507/head # [15.0][MIG] account_asset_transfer
     - origin refs/pull/1567/head # [15.0][ENH] account_asset_management: default salvage value
     - origin refs/pull/1590/head # [15.0][MIG] account_asset_compute_batch
