@@ -56,6 +56,7 @@ account-financial-tools:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    - origin refs/pull/1455/head # [15.0][MIG] account_sequence_option
     - origin refs/pull/1507/head # [15.0][MIG] account_asset_transfer
     - origin refs/pull/1567/head # [15.0][ENH] account_asset_management: default salvage value
     - origin refs/pull/1590/head # [15.0][MIG] account_asset_compute_batch
@@ -156,6 +157,7 @@ hr-expense:
     - origin $ODOO_VERSION
     - origin refs/pull/129/head # [15.0][MIG] hr_expense_payment_widget_amount
     - origin refs/pull/138/head # [15.0][MIG] hr_expense_advance_clearing_sequence
+    - origin refs/pull/149/head # [15.0][MIG] hr_expense_sequence_option
     - origin refs/pull/151/head # [15.0][MIG] hr_expense_pay_to_vendor
     - origin refs/pull/153/head # [15.0][MIG] hr_expense_tier_validation
     - origin refs/pull/154/head # [15.0][MIG] hr_expense_widget_o2m
@@ -165,6 +167,7 @@ hr-expense:
     - origin refs/pull/168/head # [15.0][ADD] hr_expense_cancel_confirm
     - origin refs/pull/172/head # [15.0][ADD] hr_expense_tax_adjust
     - origin refs/pull/173/head # [15.0][ADD] hr_expense_disable_confirm_duplicate
+    - origin refs/pull/174/head # [FIX] hr_expense_advance_clearing: change field not compute advance
 
 l10n-thailand:
   defaults:
@@ -190,6 +193,7 @@ l10n-thailand:
     - origin refs/pull/348/head # [15.0][FIX] l10n_th_gov_purchase_agreement: fix agreement report
     - origin refs/pull/349/head # [15.0][FIX] l10n_th_account_tax_expense: add hook function wht move line
     - origin refs/pull/350/head # [15.0][ADD] l10n_th_account_tax_expense_operating_unit
+    - origin refs/pull/351/head # [15.0][FIX] l10n_th_account_tax: allow duplicate PIT Table with other year
 
 mis-builder:
   defaults:
@@ -208,13 +212,11 @@ operating-unit:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/449/head # [15.0][MIG] hr_expense_operating_unit
     - origin refs/pull/452/head # [15.0][MIG] hr_expense_operating_unit_access_all
     - origin refs/pull/453/head # [15.0][MIG] stock_operating_unit_access_all
     - origin refs/pull/454/head # [15.0][MIG] mis_builder_operating_unit
     - origin refs/pull/479/head # [15.0][MIG] sale_operating_unit
     - origin refs/pull/480/head # [15.0][MIG] sale_stock_operating_unit
-    # - origin refs/pull/493/head # [15.0][MIG] purchase_request_operating_unit  # Waiting apply purchase-workflow#1727
     - origin refs/pull/529/head # [15.0][MIG] account_operating_unit_access_all
     - origin refs/pull/531/head # [15.0][MIG] account_financial_report_operating_unit
     - origin refs/pull/532/head # [15.0][MIG] analytic_operating_unit_access_all
@@ -239,6 +241,8 @@ operating-unit:
     - origin refs/pull/569/head # [15.0][MIG] purchase_operating_unit
     - origin refs/pull/572/head # [15.0][FIX] stock_operating_unit: remove domain of operation type
     - origin refs/pull/573/head # [15.0][FIX] account_operating_unit: add OU to tree view of account.move.line
+    - origin refs/pull/574/head # [15.0][MIG] hr_expense_operating_unit
+    - origin refs/pull/575/head # [15.0][MIG] purchase_request_operating_unit
 
 partner-contact:
   defaults:
@@ -320,6 +324,7 @@ server-tools:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    - origin refs/pull/2275/head # [15.0][MIG] base_sequence_option
 
 server-ux:
   defaults:

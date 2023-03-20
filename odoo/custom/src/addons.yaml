@@ -27,9 +27,10 @@ account-financial-tools:
   - account_asset_number
   - account_asset_transfer
   - account_lock_date_update
-  - account_usability
+  - account_sequence_option
   # - account_spread_cost_revenue
   # - account_spread_cost_revenue_enhanced
+  - account_usability
 
 account-invoicing:
   - account_invoice_fixed_discount
@@ -62,6 +63,7 @@ budgeting:
   - budget_activity
   - budget_activity_advance_clearing
   - budget_activity_contract
+  - budget_activity_contract_invoice_plan
   - budget_activity_expense
   - budget_activity_purchase
   - budget_activity_purchase_deposit
@@ -70,6 +72,7 @@ budgeting:
   - budget_allocation
   - budget_allocation_advance_clearing
   - budget_allocation_contract
+  - budget_allocation_contract_invoice_plan
   - budget_allocation_department
   - budget_allocation_expense
   - budget_allocation_operating_unit
@@ -129,6 +132,7 @@ hr-expense:
   - hr_expense_payment
   - hr_expense_payment_widget_amount
   - hr_expense_sequence
+  - hr_expense_sequence_option
   - hr_expense_tax_adjust
   - hr_expense_tier_validation
   - hr_expense_widget_o2m
@@ -185,7 +189,7 @@ operating-unit:
   - purchase_deposit_operating_unit
   - purchase_operating_unit
   - purchase_operating_unit_access_all
-  # - purchase_request_operating_unit  # Waiting apply purchase-workflow#1727
+  - purchase_request_operating_unit
   - purchase_request_operating_unit_access_all
   - purchase_request_to_requisition_operating_unit
   - purchase_requisition_operating_unit
@@ -248,6 +252,7 @@ server-backend:
 
 server-tools:
   - base_exception
+  - base_sequence_option
   - excel_import_export
 
 server-ux:
