@@ -27,7 +27,7 @@ account-financial-tools:
   - account_asset_number
   - account_asset_transfer
   - account_lock_date_update
-  - account_sequence_option
+  # - account_sequence_option
   # - account_spread_cost_revenue
   # - account_spread_cost_revenue_enhanced
   - account_usability
