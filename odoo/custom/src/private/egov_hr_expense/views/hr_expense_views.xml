@@ -48,6 +48,14 @@
                     type="action"
                 />
             </xpath>
+            <xpath expr="//field[@name='user_id']" position="before">
+                <field name="review_ids" invisible="1" />
+            </xpath>
+            <xpath expr="//field[@name='user_id']" position="attributes">
+                <attribute
+                    name="attrs"
+                >{'invisible': [('review_ids', '!=', [])]}</attribute>
+            </xpath>
             <!-- <xpath
                 expr="//field[@name='expense_line_ids']/tree/field[@name='tax_ids']"
                 position="attributes"
