@@ -194,6 +194,8 @@ l10n-thailand:
     - origin refs/pull/349/head # [15.0][FIX] l10n_th_account_tax_expense: add hook function wht move line
     - origin refs/pull/350/head # [15.0][ADD] l10n_th_account_tax_expense_operating_unit
     - origin refs/pull/351/head # [15.0][FIX] l10n_th_account_tax: allow duplicate PIT Table with other year
+    - origin refs/pull/352/head # [15.0][FIX] l10n_th_account_tax: fix sign tax invoice refund
+    - origin refs/pull/354/head # [15.0][FIX] l10n_th_account_tax_expense: only posted journal enties can reconcile
 
 mis-builder:
   defaults:
