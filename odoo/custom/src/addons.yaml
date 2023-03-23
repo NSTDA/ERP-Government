@@ -156,6 +156,7 @@ l10n-thailand:
   - l10n_th_gov_hr_expense
   - l10n_th_gov_purchase_agreement
   - l10n_th_gov_purchase_guarantee
+  - l10n_th_gov_purchase_report
   - l10n_th_gov_purchase_request
   - l10n_th_gov_stock_request
   - l10n_th_gov_work_acceptance
@@ -229,6 +230,7 @@ purchase-workflow:
   - purchase_request_to_requisition_manual_currency
   - purchase_request_tier_validation
   - purchase_requisition_manual_currency
+  - purchase_rfq_number
   - purchase_tax_adjust
   - purchase_tier_validation
   - purchase_work_acceptance

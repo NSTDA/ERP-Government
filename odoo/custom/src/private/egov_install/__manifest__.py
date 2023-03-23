@@ -113,6 +113,7 @@
         "stock_request_budget_allocation",
         # Procurement
         "l10n_th_gov_purchase_agreement",
+        "l10n_th_gov_purchase_report",
         "l10n_th_gov_purchase_request",
         "l10n_th_gov_purchase_guarantee",
         "l10n_th_gov_work_acceptance",
@@ -128,6 +129,7 @@
         "purchase_request_tier_validation",
         "purchase_request_to_requisition_manual_currency",
         "purchase_requisition_manual_currency",
+        "purchase_rfq_number",
         "purchase_stock_analytic",
         "purchase_tax_adjust",
         "purchase_tier_validation",
