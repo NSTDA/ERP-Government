@@ -100,6 +100,7 @@
         "budget_plan_revision",
         "budget_res_project_department",
         "l10n_th_account_tax_expense_budget_allocation",
+        "l10n_th_gov_account_asset_management_budget_allocation",
         "l10n_th_gov_budget_purchase_agreement",
         "l10n_th_gov_hr_expense_activity",
         "l10n_th_gov_purchase_guarantee_activity",
