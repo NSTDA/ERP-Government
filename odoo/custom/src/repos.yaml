@@ -167,8 +167,8 @@ hr-expense:
     - origin refs/pull/168/head # [15.0][ADD] hr_expense_cancel_confirm
     - origin refs/pull/172/head # [15.0][ADD] hr_expense_tax_adjust
     - origin refs/pull/173/head # [15.0][ADD] hr_expense_disable_confirm_duplicate
-    - origin refs/pull/174/head # [FIX] hr_expense_advance_clearing: change field not compute advance
-
+    - origin refs/pull/174/head # [15.0][FIX] hr_expense_advance_clearing: change field not compute advance
+    - origin refs/pull/176/head # [15.0][FIX] hr_expense_advance_clearing: split function create payment return advance
 l10n-thailand:
   defaults:
     depth: $DEPTH_MERGE
