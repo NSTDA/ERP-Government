@@ -198,6 +198,7 @@ l10n-thailand:
     - origin refs/pull/353/head # [15.0][ADD] l10n_th_gov_purchase_report
     - origin refs/pull/354/head # [15.0][FIX] l10n_th_account_tax_expense: only posted journal enties can reconcile
     - origin refs/pull/355/head # [15.0][IMP] l10n_th_gov_account_asset_management: accounting analytic all move line
+    - origin refs/pull/356/head # [WIP][15.0][ADD] l10n_th_bank_payment_export_bbl
 
 mis-builder:
   defaults:
