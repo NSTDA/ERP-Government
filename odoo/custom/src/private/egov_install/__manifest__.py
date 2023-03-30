@@ -175,7 +175,7 @@
         "l10n_th_account_tax_report",
         "l10n_th_account_wht_cert_form",
         "l10n_th_bank_payment_export",
-        # "l10n_th_bank_payment_export_bbl",
+        "l10n_th_bank_payment_export_bbl",
         "l10n_th_bank_payment_export_ktb",
         "l10n_th_base_location",
         "l10n_th_gov_hr_expense",
