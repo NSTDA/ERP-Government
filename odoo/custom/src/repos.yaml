@@ -248,6 +248,7 @@ operating-unit:
     - origin refs/pull/573/head # [15.0][FIX] account_operating_unit: add OU to tree view of account.move.line
     - origin refs/pull/574/head # [15.0][MIG] hr_expense_operating_unit
     - origin refs/pull/575/head # [15.0][MIG] purchase_request_operating_unit
+    - origin refs/pull/581/head # [15.0][FIX] account_operating_unit: split function for support expense operating unit
 
 partner-contact:
   defaults:
