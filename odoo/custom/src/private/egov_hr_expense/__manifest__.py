@@ -11,6 +11,7 @@
         "base_tier_validation_check_budget",
         "base_tier_validation_server_action",
         "hr_expense_tier_validation",
+        "hr_expense_advance_clearing",
     ],
     "data": [
         "security/ir.model.access.csv",
