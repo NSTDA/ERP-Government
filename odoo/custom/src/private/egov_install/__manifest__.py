@@ -179,6 +179,7 @@
         "l10n_th_bank_payment_export_ktb",
         "l10n_th_base_location",
         "l10n_th_gov_hr_expense",
+        "l10n_th_gov_tier_validation",
         "partner_bank_code",
         # "sale_fixed_discount",
         "sale_invoice_plan",
