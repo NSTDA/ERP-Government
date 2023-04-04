@@ -26,6 +26,9 @@
                     name="attrs"
                 >{'invisible': ['|', '|', ('substate_sequence', '!=', 20), ('state', '!=', 'to_approve'), ('review_ids', '!=', [])]}</attribute>
             </xpath>
+            <xpath expr="//field[@name='requested_by']" position="after">
+                <field name='create_uid' />
+            </xpath>
         </field>
     </record>
 

@@ -56,6 +56,9 @@
                     name="attrs"
                 >{'invisible': [('review_ids', '!=', [])]}</attribute>
             </xpath>
+            <xpath expr="//field[@name='employee_id']" position="after">
+                <field name="create_uid" />
+            </xpath>
             <!-- <xpath
                 expr="//field[@name='expense_line_ids']/tree/field[@name='tax_ids']"
                 position="attributes"
