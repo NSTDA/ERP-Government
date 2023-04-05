@@ -156,6 +156,7 @@
         "account_usability",
         "hr_expense_advance_clearing",
         "hr_expense_advance_clearing_sequence",
+        "hr_expense_advance_overdue_reminder",
         "hr_expense_cancel_confirm",
         "hr_expense_cancel_policy",
         "hr_expense_disable_confirm_duplicate",
