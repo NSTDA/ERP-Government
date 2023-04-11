@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+    <!-- Budget Manager -->
+    <record id="group_role_budget_manager" model="res.groups">
+        <field name="name">Role: Budget Manager</field>
+    </record>
+    <record id="role_budget_manager" model="res.users.role">
+        <field name="name">Role: Budget Manager</field>
+        <field name="group_id" ref="group_role_budget_manager" />
+        <field
+            name="implied_ids"
+            eval="[(6, 0, [ref('base.group_allow_export'),
+                           ref('base.group_user'),
+                           ref('budget_control.group_budget_control_manager'),
+                           ref('hr_expense.group_hr_expense_user'),
+                           ref('purchase_request.group_purchase_request_user'),
+                           ref('res_project.group_res_project_manager'),
+                           ref('stock_request.group_stock_request_user'),
+                           ref('operating_unit_access_all.group_all_operating_unit'),
+                           ref('account_operating_unit_access_all.group_all_ou_account'),
+                           ref('analytic_operating_unit_access_all.group_all_ou_analytic'),
+                           ref('budget_control_operating_unit_access_all.group_all_ou_budget_control'),
+                           ref('hr_expense_operating_unit_access_all.group_all_ou_hr_expense'),
+                           ref('purchase_operating_unit_access_all.group_all_ou_purchase'),
+                           ref('purchase_request_operating_unit_access_all.group_all_ou_purchase_request'),
+                           ])]"
+        />
+    </record>
+
+</odoo>

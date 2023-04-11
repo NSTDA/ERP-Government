@@ -241,6 +241,7 @@ operating-unit:
     - origin refs/pull/555/head # [15.0][MIG] account_asset_operating_unit
     - origin refs/pull/556/head # [15.0][MIG] account_asset_operating_unit_access_all
     - origin refs/pull/557/head # [15.0][ADD] purchase_deposit_operating_unit
+    - origin refs/pull/558/head # [15.0][ADD] sale_operating_unit_access_all
     - origin refs/pull/560/head # [15.0][MIG][REF] agreement_operating_unit, agreement_legal_operating_unit and agreement_serviceprofile_operating_unit
     - origin refs/pull/561/head # [15.0][ADD] agreement_operating_unit_access_all
     - origin refs/pull/562/head # [15.0][ENH] hr_operating_unit: add OU to department
@@ -255,6 +256,7 @@ operating-unit:
     - origin refs/pull/575/head # [15.0][MIG] purchase_request_operating_unit
     - origin refs/pull/581/head # [15.0][FIX] account_operating_unit: split function for support expense operating unit
     - origin refs/pull/582/head # [15.0][IMP] account_operating_unit: add OU in move line outstanding payment
+    - origin refs/pull/583/head # [15.0][MIG] mis_builder_operating_unit_access_all
 
 partner-contact:
   defaults:
