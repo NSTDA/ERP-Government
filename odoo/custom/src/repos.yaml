@@ -203,6 +203,7 @@ l10n-thailand:
     - origin refs/pull/358/head # [15.0][IMP] l10n_th_gov_account_asset_management: add fields, change display name
     - origin refs/pull/359/head # [15.0][FIX] l10n_th_account_tax: default analytic on wizard with WHT
     - origin refs/pull/360/head # [15.0][ENH] l10n_th_account_asset_management: add parent asset
+    - origin refs/pull/361/head # [15.0][ADD] l10n_th_mis_report
 
 mis-builder:
   defaults:
