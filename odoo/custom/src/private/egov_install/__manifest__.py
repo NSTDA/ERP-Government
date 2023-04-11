@@ -181,6 +181,7 @@
         "l10n_th_base_location",
         "l10n_th_gov_hr_expense",
         "l10n_th_gov_tier_validation",
+        "l10n_th_mis_report",
         "partner_bank_code",
         # "sale_fixed_discount",
         "sale_invoice_plan",
