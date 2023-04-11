@@ -1,0 +1,41 @@
+# Copyright 2023 Ecosoft Co., Ltd. (http://ecosoft.co.th)
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+
+{
+    "name": "EGOV - User Roles",
+    "version": "15.0.1.0.0",
+    "license": "AGPL-3",
+    "category": "EGOV",
+    "author": "Ecosoft",
+    "depends": [
+        "account_asset_operating_unit_access_all",
+        "account_operating_unit_access_all",
+        "agreement_legal_operating_unit",
+        "agreement_operating_unit_access_all",
+        "analytic_operating_unit_access_all",
+        "base_user_role",
+        "budget_control_operating_unit_access_all",
+        "contract",
+        "hr_contract",
+        "hr_expense_operating_unit_access_all",
+        "hr_operating_unit_access_all",
+        "mis_builder_operating_unit_access_all",
+        "operating_unit_access_all",
+        "purchase_operating_unit_access_all",
+        "purchase_request_operating_unit_access_all",
+        "purchase_requisition_operating_unit_access_all",
+        "queue_job",
+        "res_project",
+        "sale_operating_unit_access_all",
+        "stock_operating_unit_access_all",
+    ],
+    "data": [
+        "data/general_role.xml",
+        "data/accounting_role.xml",
+        "data/budget_role.xml",
+        "data/procurement_role.xml",
+        "data/sale_role.xml",
+        "data/super_user_role.xml",
+    ],
+    "installable": True,
+}

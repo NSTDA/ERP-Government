@@ -80,6 +80,11 @@ def update_data_hooks(cr, registry):
                         4,
                         env.ref("analytic.group_analytic_accounting").id,
                     ),
+                    # Require Analytic
+                    (
+                        4,
+                        env.ref("budget_control.group_required_analytic").id,
+                    ),
                     # Multi Route
                     (
                         4,

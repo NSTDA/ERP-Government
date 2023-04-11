@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+    <!-- Employee -->
+    <record id="group_role_employee" model="res.groups">
+        <field name="name">Role: Employee</field>
+    </record>
+    <record id="role_employee" model="res.users.role">
+        <field name="name">Role: Employee</field>
+        <field name="group_id" ref="group_role_employee" />
+        <field
+            name="implied_ids"
+            eval="[(6, 0, [ref('base.group_allow_export'),
+                           ref('base.group_user'),
+                           ref('budget_control.group_budget_control_user'),
+                           ref('hr_expense.group_hr_expense_user'),
+                           ref('purchase_request.group_purchase_request_user'),
+                           ref('res_project.group_res_project_manager'),
+                           ref('stock_request.group_stock_request_user'),
+                           ref('operating_unit_access_all.group_all_operating_unit'),
+                           ref('analytic_operating_unit_access_all.group_all_ou_analytic'),
+                           ref('stock_operating_unit_access_all.group_all_ou_stock'),
+                           ])]"
+        />
+    </record>
+
+</odoo>
