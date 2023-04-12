@@ -274,20 +274,14 @@ purchase-workflow:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/1637/head # [15.0][MIG] purchase_request_exception
-    - origin refs/pull/1638/head # [15.0][MIG] purchase_request_substate
     - origin refs/pull/1728/head # [15.0][ADD] purchase_request_manual_currency
     - origin refs/pull/1737/head # [15.0][MIG] purchase_invoice_plan_retention
     - origin refs/pull/1744/head # [15.0][ADD] purchase_tax_adjust
     - origin refs/pull/1748/head # [15.0][MIG] purchase_request_cancel_confirm
-    - origin refs/pull/1750/head # [15.0][MIG] purchase_work_acceptance_invoice_plan
-    - origin refs/pull/1763/head # [15.0][ENH] purchase_work_acceptance_late_fines, option to create fines as refund
     - origin refs/pull/1765/head # [15.0][MIG] purchase_manual_currency
     - origin refs/pull/1768/head # [15.0][MIG] purchase_invoice_plan_deposit
-    - origin refs/pull/1773/head # [15.0][FIX] purchase_deposit: split function _prepare_advance_purchase_line for hook
     - origin refs/pull/1774/head # [15.0][ADD] purchase_deposit_analytic
     - origin refs/pull/1775/head # [15.0][FIX] purchase_invoice_plan: change qty after create invoiced will error
-    - origin refs/pull/1782/head # [15.0][FIX] purchase_request_to_requisition: send currency to requisition
     - origin refs/pull/1786/head # [15.0][MIG] purchase_rfq_number
     - origin refs/pull/1807/head # [15.0][IMP] purchase_work_acceptance: add purchase in wa view
     - origin refs/pull/1808/head # [15.0][ADD] purchase_requisition_manual_currency
