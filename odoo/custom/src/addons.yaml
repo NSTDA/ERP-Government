@@ -251,7 +251,7 @@ reporting-engine:
   - report_xlsx_helper
 
 sale-workflow:
-  # - sale_fixed_discount
+  - sale_fixed_discount
   - sale_invoice_plan
   - sale_invoice_plan_retention
   - sale_tax_adjust

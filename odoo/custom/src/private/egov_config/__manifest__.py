@@ -30,6 +30,7 @@
         "data/res_partner_data.xml",
         "data/hr_department_data.xml",
         "data/budget.template.csv",
+        "data/tier_reviewer_extra_access.xml",
     ],
     "post_init_hook": "update_data_hooks",
 }
