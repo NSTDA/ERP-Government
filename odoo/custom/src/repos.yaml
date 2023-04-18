@@ -203,6 +203,7 @@ l10n-thailand:
     - origin refs/pull/358/head # [15.0][IMP] l10n_th_gov_account_asset_management: add fields, change display name
     - origin refs/pull/360/head # [15.0][ENH] l10n_th_account_asset_management: add parent asset
     - origin refs/pull/361/head # [15.0][ADD] l10n_th_mis_report
+    - origin refs/pull/362/head # [15.0][FIX] l10n_th_account_tax: allow reconcile undue case can't register payment
 
 mis-builder:
   defaults:
@@ -314,10 +315,10 @@ sale-workflow:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    # - origin refs/pull/2269/head # [15.0][MIG] sale_fixed_discount
     - origin refs/pull/2351/head # [15.0][ADD] sale_invoice_plan_retention
     - origin refs/pull/2362/head # [15.0][ADD] sale_tax_adjust
     - origin refs/pull/2408/head # [15.0][FIX] sale_invoice_plan: hide create invoice button
+    - origin refs/pull/2485/head # [15.0][MIG] sale_fixed_discount
 
 server-backend:
   defaults:

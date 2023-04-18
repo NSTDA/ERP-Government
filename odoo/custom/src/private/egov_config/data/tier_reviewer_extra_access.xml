@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+    <!-- Purchase Request -->
+
+    <function model="ir.rule" name="write">
+        <value
+            eval="[ref('purchase_request_operating_unit.ir_rule_purchase_request_allowed_operating_units')]"
+        />
+        <value
+            eval="{'domain_force': &quot;['|', ('review_ids.reviewer_ids', 'in', [user.id])] + ['|','|',(1, '=', 1) if user.has_group('purchase_request_operating_unit_access_all.group_all_ou_purchase_request') else (0, '=', 1),('operating_unit_id','=',False),('operating_unit_id','in', user.operating_unit_ids.ids)]&quot;}"
+        />
+    </function>
+
+    <function model="ir.rule" name="write">
+        <value
+            eval="[ref('purchase_request_operating_unit.ir_rule_purchase_request_line_allowed_operating_units')]"
+        />
+        <value
+            eval="{'domain_force': &quot;['|', ('request_id.review_ids.reviewer_ids', 'in', [user.id])] + ['|','|',(1, '=', 1) if user.has_group('purchase_request_operating_unit_access_all.group_all_ou_purchase_request') else (0, '=', 1),('request_id.operating_unit_id','=',False),('request_id.operating_unit_id','in', user.operating_unit_ids.ids)]&quot;}"
+        />
+    </function>
+
+    <!-- Purchase -->
+
+    <function model="ir.rule" name="write">
+        <value
+            eval="[ref('purchase_operating_unit.ir_rule_purchase_order_allowed_operating_units')]"
+        />
+        <value
+            eval="{'domain_force': &quot;['|', ('review_ids.reviewer_ids', 'in', [user.id])] + ['|','|',(1, '=', 1) if user.has_group('purchase_operating_unit_access_all.group_all_ou_purchase') else (0, '=', 1),('operating_unit_id','=',False),('operating_unit_id','in', user.operating_unit_ids.ids)]&quot;}"
+        />
+    </function>
+
+    <function model="ir.rule" name="write">
+        <value
+            eval="[ref('purchase_operating_unit.ir_rule_purchase_order_line_allowed_operating_units')]"
+        />
+        <value
+            eval="{'domain_force': &quot;['|', ('order_id.review_ids.reviewer_ids', 'in', [user.id])] + ['|','|',(1, '=', 1) if user.has_group('purchase_operating_unit_access_all.group_all_ou_purchase') else (0, '=', 1),('operating_unit_id','=',False),('operating_unit_id','in', user.operating_unit_ids.ids)]&quot;}"
+        />
+    </function>
+
+    <!-- Expense -->
+
+    <function model="ir.rule" name="write">
+        <value
+            eval="[ref('hr_expense_operating_unit.ir_rule_hr_expense_sheet_allowed_operating_units')]"
+        />
+        <value
+            eval="{'domain_force': &quot;['|', ('review_ids.reviewer_ids', 'in', [user.id])] + ['|','|',(1, '=', 1) if user.has_group('hr_expense_operating_unit_access_all.group_all_ou_hr_expense') else (0, '=', 1),('operating_unit_id','=',False),('operating_unit_id','in', user.operating_unit_ids.ids)]&quot;}"
+        />
+    </function>
+
+    <function model="ir.rule" name="write">
+        <value
+            eval="[ref('hr_expense_operating_unit.ir_rule_hr_expense_allowed_operating_units')]"
+        />
+        <value
+            eval="{'domain_force': &quot;['|', ('sheet_id.review_ids.reviewer_ids', 'in', [user.id])] + ['|','|',(1, '=', 1) if user.has_group('hr_expense_operating_unit_access_all.group_all_ou_hr_expense') else (0, '=', 1),('operating_unit_id','=',False),('operating_unit_id','in', user.operating_unit_ids.ids)]&quot;}"
+        />
+    </function>
+
+</odoo>
