@@ -116,11 +116,42 @@ def update_data_hooks(cr, registry):
         date_format = "%d/%m/%Y"
         lang.write({"date_format": date_format})
 
-        # Update Account on Advance
-        # advance_kpi = env.ref("budget_activity_advance_clearing.activity_advance")
-        # advance_kpi.account_id = env.ref("tint_coa.1_account_11020201")
-        # emp_advance = env.ref("hr_expense_advance_clearing.product_emp_advance")
-        # emp_advance.property_account_expense_id = env.ref("tint_coa.1_account_11020201")
+        AccountAccount = env["account.account"]
+
+        # Update Employee Advance Data
+        advance_account = AccountAccount.create(
+            {
+                "code": "111005",
+                "name": "Employee Advance",
+                "user_type_id": env.ref("account.data_account_type_current_assets").id,
+                "reconcile": True,
+            }
+        )
+        advance_activity = env.ref(
+            "budget_activity_advance_clearing.budget_activity_advance"
+        )
+        advance_activity.account_id = advance_account
+        advance_product = env.ref("hr_expense_advance_clearing.product_emp_advance")
+        advance_product.property_account_expense_id = advance_account
+
+        # Update Deposit Data
+        deposit_account = AccountAccount.create(
+            {
+                "code": "111006",
+                "name": "Deposit",
+                "user_type_id": env.ref("account.data_account_type_current_assets").id,
+                "reconcile": True,
+            }
+        )
+        deposit_activity = env.ref(
+            "budget_activity_purchase_deposit.budget_activity_purchase_deposit"
+        )
+        deposit_activity.account_id = deposit_account
+        deposit_product = env.ref(
+            "budget_activity_purchase_deposit.product_purchase_deposit"
+        )
+        deposit_product.property_account_income_id = deposit_account
+        deposit_product.property_account_expense_id = deposit_account
 
         # Update Employee Admin
         env.ref("hr.employee_admin").write(
