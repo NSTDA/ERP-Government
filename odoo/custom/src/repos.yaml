@@ -350,9 +350,9 @@ server-ux:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/541/head # [15.0][MIG] base_cancel_confirm
     - origin refs/pull/567/head # [15.0][MIG] base_tier_validation_report
     - origin refs/pull/584/head # [15.0][MIG] base_tier_validation_server_action
+    - origin refs/pull/641/head # [15.0][FIX] base_tier_validation: edit domain can_review
 
 stock-logistics-reporting:
   defaults:
