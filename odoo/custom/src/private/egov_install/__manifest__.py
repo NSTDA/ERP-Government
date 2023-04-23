@@ -149,7 +149,7 @@
         "account_move_line_stock_info",
         "account_payment_multi_deduction",
         "account_reconciliation_widget",
-        # "account_sequence_option",
+        "account_sequence_option",
         # "account_spread_cost_revenue",
         # "account_spread_cost_revenue_enhanced",
         "account_statement_import_txt_xlsx",
@@ -184,7 +184,7 @@
         "l10n_th_gov_tier_validation",
         "l10n_th_mis_report",
         "partner_bank_code",
-        # "sale_fixed_discount",
+        "sale_fixed_discount",
         "sale_invoice_plan",
         "sale_invoice_plan_retention",
         "sale_management",
@@ -214,9 +214,15 @@
         "stock_no_negative",
         "stock_request",
         "stock_request_separate_picking",
-        # Optional
+        # Optional - EGOV
+        "egov_budget_allocation_excel_import",
+        "egov_budget_control_excel_import",
         "egov_hr_expense",
         "egov_purchase",
         "egov_purchase_request",
+        "egov_user_role",
+        # Optional - Other App
+        "om_credit_limit",
+        "sale_discount_total",
     ],
 }
