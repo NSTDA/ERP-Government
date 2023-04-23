@@ -18,7 +18,6 @@
         "data/operating.unit.csv",
         "data/res.users.csv",
         "data/res_company_data.xml",
-        "data/res.bank.csv",
         "data/stock.warehouse.csv",
         "data/hr.department.csv",
         "data/hr.employee.csv",
