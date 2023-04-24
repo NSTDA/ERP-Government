@@ -208,6 +208,9 @@ l10n-thailand:
     - origin refs/pull/363/head # [15.0][ENH] l10n_th_gov_purchase_request: allow committee is not an employee
     - origin refs/pull/364/head # [15.0][FIX] l10n_th_account_tax: split function add_deduction to hook
     - origin refs/pull/365/head # [15.0][ADD] l10n_th_bank
+    - origin refs/pull/366/head # [15.0][ENH] l10n_th_account_tax_report: refactor code for inherit report
+    - origin refs/pull/367/head # [15.0][ADD] l10n_th_account_tax_branch_operating_unit
+    - origin refs/pull/368/head # [15.0][ADD] l10n_th_account_tax_branch_report
 
 mis-builder:
   defaults:
