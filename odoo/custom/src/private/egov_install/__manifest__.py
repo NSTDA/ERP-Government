@@ -225,6 +225,5 @@
         "egov_user_role",
         # Optional - Other App
         "om_credit_limit",
-        "sale_discount_total",
     ],
 }
