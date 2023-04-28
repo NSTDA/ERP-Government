@@ -13,7 +13,6 @@
   merges:
     - ocb $ODOO_VERSION
     - ocb refs/pull/1162/head # [15.0][FIX] hr_expense: show paid_by and message refuse duplicate
-    - odoo refs/pull/114117/head # [15.0][FIX] purchase_requisition: currency default from pr
 
 account-analytic:
   defaults:
@@ -161,11 +160,9 @@ hr-expense:
     - origin refs/pull/151/head # [15.0][MIG] hr_expense_pay_to_vendor
     - origin refs/pull/153/head # [15.0][MIG] hr_expense_tier_validation
     - origin refs/pull/154/head # [15.0][MIG] hr_expense_widget_o2m
-    - origin refs/pull/162/head # [15.0][FIX] hr_expense_advance_clearing: zero unit price
     - origin refs/pull/163/head # [15.0][ADD] hr_expense_excluded_tax
     - origin refs/pull/167/head # [15.0][ADD] hr_expense_cancel_policy
     - origin refs/pull/168/head # [15.0][ADD] hr_expense_cancel_confirm
-    - origin refs/pull/172/head # [15.0][ADD] hr_expense_tax_adjust
     - origin refs/pull/173/head # [15.0][ADD] hr_expense_disable_confirm_duplicate
     - origin refs/pull/174/head # [15.0][FIX] hr_expense_advance_clearing: change field not compute advance
     - origin refs/pull/176/head # [15.0][FIX] hr_expense_advance_clearing: split function create payment return advance
@@ -180,17 +177,8 @@ l10n-thailand:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/323/head # [15.0][MIG/REF] l10n_th_account_tax_multi
-    - origin refs/pull/328/head # [15.0][MIG] l10n_th_account_asset_management
-    - origin refs/pull/332/head # [15.0][MIG] l10n_th_gov_purchase_agreement
-    - origin refs/pull/333/head # [15.0][MIG] l10n_th_gov_purchase_request
-    - origin refs/pull/335/head # [15.0][ADD] l10n_th_gov_account_asset_management
     - origin refs/pull/336/head # [15.0][ADD] l10n_th_gov_hr_expense
     - origin refs/pull/337/head # [15.0][MIG] l10n_th_gov_work_acceptance
-    - origin refs/pull/340/head # [15.0][FIX] l10n_th_partner: filter instead of search compute field
-    - origin refs/pull/341/head # [15.0][FIX] l10n_th_gov_purchase_guarantee: compute_sudo for avoid inconsistent
-    - origin refs/pull/344/head # [15.0][ENH] l10n_th_account_asset_management: allow to link journal entry to an asset
-    - origin refs/pull/345/head # [15.0][FIX] l10n_th_account_tax_expense: show Bill Reference
-    - origin refs/pull/346/head # [15.0][FIX] l10n_th_account_asset_management: fix size image tree view
     - origin refs/pull/347/head # [15.0][ADD] l10n_th_gov_stock_request
     - origin refs/pull/348/head # [15.0][FIX] l10n_th_gov_purchase_agreement: fix agreement report
     - origin refs/pull/349/head # [15.0][FIX] l10n_th_account_tax_expense: add hook function wht move line
@@ -245,7 +233,6 @@ operating-unit:
     - origin refs/pull/552/head # [15.0][MIG] purchase_requisition_operating_unit
     - origin refs/pull/553/head # [15.0][MIG] purchase_requisition_operating_unit_access_all
     - origin refs/pull/554/head # [15.0][MIG] purchase_request_to_requisition_operating_unit
-    - origin refs/pull/555/head # [15.0][MIG] account_asset_operating_unit
     - origin refs/pull/556/head # [15.0][MIG] account_asset_operating_unit_access_all
     - origin refs/pull/557/head # [15.0][ADD] purchase_deposit_operating_unit
     - origin refs/pull/558/head # [15.0][ADD] sale_operating_unit_access_all
@@ -253,14 +240,8 @@ operating-unit:
     - origin refs/pull/561/head # [15.0][ADD] agreement_operating_unit_access_all
     - origin refs/pull/562/head # [15.0][ENH] hr_operating_unit: add OU to department
     - origin refs/pull/564/head # [15.0][ADD] account_asset_transfer_operating_unit
-    - origin refs/pull/565/head # [15.0][FIX] account_operating_unit: re reconcile payment for case self balance only
     - origin refs/pull/566/head # [15.0][ADD] account_payment_multi_deduction_operating_unit
-    - origin refs/pull/568/head # [15.0][ADD] purchase_stock_operating_unit
-    - origin refs/pull/569/head # [15.0][MIG] purchase_operating_unit
-    - origin refs/pull/572/head # [15.0][FIX] stock_operating_unit: remove domain of operation type
-    - origin refs/pull/573/head # [15.0][FIX] account_operating_unit: add OU to tree view of account.move.line
     - origin refs/pull/574/head # [15.0][MIG] hr_expense_operating_unit
-    - origin refs/pull/575/head # [15.0][MIG] purchase_request_operating_unit
     - origin refs/pull/581/head # [15.0][FIX] account_operating_unit: split function for support expense operating unit
     - origin refs/pull/582/head # [15.0][IMP] account_operating_unit: add OU in move line outstanding payment
     - origin refs/pull/583/head # [15.0][MIG] mis_builder_operating_unit_access_all
@@ -291,7 +272,6 @@ purchase-workflow:
     - origin refs/pull/1774/head # [15.0][ADD] purchase_deposit_analytic
     - origin refs/pull/1775/head # [15.0][FIX] purchase_invoice_plan: change qty after create invoiced will error
     - origin refs/pull/1786/head # [15.0][MIG] purchase_rfq_number
-    - origin refs/pull/1807/head # [15.0][IMP] purchase_work_acceptance: add purchase in wa view
     - origin refs/pull/1808/head # [15.0][ADD] purchase_requisition_manual_currency
     - origin refs/pull/1809/head # [15.0][ADD] purchase_request_to_requisition_manual_currency
     - origin refs/pull/1840/head # [15.0][ENH] purchase_work_acceptance: compute search wa_acceted field for filter
@@ -379,7 +359,6 @@ stock-logistics-warehouse:
     # - origin refs/pull/1396/head # [15.0][MIG] stock_request_direction
     # - origin refs/pull/1397/head # [15.0][MIG] stock_request_picking_type
     # - origin refs/pull/1469/head # [15.0][MIG] stock_request_mrp
-    - origin refs/pull/1587/head # [15.0][MIG] stock_request_analytic
     - origin refs/pull/1594/head # [15.0][MIG] stock_request_submit
     - origin refs/pull/1595/head # [15.0][MIG] stock_request_tier_validation
     - origin refs/pull/1621/head # [15.0][ADD] stock_request_separate_picking
