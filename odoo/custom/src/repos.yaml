@@ -332,12 +332,14 @@ server-ux:
     depth: $DEPTH_MERGE
   remotes:
     origin: https://github.com/OCA/server-ux.git
+    ecosoft: https://github.com/ecosoft-odoo/server-ux.git
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/567/head # [15.0][MIG] base_tier_validation_report
     - origin refs/pull/584/head # [15.0][MIG] base_tier_validation_server_action
     - origin refs/pull/646/head # [15.0][FIX] base_tier_validation: Detect if model has active field
+    - ecosoft refs/pull/3/head # [15.0][FIX] base_tier_validation_server_action: fix reject tier error
 
 stock-logistics-reporting:
   defaults:
