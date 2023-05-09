@@ -1,0 +1,3149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="res_config_settings_view_form_egov" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.egov</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="99" />
+        <field name="inherit_id" ref="base.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('settings')]" position="inside">
+                <div
+                    class="app_settings_block"
+                    data-string="eGov Module"
+                    string="eGov Module"
+                    data-key="egov_module"
+                >
+                    <div
+                        class="row mt16 o_settings_container"
+                        name="all_install_setting_container"
+                    >
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_egov_install"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_egov_install" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_egov_install" />
+                                <div class="text-muted">
+                                    ติดตั้งทุกโมดูล
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Structure</h2>
+                    <div
+                        class="row mt16 o_settings_container"
+                        name="structure_setting_container"
+                    >
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_asset_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_asset_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_asset_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ในครุภัณฑ์
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_asset_operating_unit_access_all"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_account_asset_operating_unit_access_all"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_account_asset_operating_unit_access_all"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มสิทธิ์การเห็นครุภัณฑ์ทุก Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_asset_transfer_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_account_asset_transfer_operating_unit"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_account_asset_transfer_operating_unit"
+                                />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ในการโอนครุภัณฑ์
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_financial_report_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_account_financial_report_operating_unit"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_account_financial_report_operating_unit"
+                                />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ในรายงานการเงิน
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ในเอกสารการเงิน / บัญชี
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_operating_unit_access_all"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_account_operating_unit_access_all"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_operating_unit_access_all" />
+                                <div class="text-muted">
+                                    เพิ่มสิทธิ์การเห็นเอกสารการเงิน / บัญชีทุก Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_payment_multi_deduction_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_account_payment_multi_deduction_operating_unit"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_account_payment_multi_deduction_operating_unit"
+                                />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ในการจ่ายเงินหลายใบ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_agreement_legal_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_agreement_legal_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_agreement_legal_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ในข้อตกลงทางกฎหมาย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_agreement_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_agreement_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_agreement_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ในข้อตกลง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_agreement_operating_unit_access_all"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_agreement_operating_unit_access_all"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_agreement_operating_unit_access_all"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มสิทธิ์การเห็นเอกสารข้อตกลงทุก Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_analytic_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_analytic_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_analytic_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ใน Analytic (แหล่งงบประมาณ)
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_analytic_operating_unit_access_all"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_analytic_operating_unit_access_all"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_analytic_operating_unit_access_all"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มสิทธิ์การเห็น Analytic ทุก Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_base_tier_validation_report"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_base_tier_validation_report" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_base_tier_validation_report" />
+                                <div class="text-muted">
+                                    เพิ่มการแสดงผลการอนุมัติของตัวเองในรูปแบบรายงาน
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_base_user_role"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_base_user_role" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_base_user_role" />
+                                <div class="text-muted">
+                                    เพิ่มการจัดกลุ่มสิทธิ์เป็นรูปแบบ Role
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_allocation_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_allocation_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_allocation_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่มการ Filter Budget Source Fund Monitoring ให้แสดงตามสิทธิ์ Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_allocation_operating_unit_access_all"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_budget_allocation_operating_unit_access_all"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_budget_allocation_operating_unit_access_all"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มสิทธิ์ให้ผู้ใช้งานสามารถเห็น Budget Source Fund Monitoring ได้ทุก Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_control_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_control_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_control_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ใน Budget Control
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_control_operating_unit_access_all"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_budget_control_operating_unit_access_all"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_budget_control_operating_unit_access_all"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มสิทธิ์การเห็น Budget Control ทุก Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_contract_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_contract_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_contract_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ในสัญญา
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_contract_operating_unit_access_all"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_contract_operating_unit_access_all"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_contract_operating_unit_access_all"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มสิทธิ์การเห็นสัญญาทุก Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_hr_expense_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_hr_expense_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ในเอกสารเบิกจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_operating_unit_access_all"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_hr_expense_operating_unit_access_all"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_hr_expense_operating_unit_access_all"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มสิทธิ์การเห็นเอกสารเบิกจ่ายทุก Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_hr_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_hr_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ให้กับพนักงานและฝ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_operating_unit_access_all"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_hr_operating_unit_access_all" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_hr_operating_unit_access_all" />
+                                <div class="text-muted">
+                                    เพิ่มสิทธิ์การเห็นพนักงาน / ฝ่ายทุก Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_account_tax_expense_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_l10n_th_account_tax_expense_operating_unit"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_l10n_th_account_tax_expense_operating_unit"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มการส่งค่า Operating Unit จากเอกสารเบิกจ่ายไปที่ Withholding Tax สำหรับกรณีที่มีการเคลียร์เงินยืมและมี Withholding Tax
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_mis_builder_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_mis_builder_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_mis_builder_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่มการ Filter การออกรายงาน MIS ตาม Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_mis_builder_operating_unit_access_all"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_mis_builder_operating_unit_access_all"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_mis_builder_operating_unit_access_all"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มสิทธิ์การแสดงรายงาน MIS ทุก Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่ม Master Data Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_operating_unit_access_all"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_operating_unit_access_all" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_operating_unit_access_all" />
+                                <div class="text-muted">
+                                    เพิ่มสิทธิ์การเห็นทุก Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_deposit_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_deposit_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_deposit_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ในการทำจ่ายล่วงหน้า
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ในการทำเอกสารใบสั่งซื้อสั่งจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_operating_unit_access_all"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_purchase_operating_unit_access_all"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_purchase_operating_unit_access_all"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มสิทธิ์การเห็นเอกสารใบสั่งซื้อสั่งจ้างทุก Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_request_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_request_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_request_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ในการทำเอกสารใบขอซื้อขอจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_request_operating_unit_access_all"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_purchase_request_operating_unit_access_all"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_purchase_request_operating_unit_access_all"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มสิทธิ์การเห็นเอกสารใบขอซื้อขอจ้างทุก Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_request_to_requisition_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_purchase_request_to_requisition_operating_unit"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_purchase_request_to_requisition_operating_unit"
+                                />
+                                <div class="text-muted">
+                                    ส่งข้อมูล Operating Unit จากใบขอซื้อขอจ้างไปที่เอกสารต้นทางการจัดซื้อจัดจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_requisition_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_purchase_requisition_operating_unit"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_purchase_requisition_operating_unit"
+                                />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ในการทำเอกสารต้นทางการจัดซื้อจัดจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_requisition_operating_unit_access_all"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_purchase_requisition_operating_unit_access_all"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_purchase_requisition_operating_unit_access_all"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มสิทธิ์การเห็นเอกสารต้นทางการจัดซื้อจัดจ้างทุก Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_stock_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_stock_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_stock_operating_unit" />
+                                <div class="text-muted">
+                                    ส่งข้อมูล Operating Unit จากใบสั่งซื้อสั่งจ้างไปที่คลัง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_sale_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_sale_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_sale_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ในการทำเอกสารใบเสนอราคา
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_sale_operating_unit_access_all"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_sale_operating_unit_access_all" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_sale_operating_unit_access_all" />
+                                <div class="text-muted">
+                                    เพิ่มสิทธิ์การเห็นใบเสนอราคาทุก Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_sale_stock_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_sale_stock_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_sale_stock_operating_unit" />
+                                <div class="text-muted">
+                                    ส่งข้อมูล Operating Unit จากใบเสนอราคาไปที่คลัง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_sales_team_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_sales_team_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_sales_team_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ใน Sales Team
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_stock_account_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_stock_account_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_stock_account_operating_unit" />
+                                <div class="text-muted">
+                                    ส่งข้อมูล Operating Unit จากคลังไปที่การเงิน / บัญชี
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_stock_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_stock_operating_unit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_stock_operating_unit" />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ในคลังสินค้า
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_stock_operating_unit_access_all"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_stock_operating_unit_access_all" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_stock_operating_unit_access_all" />
+                                <div class="text-muted">
+                                    เพิ่มสิทธิ์การเห็นคลังสินค้าทุก Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Budgeting</h2>
+                    <div
+                        class="row mt16 o_settings_container"
+                        name="budget_setting_container"
+                    >
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_asset_fund"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_asset_fund" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_asset_fund" />
+                                <div class="text-muted">
+                                    เพิ่ม Fund ในครุภัณฑ์
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_asset_transfer_budget_allocation"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_account_asset_transfer_budget_allocation"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_account_asset_transfer_budget_allocation"
+                                />
+                                <div class="text-muted">
+                                    เพิ่ม Fund, Analytic Tags ในการโอนครุภัณฑ์
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_invoice_payment_retention_budget_control"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_account_invoice_payment_retention_budget_control"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_account_invoice_payment_retention_budget_control"
+                                />
+                                <div class="text-muted">
+                                    ไม่ใช้งบประมาณเมื่อมีการคืนเงินประกันผลงาน
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_payment_multi_deduction_activity"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_account_payment_multi_deduction_activity"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_account_payment_multi_deduction_activity"
+                                />
+                                <div class="text-muted">
+                                    เพิ่ม Activity ในการจ่ายเงินหลายใบ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_payment_multi_deduction_budget_allocation"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_account_payment_multi_deduction_budget_allocation"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_account_payment_multi_deduction_budget_allocation"
+                                />
+                                <div class="text-muted">
+                                    เพิ่ม Fund, Analytic Tags ในการจ่ายเงินหลายใบ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_base_tier_validation_check_budget"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_base_tier_validation_check_budget"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_base_tier_validation_check_budget" />
+                                <div class="text-muted">
+                                    เพิ่มการตรวจสอบงบประมาณในทุกการอนุมัติ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_activity"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_activity" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_activity" />
+                                <div class="text-muted">
+                                    เพิ่ม Master Data Activity
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_activity_advance_clearing"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_activity_advance_clearing" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_activity_advance_clearing" />
+                                <div class="text-muted">
+                                    เพิ่ม Activity ในเอกสารยืมเงินทดรองจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_activity_contract"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_activity_contract" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_activity_contract" />
+                                <div class="text-muted">
+                                    เพิ่ม Activity ในเอกสารสัญญา
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_activity_contract_invoice_plan"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_budget_activity_contract_invoice_plan"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_budget_activity_contract_invoice_plan"
+                                />
+                                <div class="text-muted">
+                                    ส่งข้อมูล Activity จากใบสั่งซื้อสั่งจ้างที่มีการแบ่งจ่ายหลายงวดไปเอกสารการเงิน / บัญชี
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_activity_expense"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_activity_expense" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_activity_expense" />
+                                <div class="text-muted">
+                                    เพิ่ม Activity ในเอกสารเบิกจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_activity_purchase"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_activity_purchase" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_activity_purchase" />
+                                <div class="text-muted">
+                                    เพิ่ม Activity ในการทำเอกสารใบสั่งซื้อสั่งจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_activity_purchase_deposit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_activity_purchase_deposit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_activity_purchase_deposit" />
+                                <div class="text-muted">
+                                    ส่งข้อมูล Activity จากใบสั่งซื้อสั่งจ้างที่มีการจ่ายล่วงหน้าไปเอกสารการเงิน / บัญชี
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_activity_purchase_request"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_activity_purchase_request" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_activity_purchase_request" />
+                                <div class="text-muted">
+                                    เพิ่ม Activity ในการทำเอกสารใบขอซื้อขอจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_activity_purchase_requisition"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_budget_activity_purchase_requisition"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_budget_activity_purchase_requisition"
+                                />
+                                <div class="text-muted">
+                                    เพิ่ม Activity ในการทำเอกสารต้นทางการจัดซื้อจัดจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_allocation"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_allocation" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_allocation" />
+                                <div class="text-muted">
+                                    การแจกกรอบงบประมาณ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_allocation_advance_clearing"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_budget_allocation_advance_clearing"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_budget_allocation_advance_clearing"
+                                />
+                                <div class="text-muted">
+                                    เพิ่ม Fund, Analyic Tags ที่เอกสารยืมเงินทดรองจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_allocation_contract"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_allocation_contract" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_allocation_contract" />
+                                <div class="text-muted">
+                                    เพิ่ม Fund, Analyic Tags ที่เอกสารสัญญา
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_allocation_contract_invoice_plan"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_budget_allocation_contract_invoice_plan"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_budget_allocation_contract_invoice_plan"
+                                />
+                                <div class="text-muted">
+                                    ส่งข้อมูล Fund, Analyic Tags จากสัญญาที่มีการแบ่งจ่ายเงินงวดไปที่เอกสารการเงิน / บัญชี
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_allocation_department"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_allocation_department" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_allocation_department" />
+                                <div class="text-muted">
+                                    เพิ่มการ Filter Department สำหรับ Budget Source Fund Monitoring
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_allocation_expense"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_allocation_expense" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_allocation_expense" />
+                                <div class="text-muted">
+                                    เพิ่ม Fund, Analyic Tags ที่เอกสารเบิกจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_allocation_purchase"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_allocation_purchase" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_allocation_purchase" />
+                                <div class="text-muted">
+                                    เพิ่ม Fund, Analyic Tags ที่เอกสารใบสั่งซื้อสั่งจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_allocation_purchase_deposit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_budget_allocation_purchase_deposit"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_budget_allocation_purchase_deposit"
+                                />
+                                <div class="text-muted">
+                                    เพิ่ม Fund, Analyic Tags ที่เอกสารใบสั่งซื้อสั่งจ้างกรณีที่มีการทำจ่ายล่วงหน้า
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_allocation_purchase_request"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_budget_allocation_purchase_request"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_budget_allocation_purchase_request"
+                                />
+                                <div class="text-muted">
+                                    เพิ่ม Fund, Analyic Tags ที่เอกสารใบขอซื้อขอจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_allocation_purchase_requisition"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_budget_allocation_purchase_requisition"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_budget_allocation_purchase_requisition"
+                                />
+                                <div class="text-muted">
+                                    เพิ่ม Fund, Analyic Tags ที่เอกสารต้นทางการจัดซื้อจัดจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_allocation_revision"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_allocation_revision" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_allocation_revision" />
+                                <div class="text-muted">
+                                    การแจกกรอบงบประมาณใหม่ โดยเก็บ Version เก่าไว้ในระบบ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_control"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_control" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_control" />
+                                <div class="text-muted">
+                                    โมดูลหลักในการควบคุมงบประมาณ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_control_account_asset_management"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_budget_control_account_asset_management"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_budget_control_account_asset_management"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มการตรวจสอบงบประมาณในครุภัณฑ์
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_control_advance_clearing"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_control_advance_clearing" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_control_advance_clearing" />
+                                <div class="text-muted">
+                                    การคุมงบประมาณในส่วนของเอกสารยืมเงินทดรองจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_control_contract"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_control_contract" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_control_contract" />
+                                <div class="text-muted">
+                                    การคุมงบประมาณในส่วนของสัญญา
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_control_expense"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_control_expense" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_control_expense" />
+                                <div class="text-muted">
+                                    การคุมงบประมาณในส่วนของเอกสารเบิกจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_control_purchase"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_control_purchase" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_control_purchase" />
+                                <div class="text-muted">
+                                    การคุมงบประมาณในส่วนของเอกสารใบสั่งซื้อสั่งจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_control_purchase_manual_currency"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_budget_control_purchase_manual_currency"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_budget_control_purchase_manual_currency"
+                                />
+                                <div class="text-muted">
+                                    ตรวจสอบงบประมาณตามเรทสกุลเงินที่ใส่
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_control_purchase_request"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_control_purchase_request" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_control_purchase_request" />
+                                <div class="text-muted">
+                                    การคุมงบประมาณในส่วนของเอกสารใบขอซื้อขอจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_control_purchase_requisition"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_budget_control_purchase_requisition"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_budget_control_purchase_requisition"
+                                />
+                                <div class="text-muted">
+                                    การคุมงบประมาณในส่วนของเอกสารต้นทางการจัดซื้อจัดจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_control_revision"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_control_revision" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_control_revision" />
+                                <div class="text-muted">
+                                    การสร้างงบประมาณใหม่ โดยเก็บ Version เก่าไว้ในระบบ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_control_revision_lock_amount"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_budget_control_revision_lock_amount"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_budget_control_revision_lock_amount"
+                                />
+                                <div class="text-muted">
+                                    การคุมการวางแผนงบประมาณหลังทำ Version ใหม่ ไม่ให้แก้ไขยอดเงินในอดีต
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_plan"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_plan" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_plan" />
+                                <div class="text-muted">
+                                    การตรวจสอบการแจกกรอบงบประมาณ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_plan_revision"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_plan_revision" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_plan_revision" />
+                                <div class="text-muted">
+                                    การสร้างการตรวจสอบการแจกกรอบใหม่ โดยเก็บ Version เก่าไว้ในระบบ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_budget_res_project_department"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_budget_res_project_department" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_budget_res_project_department" />
+                                <div class="text-muted">
+                                    การสร้าง Analytic จากฝ่าย หรือโครงการ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_account_tax_expense_budget_allocation"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_l10n_th_account_tax_expense_budget_allocation"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_l10n_th_account_tax_expense_budget_allocation"
+                                />
+                                <div class="text-muted">
+                                    ส่งข้อมูล Fund, Analytic Tags ในกรณีที่เอกสารใบเบิกจ่ายมีการหัก Withholding Tax
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_gov_account_asset_management_budget_allocation"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_l10n_th_gov_account_asset_management_budget_allocation"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_l10n_th_gov_account_asset_management_budget_allocation"
+                                />
+                                <div class="text-muted">
+                                    เพิ่ม Fund เมื่อมีการลบครุภัณฑ์
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_gov_purchase_agreement_budget_control"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_l10n_th_gov_purchase_agreement_budget_control"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_l10n_th_gov_purchase_agreement_budget_control"
+                                />
+                                <div class="text-muted">
+                                    การแยกการใช้งบประมาณในเอกสารใบสั่งซื้อสั่งจ้างตามประเภทสัญญา หรือปกติ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_gov_hr_expense_activity"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_gov_hr_expense_activity" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_gov_hr_expense_activity" />
+                                <div class="text-muted">
+                                    เพิ่ม Activity ในเอกสารยืมเงินทดรองจ่ายกรณีที่มาจากเอกสารใบขอซื้อขอจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_gov_hr_expense_budget_control"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_l10n_th_gov_hr_expense_budget_control"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_l10n_th_gov_hr_expense_budget_control"
+                                />
+                                <div class="text-muted">
+                                    การคุมงบประมาณในส่วนของเอกสารเบิกจ่ายที่มาจากใบขอซื้อขอจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_gov_purchase_guarantee_activity"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_l10n_th_gov_purchase_guarantee_activity"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_l10n_th_gov_purchase_guarantee_activity"
+                                />
+                                <div class="text-muted">
+                                    ส่งข้อมูล Activity จากเอกสารหลักประกันไปเอกสารการเงิน / บัญชี
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_gov_purchase_guarantee_budget_allocation"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_l10n_th_gov_purchase_guarantee_budget_allocation"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_l10n_th_gov_purchase_guarantee_budget_allocation"
+                                />
+                                <div class="text-muted">
+                                    เพิ่ม Fund, Analytic Tags ที่เอกสารใบประกัน
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_gov_purchase_guarantee_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_l10n_th_gov_purchase_guarantee_operating_unit"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_l10n_th_gov_purchase_guarantee_operating_unit"
+                                />
+                                <div class="text-muted">
+                                    เพิ่ม Operating Unit ที่เอกสารใบประกัน
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_mis_builder"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_mis_builder" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_mis_builder" />
+                                <div class="text-muted">
+                                    เครื่องมือในการทำรายงาน MIS
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_stock_budget_allocation"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_stock_budget_allocation" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_stock_budget_allocation" />
+                                <div class="text-muted">
+                                    ส่งข้อมูล Fund, Analytic Tags จากเอกสารใบสั่งซื้อสั่งจ้างไปที่คลังสินค้า
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_res_project"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_res_project" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_res_project" />
+                                <div class="text-muted">
+                                    โมดูลหลักในการสร้างโครงการ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_res_project_sequence"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_res_project_sequence" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_res_project_sequence" />
+                                <div class="text-muted">
+                                    เพิ่ม Sequence ในเอกสารโครงการ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_stock_budget_allocation"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_stock_budget_allocation" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_stock_budget_allocation" />
+                                <div class="text-muted">
+                                    เพิ่ม Fund, Analytic Tags ในคลังสินค้า
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_stock_request_budget_allocation"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_stock_request_budget_allocation" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_stock_request_budget_allocation" />
+                                <div class="text-muted">
+                                    เพิ่ม Fund, Analytic Tags ในการยืมสินค้า
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Procurement</h2>
+                    <div
+                        class="row mt16 o_settings_container"
+                        name="procurement_setting_container"
+                    >
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_gov_purchase_agreement"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_gov_purchase_agreement" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_gov_purchase_agreement" />
+                                <div class="text-muted">
+                                    เพิ่มประเภทการจัดซื้อจัดจ้างแบบมีสัญญา
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_gov_purchase_report"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_gov_purchase_report" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_gov_purchase_report" />
+                                <div class="text-muted">
+                                    เพิ่มรายงานที่เกี่ยวกับการจัดซื้อจัดจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_gov_purchase_request"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_gov_purchase_request" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_gov_purchase_request" />
+                                <div class="text-muted">
+                                    เพิ่มประเภท/ระเบียบ และวิธีการในเอกสารขอซื้อขอจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_gov_purchase_guarantee"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_gov_purchase_guarantee" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_gov_purchase_guarantee" />
+                                <div class="text-muted">
+                                    เพิ่มเอกสารประกันผลงาน
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_gov_work_acceptance"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_gov_work_acceptance" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_gov_work_acceptance" />
+                                <div class="text-muted">
+                                    เพิ่มคณะกรรมการตรวจรับจากเอกสารขอซื้อขอจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_deposit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_deposit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_deposit" />
+                                <div class="text-muted">
+                                    การจ่ายเงินล่วงหน้า
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_deposit_analytic"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_deposit_analytic" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_deposit_analytic" />
+                                <div class="text-muted">
+                                    การส่งค่า Analytic Account กรณีที่มีการทำจ่ายเงินล่วงหน้า
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_invoice_plan"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_invoice_plan" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_invoice_plan" />
+                                <div class="text-muted">
+                                    การแบ่งจ่ายเป็นงวด
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_invoice_plan_deposit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_invoice_plan_deposit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_invoice_plan_deposit" />
+                                <div class="text-muted">
+                                    การแบ่งจ่ายเป็นงวดแบบมีการจ่ายล่วงหน้า
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_invoice_plan_retention"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_invoice_plan_retention" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_invoice_plan_retention" />
+                                <div class="text-muted">
+                                    การแบ่งจ่ายเป็นงวดแบบมีการหักเงินประกันผลงาน
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_manual_currency"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_manual_currency" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_manual_currency" />
+                                <div class="text-muted">
+                                    การกำหนดค่าเงินต่างประเทศด้วยตัวเองในเอกสารจัดซื้อจัดจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_request"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_request" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_request" />
+                                <div class="text-muted">
+                                    เพิ่มเอกสารการขอซื้อขอจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_request_cancel_confirm"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_request_cancel_confirm" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_request_cancel_confirm" />
+                                <div class="text-muted">
+                                    เพิ่มเหตุผลในการยกเลิกเอกสารขอซื้อขอจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_request_manual_currency"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_request_manual_currency" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_request_manual_currency" />
+                                <div class="text-muted">
+                                    การกำหนดค่าเงินต่างประเทศด้วยตัวเองในเอกสารขอซื้อขอจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_request_tier_validation"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_request_tier_validation" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_request_tier_validation" />
+                                <div class="text-muted">
+                                    เพิ่มการอนุมัติที่เอกสารขอซื้อขอจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_request_to_requisition_manual_currency"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_purchase_request_to_requisition_manual_currency"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_purchase_request_to_requisition_manual_currency"
+                                />
+                                <div class="text-muted">
+                                    การส่งค่าเงินต่างประเทศที่กำหนดเองจากเอกสารขอซื้อขอจ้างไปยังเอกสารต้นทางการจัดซื้อจัดจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_requisition_manual_currency"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_purchase_requisition_manual_currency"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_purchase_requisition_manual_currency"
+                                />
+                                <div class="text-muted">
+                                    การกำหนดค่าเงินต่างประเทศด้วยตัวเองในเอกสารต้นทางการจัดซื้อจัดจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_rfq_number"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_rfq_number" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_rfq_number" />
+                                <div class="text-muted">
+                                    แยกการออกเลขระหว่างเอกสาร RFQ และการจัดซื้อจัดจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_stock_analytic"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_stock_analytic" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_stock_analytic" />
+                                <div class="text-muted">
+                                    การส่งค่า Analytic Account จากเอกสารจัดซื้อจัดจ้างไปยังคลังสินค้า
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_tax_adjust"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_tax_adjust" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_tax_adjust" />
+                                <div class="text-muted">
+                                    การปรับแก้ไขตัวเลขภาษีในเอกสารการจัดซื้อจัดจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_tier_validation"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_tier_validation" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_tier_validation" />
+                                <div class="text-muted">
+                                    การอนุมัติเอกสารจัดซื้อจัดจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_work_acceptance"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_purchase_work_acceptance" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_purchase_work_acceptance" />
+                                <div class="text-muted">
+                                    เพิ่มเอกสารการตรวจรับ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_work_acceptance_evaluation"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_purchase_work_acceptance_evaluation"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_purchase_work_acceptance_evaluation"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มการประเมินผู้ค้าหลังตรวจรับ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_work_acceptance_invoice_plan"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_purchase_work_acceptance_invoice_plan"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_purchase_work_acceptance_invoice_plan"
+                                />
+                                <div class="text-muted">
+                                    การตรวจรับตามงวดที่แบ่งจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_work_acceptance_late_fines"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_purchase_work_acceptance_late_fines"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_purchase_work_acceptance_late_fines"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มค่าปรับกรณีที่ส่งของล่าช้า
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_purchase_work_acceptance_tier_validation"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_purchase_work_acceptance_tier_validation"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_purchase_work_acceptance_tier_validation"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มการอนุมัติที่เอกสารการตรวจรับ
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Accounting</h2>
+                    <div
+                        class="row mt16 o_settings_container"
+                        name="accounting_setting_container"
+                    >
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_financial_report"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_financial_report" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_financial_report" />
+                                <div class="text-muted">
+                                    รายงานในส่วนของการเงินและบัญชี
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_financial_report_extension"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_account_financial_report_extension"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_account_financial_report_extension"
+                                />
+                                <div class="text-muted">
+                                    ส่วนเสริมของรายงานการเงินและบัญชี
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_journal_lock_date"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_journal_lock_date" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_journal_lock_date" />
+                                <div class="text-muted">
+                                    เพิ่มการ Lock เอกสาร Journal ไม่ให้ทำรายการย้อนหลัง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_lock_date_update"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_lock_date_update" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_lock_date_update" />
+                                <div class="text-muted">
+                                    ผู้ที่มีสิทธิ์สามารถเปลี่ยนวันที่ Lock Date ได้
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_move_line_stock_info"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_move_line_stock_info" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_move_line_stock_info" />
+                                <div class="text-muted">
+                                    เพิ่มการแสดงผลที่เอกสารบัญชี และคลังสินค้าให้เห็นความสัมพันธ์กัน
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_payment_multi_deduction"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_payment_multi_deduction" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_payment_multi_deduction" />
+                                <div class="text-muted">
+                                    เพิ่มการจ่ายเงินให้รองรับการจ่ายเงินหลายใบ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_reconciliation_widget"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_reconciliation_widget" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_reconciliation_widget" />
+                                <div class="text-muted">
+                                    เพิ่มหน้าต่างในการทำ Reconcile
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_sequence_option"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_sequence_option" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_sequence_option" />
+                                <div class="text-muted">
+                                    การแยก sequence ของเอกสารบัญชี
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_statement_import_txt_xlsx"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_account_statement_import_txt_xlsx"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_statement_import_txt_xlsx" />
+                                <div class="text-muted">
+                                    เพิ่มการ Import statement ด้วย Text หรือ Excel File
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_usability"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_usability" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_usability" />
+                                <div class="text-muted">
+                                    เพิ่มการมองเห็นเมนูบัญชีที่มีการซ่อนไว้
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_advance_clearing"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_hr_expense_advance_clearing" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_hr_expense_advance_clearing" />
+                                <div class="text-muted">
+                                    เพิ่มกระบวนการทำเงินยืมทดรองจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_advance_clearing_sequence"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_hr_expense_advance_clearing_sequence"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_hr_expense_advance_clearing_sequence"
+                                />
+                                <div class="text-muted">
+                                    แยก Sequence สำหรับเอกสารเงินยืมทดรองจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_advance_overdue_reminder"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_hr_expense_advance_overdue_reminder"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_hr_expense_advance_overdue_reminder"
+                                />
+                                <div class="text-muted">
+                                    การแจ้งเตือนการคืนเงินยืมทดรองจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_cancel_confirm"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_hr_expense_cancel_confirm" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_hr_expense_cancel_confirm" />
+                                <div class="text-muted">
+                                    เพิ่มเหตุผลในการยกเลิกเอกสารเบิกจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_cancel_policy"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_hr_expense_cancel_policy" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_hr_expense_cancel_policy" />
+                                <div class="text-muted">
+                                    การกำหนดสถานะเอกสารเมื่อยกเลิกเอกสารเบิกจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_disable_confirm_duplicate"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_hr_expense_disable_confirm_duplicate"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_hr_expense_disable_confirm_duplicate"
+                                />
+                                <div class="text-muted">
+                                    การปิดการยืนยัน กรณีที่เอกสารเบิกจ่ายมีข้อมูลเหมือนกัน
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_excluded_tax"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_hr_expense_excluded_tax" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_hr_expense_excluded_tax" />
+                                <div class="text-muted">
+                                    เพิ่ม Exclude Tax ในเอกสารเบิกจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_exception"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_hr_expense_exception" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_hr_expense_exception" />
+                                <div class="text-muted">
+                                    เพิ่มเงื่อนไขในการ Error ที่เอกสารเบิกจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_pay_to_vendor"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_hr_expense_pay_to_vendor" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_hr_expense_pay_to_vendor" />
+                                <div class="text-muted">
+                                    เพิ่มการจ่ายเงินไปที่คู่ค้าโดยตรง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_payment"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_hr_expense_payment" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_hr_expense_payment" />
+                                <div class="text-muted">
+                                    เพิ่มความสัมพันธ์ระหว่างเอกสารการจ่ายเงินและใบเบิกจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_payment_widget_amount"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_hr_expense_payment_widget_amount" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_hr_expense_payment_widget_amount" />
+                                <div class="text-muted">
+                                    เพิ่ม Link จากเอกสารเบิกจ่ายไปเอกสารจ่ายเงิน
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_sequence"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_hr_expense_sequence" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_hr_expense_sequence" />
+                                <div class="text-muted">
+                                    เพิ่ม Sequence ที่เอกสารเบิกจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_sequence_option"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_hr_expense_sequence_option" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_hr_expense_sequence_option" />
+                                <div class="text-muted">
+                                    เพิ่ม Sequence ตามเงื่อนไขของเอกสารเบิกจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_tax_adjust"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_hr_expense_tax_adjust" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_hr_expense_tax_adjust" />
+                                <div class="text-muted">
+                                    การปรับแก้ไขตัวเลขภาษีในเอกสารเบิกจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_tier_validation"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_hr_expense_tier_validation" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_hr_expense_tier_validation" />
+                                <div class="text-muted">
+                                    เพิ่มการอนุมัติที่เอกสารเบิกจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_hr_expense_widget_o2m"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_hr_expense_widget_o2m" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_hr_expense_widget_o2m" />
+                                <div class="text-muted">
+                                    แสดงบรรทัดของเอกสารเบิกจ่ายในรูปแบบ one2many
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_account_tax"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_account_tax" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_account_tax" />
+                                <div class="text-muted">
+                                    ระบบภาษี และหัก ณ ที่จ่าย ของประเทศไทย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_account_tax_branch_operating_unit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_l10n_th_account_tax_branch_operating_unit"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_l10n_th_account_tax_branch_operating_unit"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มสาขาใน Operating Unit
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_account_tax_branch_report"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_l10n_th_account_tax_branch_report"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_account_tax_branch_report" />
+                                <div class="text-muted">
+                                    การออกรายงานตามสาขา
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_account_tax_expense"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_account_tax_expense" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_account_tax_expense" />
+                                <div class="text-muted">
+                                    การออกภาษีและหัก ณ ที่จ่าย ในเอกสารเบิกจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_account_tax_multi"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_account_tax_multi" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_account_tax_multi" />
+                                <div class="text-muted">
+                                    การทำภาษีและ หัก ณ ที่จ่าย กรณีที่มีมากกว่า 1 ค่า
+\                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_account_tax_report"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_account_tax_report" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_account_tax_report" />
+                                <div class="text-muted">
+                                    รายงานภาษี และ หัก ณ ที่จ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_account_wht_cert_form"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_account_wht_cert_form" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_account_wht_cert_form" />
+                                <div class="text-muted">
+                                    การออกฟอร์มหัก ณ ที่จ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_bank"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_bank" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_bank" />
+                                <div class="text-muted">
+                                    เพิ่มธนาคารที่มีการเปิดบริการในประเทศไทย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_bank_payment_export"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_bank_payment_export" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_bank_payment_export" />
+                                <div class="text-muted">
+                                    การออกข้อมูลการจ่ายเงินในระบบเป็น Text File เพื่อนำส่งให้ธนาคาร
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_bank_payment_export_bbl"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_bank_payment_export_bbl" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_bank_payment_export_bbl" />
+                                <div class="text-muted">
+                                    การออกข้อมูลการจ่ายเงินสำหรับธนาคารกรุงเทพ (BBL)
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_bank_payment_export_ktb"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_bank_payment_export_ktb" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_bank_payment_export_ktb" />
+                                <div class="text-muted">
+                                    การออกข้อมูลการจ่ายเงินสำหรับธนาคารกรุงไทย (KTB)
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_base_location"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_base_location" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_base_location" />
+                                <div class="text-muted">
+                                    การเลือกที่อยู่ในประเทศไทย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_base_sequence"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_base_sequence" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_base_sequence" />
+                                <div class="text-muted">
+                                    การแสดง Sequence ตามปีพุทธศักราช
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_gov_hr_expense"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_gov_hr_expense" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_gov_hr_expense" />
+                                <div class="text-muted">
+                                    การทำเอกสารเบิกจ่ายต่อจากเอกสารใบขอซื้อขอจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_gov_tier_validation"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_gov_tier_validation" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_gov_tier_validation" />
+                                <div class="text-muted">
+                                    การแสดงลำดับการอนุมัติตามแผนก
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_mis_report"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_mis_report" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_mis_report" />
+                                <div class="text-muted">
+                                    การออกรายงาน Balance Sheet, Profile and Loss
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_partner_bank_code"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_partner_bank_code" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_partner_bank_code" />
+                                <div class="text-muted">
+                                    เพิ่มรหัสธนาคาร และสาขาธนาคาร
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_sale_fixed_discount"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_sale_fixed_discount" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_sale_fixed_discount" />
+                                <div class="text-muted">
+                                    เพิ่มส่วนลดในการขายของแบบเป็นตัวเลข
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_sale_invoice_plan"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_sale_invoice_plan" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_sale_invoice_plan" />
+                                <div class="text-muted">
+                                    การแบ่งรับเป็นงวดที่เอกสารขาย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_sale_invoice_plan_retention"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_sale_invoice_plan_retention" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_sale_invoice_plan_retention" />
+                                <div class="text-muted">
+                                    การแบ่งรับเป็นงวดแบบมีการหักเงินประกันผลงาน
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_sale_management"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_sale_management" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_sale_management" />
+                                <div class="text-muted">
+                                    ระบบการขาย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_sale_order_line_analytic"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_sale_order_line_analytic" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_sale_order_line_analytic" />
+                                <div class="text-muted">
+                                    เพิ่มให้มี Analytic Account ในหน้า Sale Order
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_sale_order_line_stock_analytic"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_sale_order_line_stock_analytic" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_sale_order_line_stock_analytic" />
+                                <div class="text-muted">
+                                    ส่งค่า Analytic Account จาก Sale Order ไปยังคลังสินค้า
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_sale_tax_adjust"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_sale_tax_adjust" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_sale_tax_adjust" />
+                                <div class="text-muted">
+                                    การปรับแก้ไขตัวเลขภาษีในเอกสารการขาย
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Agreement &amp; Contract</h2>
+                    <div
+                        class="row mt16 o_settings_container"
+                        name="agreement_contract_setting_container"
+                    >
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_agreement"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_agreement" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_agreement" />
+                                <div class="text-muted">
+                                    ระบบข้อตกลง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_agreement_legal"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_agreement_legal" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_agreement_legal" />
+                                <div class="text-muted">
+                                    การทำข้อตกลงที่มีผลทางกฎหมาย
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box" id="module_contract">
+                            <div class="o_setting_left_pane">
+                                <field name="module_contract" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_contract" />
+                                <div class="text-muted">
+                                    ระบบสัญญา
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_contract_invoice_plan"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_contract_invoice_plan" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_contract_invoice_plan" />
+                                <div class="text-muted">
+                                    การทำสัญญาแบ่งจ่ายหลายงวด
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_contract_invoice_plan_selection"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_contract_invoice_plan_selection" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_contract_invoice_plan_selection" />
+                                <div class="text-muted">
+                                    การเลือกงวดจ่ายสัญญา
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Asset</h2>
+                    <div
+                        class="row mt16 o_settings_container"
+                        name="asset_setting_container"
+                    >
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_asset_compute_batch"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_asset_compute_batch" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_asset_compute_batch" />
+                                <div class="text-muted">
+                                    การคำนวณค่าเสื่อมแบบเป็นกลุ่ม
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_asset_compute_batch_job"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_asset_compute_batch_job" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_asset_compute_batch_job" />
+                                <div class="text-muted">
+                                    การคำนวณค่าเสื่อมแบบเป็นกลุ่ม โดยใช้ Job Queue ในการรันเบื้องหลัง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_asset_from_expense"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_asset_from_expense" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_asset_from_expense" />
+                                <div class="text-muted">
+                                    การสร้างครุภัณฑ์จากเอกสารเบิกจ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_asset_low_value"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_asset_low_value" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_asset_low_value" />
+                                <div class="text-muted">
+                                    การเพิ่มครุภัณฑ์ต่ำกว่าเกณฑ์
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_asset_management"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_asset_management" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_asset_management" />
+                                <div class="text-muted">
+                                    ระบบครุภัณฑ์
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_asset_transfer"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_asset_transfer" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_asset_transfer" />
+                                <div class="text-muted">
+                                    การโอนครุภัณฑ์
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_account_asset_management"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_account_asset_management" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_account_asset_management" />
+                                <div class="text-muted">
+                                    การคำนวณค่าเสื่อมแบบไทย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_gov_account_asset_management"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_l10n_th_gov_account_asset_management"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_l10n_th_gov_account_asset_management"
+                                />
+                                <div class="text-muted">
+                                    การคำนวณค่าเสื่อมแบบราชการไทย
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Inventory</h2>
+                    <div
+                        class="row mt16 o_settings_container"
+                        name="inventory_setting_container"
+                    >
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_gov_stock_request"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_gov_stock_request" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_gov_stock_request" />
+                                <div class="text-muted">
+                                    การยืมคืนสินค้าแบบราชการไทย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_stock_analytic"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_stock_analytic" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_stock_analytic" />
+                                <div class="text-muted">
+                                    การส่งค่า Analytic Account จาก Stock ไป Journal
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_stock_card_report"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_stock_card_report" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_stock_card_report" />
+                                <div class="text-muted">
+                                    รายงานสินค้าที่มีการเข้าออก
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_stock_no_negative"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_stock_no_negative" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_stock_no_negative" />
+                                <div class="text-muted">
+                                    เพิ่มการดักไม่ให้ทำงานต่อได้เมื่อ Stock ติดลบ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_stock_request"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_stock_request" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_stock_request" />
+                                <div class="text-muted">
+                                    ระบบยืมคืนสินค้า
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_stock_request_separate_picking"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_stock_request_separate_picking" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_stock_request_separate_picking" />
+                                <div class="text-muted">
+                                    เพิ่มการจัดกลุ่มเมื่อมีการสร้างเอกสาร Stock Request
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Other</h2>
+                    <div
+                        class="row mt16 o_settings_container"
+                        name="inventory_setting_container"
+                    >
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_egov_budget_allocation_excel_import_export"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_egov_budget_allocation_excel_import_export"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_egov_budget_allocation_excel_import_export"
+                                />
+                                <div class="text-muted">
+                                    การ Import Export เอกสารการแจกกรอบงบประมาณ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_egov_budget_control_excel_import_export"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_egov_budget_control_excel_import_export"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_egov_budget_control_excel_import_export"
+                                />
+                                <div class="text-muted">
+                                    การ Import Export เอกสารการคุมงบประมาณ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_egov_hr_expense"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_egov_hr_expense" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_egov_hr_expense" />
+                                <div class="text-muted">
+                                    เพิ่ม Function ที่เกี่ยวข้องกับเอกสารค่าใช้จ่าย
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_egov_purchase"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_egov_purchase" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_egov_purchase" />
+                                <div class="text-muted">
+                                    เพิ่ม Function ที่เกี่ยวข้องกับเอกสารจัดซื้อจัดจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_egov_purchase_request"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_egov_purchase_request" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_egov_purchase_request" />
+                                <div class="text-muted">
+                                    เพิ่ม Function ที่เกี่ยวข้องกับเอกสารขอซื้อขอจ้าง
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_egov_user_role"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_egov_user_role" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_egov_user_role" />
+                                <div class="text-muted">
+                                    การสร้าง Role เบื้องต้น
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_om_credit_limit"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_om_credit_limit" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_om_credit_limit" />
+                                <div class="text-muted">
+                                    การกำหนด Credit Limit ในแต่ละคู่ค้า
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_egov_config"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_egov_config" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_egov_config" />
+                                <div class="text-muted">
+                                    การตั้งค่าเบื้องต้น
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+    <record id="action_egov_module_configuration" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+    </record>
+
+    <menuitem
+        id="menu_egov_config"
+        name="eGov Module Settings"
+        parent="base.menu_administration"
+        sequence="20"
+        action="action_egov_module_configuration"
+        groups="base.group_system"
+    />
+
+</odoo>
