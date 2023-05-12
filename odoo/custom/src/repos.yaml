@@ -328,6 +328,7 @@ server-tools:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/2275/head # [15.0][MIG] base_sequence_option
+    - origin refs/pull/2620/head # [15.0][MIG] base_model_restrict_update
 
 server-ux:
   defaults:
@@ -341,6 +342,8 @@ server-ux:
     - origin refs/pull/567/head # [15.0][MIG] base_tier_validation_report
     - origin refs/pull/584/head # [15.0][MIG] base_tier_validation_server_action
     - origin refs/pull/646/head # [15.0][FIX] base_tier_validation: Detect if model has active field
+    - origin refs/pull/655/head # [15.0][MIG] base_tier_validation_correction
+    - origin refs/pull/656/head # [15.0][IMP] base_tier_validation, approve by sequence with option to bypass for same reviewer
     - ecosoft refs/pull/3/head # [15.0][FIX] base_tier_validation_server_action: fix reject tier error
 
 stock-logistics-reporting:

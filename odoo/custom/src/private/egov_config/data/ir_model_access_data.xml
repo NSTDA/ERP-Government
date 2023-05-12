@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- Update access right about module base_model_restrict_update -->
+    <record id="mail.access_mail_channel_all" model="ir.model.access">
+        <field name="perm_read" eval="1" />
+        <field name="perm_write" eval="1" />
+        <field name="perm_create" eval="1" />
+        <field name="perm_unlink" eval="0" />
+    </record>
+    <record id="access_mail_channel_partner_all" model="ir.model.access">
+        <field name="name">mail.channel.partner.all</field>
+        <field name="model_id" ref="mail.model_mail_channel" />
+        <field name="perm_read" eval="1" />
+        <field name="perm_write" eval="1" />
+        <field name="perm_create" eval="1" />
+        <field name="perm_unlink" eval="0" />
+    </record>
+</odoo>

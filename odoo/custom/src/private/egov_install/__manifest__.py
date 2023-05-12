@@ -23,6 +23,8 @@
         "agreement_operating_unit_access_all",
         "analytic_operating_unit",
         "analytic_operating_unit_access_all",
+        "base_model_restrict_update",
+        "base_tier_validation_correction",
         "base_tier_validation_report",
         "base_user_role",
         "budget_allocation_operating_unit",
