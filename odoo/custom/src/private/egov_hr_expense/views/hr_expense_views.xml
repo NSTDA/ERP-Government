@@ -48,6 +48,14 @@
                     type="action"
                 />
             </xpath>
+            <xpath
+                expr="//header/button[@name='reset_expense_sheets']"
+                position="attributes"
+            >
+                <attribute
+                    name="attrs"
+                >{'invisible': ['|', '|', ('can_reset', '=', False), ('state', 'not in', ['submit', 'cancel']), ('review_ids', '!=', [])]}</attribute>
+            </xpath>
             <xpath expr="//field[@name='user_id']" position="before">
                 <field name="review_ids" invisible="1" />
             </xpath>

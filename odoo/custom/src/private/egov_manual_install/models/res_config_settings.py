@@ -22,6 +22,8 @@ class ResConfigSettings(models.TransientModel):
     module_agreement_operating_unit_access_all = fields.Boolean()
     module_analytic_operating_unit = fields.Boolean()
     module_analytic_operating_unit_access_all = fields.Boolean()
+    module_base_model_restrict_update = fields.Boolean()
+    module_base_tier_validation_correction = fields.Boolean()
     module_base_tier_validation_report = fields.Boolean()
     module_base_user_role = fields.Boolean()
     module_budget_allocation_operating_unit = fields.Boolean()

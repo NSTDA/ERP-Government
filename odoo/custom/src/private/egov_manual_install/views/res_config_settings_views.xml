@@ -233,6 +233,34 @@
                         </div>
                         <div
                             class="col-12 col-lg-6 o_setting_box"
+                            id="module_base_model_restrict_update"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_base_model_restrict_update" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_base_model_restrict_update" />
+                                <div class="text-muted">
+                                    เพิ่มการตั้งค่าสิทธิ์การแก้ไขข้อมูลของทั้งระบบ
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_base_tier_validation_correction"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_base_tier_validation_correction" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_base_tier_validation_correction" />
+                                <div class="text-muted">
+                                    เพิ่มให้สามารถเปลี่ยนผู้อนุมัติเอกสารที่อยู่ระหว่างรอการอนุมัติได้
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
                             id="module_base_tier_validation_report"
                         >
                             <div class="o_setting_left_pane">

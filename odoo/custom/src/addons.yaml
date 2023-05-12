@@ -265,6 +265,7 @@ server-backend:
 
 server-tools:
   - base_exception
+  - base_model_restrict_update
   - base_sequence_option
   - excel_import_export
 
@@ -273,6 +274,7 @@ server-ux:
   - base_revision
   - base_substate
   - base_tier_validation
+  - base_tier_validation_correction
   - base_tier_validation_formula
   - base_tier_validation_forward
   - base_tier_validation_report
