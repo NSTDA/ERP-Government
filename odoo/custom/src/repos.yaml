@@ -168,6 +168,7 @@ hr-expense:
     - origin refs/pull/174/head # [15.0][FIX] hr_expense_advance_clearing: change field not compute advance
     - origin refs/pull/176/head # [15.0][FIX] hr_expense_advance_clearing: split function create payment return advance
     - origin refs/pull/177/head # [15.0][ADD] hr_expense_advance_overdue_reminder
+    - origin refs/pull/181/head # [15.0][FIX] hr_expense_tax_adjust: edit view
 
 l10n-thailand:
   defaults:
@@ -201,6 +202,7 @@ l10n-thailand:
     - origin refs/pull/367/head # [15.0][ADD] l10n_th_account_tax_branch_operating_unit
     - origin refs/pull/368/head # [15.0][ADD] l10n_th_account_tax_branch_report
     - origin refs/pull/369/head # [15.0][REF] change name l10n_th_sequence_refactored -> l10n_th_base_sequence
+    - origin refs/pull/371/head # [15.0][FIX] l10n_th_account_tax_expense: readonly fields following standard fields
 
 mis-builder:
   defaults:

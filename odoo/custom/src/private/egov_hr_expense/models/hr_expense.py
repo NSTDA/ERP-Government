@@ -15,6 +15,14 @@ class HrExpense(models.Model):
             "refused": [("readonly", False)],
         },
     )
+    clearing_product_id = fields.Many2one(
+        readonly=True,
+        states={
+            "draft": [("readonly", False)],
+            "reported": [("readonly", False)],
+            "refused": [("readonly", False)],
+        },
+    )
 
     @api.model
     def _get_under_validation_exceptions(self):
