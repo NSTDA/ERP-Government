@@ -1,11 +1,20 @@
 # Copyright 2023 Ecosoft Co., Ltd. (http://ecosoft.co.th)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo import api, models
+from odoo import api, fields, models
 
 
 class HrExpense(models.Model):
     _inherit = "hr.expense"
+
+    product_id = fields.Many2one(
+        readonly=True,
+        states={
+            "draft": [("readonly", False)],
+            "reported": [("readonly", False)],
+            "refused": [("readonly", False)],
+        },
+    )
 
     @api.model
     def _get_under_validation_exceptions(self):
@@ -16,6 +25,10 @@ class HrExpense(models.Model):
 
 class HrExpenseSheet(models.Model):
     _inherit = "hr.expense.sheet"
+
+    name = fields.Char(
+        states={"done": [("readonly", True)], "post": [("readonly", True)]},
+    )
 
     def action_submit_sheet(self):
         res = super().action_submit_sheet()
