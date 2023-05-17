@@ -18,7 +18,7 @@ services:
       - filestore:/var/lib/odoo:z
     networks:
       default:
-    command: -i egov_install
+    command: -i base
     tty: true
     depends_on:
       - db
