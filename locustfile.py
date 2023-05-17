@@ -16,7 +16,7 @@ class OdooUser(HttpUser):
                 "jsonrpc": "2.0",
                 "method": "call",
                 "params": {
-                    "db": "devel_egov",
+                    "db": "prod-SIT-test",
                     "login": "admin@egov.or.th",
                     "password": "1234",
                 },
