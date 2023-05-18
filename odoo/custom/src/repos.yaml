@@ -81,7 +81,6 @@ account-payment:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/561/head # [15.0][MIG] account_payment_multi_deduction
 
 account-reconcile:
   defaults:
@@ -155,8 +154,6 @@ hr-expense:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/129/head # [15.0][MIG] hr_expense_payment_widget_amount
-    - origin refs/pull/138/head # [15.0][MIG] hr_expense_advance_clearing_sequence
     - origin refs/pull/149/head # [15.0][MIG] hr_expense_sequence_option
     - origin refs/pull/151/head # [15.0][MIG] hr_expense_pay_to_vendor
     - origin refs/pull/153/head # [15.0][MIG] hr_expense_tier_validation
@@ -165,10 +162,8 @@ hr-expense:
     - origin refs/pull/167/head # [15.0][ADD] hr_expense_cancel_policy
     - origin refs/pull/168/head # [15.0][ADD] hr_expense_cancel_confirm
     - origin refs/pull/173/head # [15.0][ADD] hr_expense_disable_confirm_duplicate
-    - origin refs/pull/174/head # [15.0][FIX] hr_expense_advance_clearing: change field not compute advance
     - origin refs/pull/176/head # [15.0][FIX] hr_expense_advance_clearing: split function create payment return advance
     - origin refs/pull/177/head # [15.0][ADD] hr_expense_advance_overdue_reminder
-    - origin refs/pull/181/head # [15.0][FIX] hr_expense_tax_adjust: edit view
 
 l10n-thailand:
   defaults:
@@ -178,12 +173,10 @@ l10n-thailand:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/323/head # [15.0][MIG/REF] l10n_th_account_tax_multi
     - origin refs/pull/336/head # [15.0][ADD] l10n_th_gov_hr_expense
     - origin refs/pull/337/head # [15.0][MIG] l10n_th_gov_work_acceptance
     - origin refs/pull/347/head # [15.0][ADD] l10n_th_gov_stock_request
     - origin refs/pull/348/head # [15.0][FIX] l10n_th_gov_purchase_agreement: fix agreement report
-    - origin refs/pull/349/head # [15.0][FIX] l10n_th_account_tax_expense: add hook function wht move line
     - origin refs/pull/350/head # [15.0][ADD] l10n_th_account_tax_expense_operating_unit
     - origin refs/pull/351/head # [15.0][FIX] l10n_th_account_tax: allow duplicate PIT Table with other year
     - origin refs/pull/352/head # [15.0][FIX] l10n_th_account_tax: fix sign tax invoice refund
@@ -196,7 +189,6 @@ l10n-thailand:
     - origin refs/pull/361/head # [15.0][ADD] l10n_th_mis_report
     - origin refs/pull/362/head # [15.0][FIX] l10n_th_account_tax: allow reconcile undue case can't register payment
     - origin refs/pull/363/head # [15.0][ENH] l10n_th_gov_purchase_request: allow committee is not an employee
-    - origin refs/pull/364/head # [15.0][FIX] l10n_th_account_tax: split function add_deduction to hook
     - origin refs/pull/365/head # [15.0][ADD] l10n_th_bank
     - origin refs/pull/366/head # [15.0][ENH] l10n_th_account_tax_report: refactor code for inherit report
     - origin refs/pull/367/head # [15.0][ADD] l10n_th_account_tax_branch_operating_unit
@@ -222,10 +214,6 @@ operating-unit:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/452/head # [15.0][MIG] hr_expense_operating_unit_access_all
-    - origin refs/pull/453/head # [15.0][MIG] stock_operating_unit_access_all
-    - origin refs/pull/454/head # [15.0][MIG] mis_builder_operating_unit
-    - origin refs/pull/479/head # [15.0][MIG] sale_operating_unit
     - origin refs/pull/480/head # [15.0][MIG] sale_stock_operating_unit
     - origin refs/pull/529/head # [15.0][MIG] account_operating_unit_access_all
     - origin refs/pull/531/head # [15.0][MIG] account_financial_report_operating_unit
@@ -246,10 +234,12 @@ operating-unit:
     - origin refs/pull/562/head # [15.0][ENH] hr_operating_unit: add OU to department
     - origin refs/pull/564/head # [15.0][ADD] account_asset_transfer_operating_unit
     - origin refs/pull/566/head # [15.0][ADD] account_payment_multi_deduction_operating_unit
-    - origin refs/pull/574/head # [15.0][MIG] hr_expense_operating_unit
-    - origin refs/pull/581/head # [15.0][FIX] account_operating_unit: split function for support expense operating unit
+    - origin refs/pull/580/head # [15.0][MIG] sale_operating_unit
     - origin refs/pull/582/head # [15.0][IMP] account_operating_unit: add OU in move line outstanding payment
     - origin refs/pull/583/head # [15.0][MIG] mis_builder_operating_unit_access_all
+    - origin refs/pull/587/head # [15.0][MIG] mis_builder_operating_unit
+    - origin refs/pull/588/head # [15.0][MIG] hr_expense_operating_unit_access_all
+    - origin refs/pull/589/head # [15.0][MIG] stock_operating_unit_access_all
 
 partner-contact:
   defaults:
@@ -344,7 +334,6 @@ server-ux:
     - origin $ODOO_VERSION
     - origin refs/pull/567/head # [15.0][MIG] base_tier_validation_report
     - origin refs/pull/584/head # [15.0][MIG] base_tier_validation_server_action
-    - origin refs/pull/646/head # [15.0][FIX] base_tier_validation: Detect if model has active field
     - origin refs/pull/655/head # [15.0][MIG] base_tier_validation_correction
     - origin refs/pull/656/head # [15.0][IMP] base_tier_validation, approve by sequence with option to bypass for same reviewer
     - ecosoft refs/pull/3/head # [15.0][FIX] base_tier_validation_server_action: fix reject tier error
