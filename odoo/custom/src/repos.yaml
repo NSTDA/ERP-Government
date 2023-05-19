@@ -196,6 +196,7 @@ l10n-thailand:
     - origin refs/pull/369/head # [15.0][REF] change name l10n_th_sequence_refactored -> l10n_th_base_sequence
     - origin refs/pull/371/head # [15.0][FIX] l10n_th_account_tax_expense: readonly fields following standard fields
     - origin refs/pull/372/head # [15.0][FIX] l10n_th_bank_payment_export: permission
+    - origin refs/pull/374/head # [15.0][FIX] l10n_th_account_tax: fix bug space table and copy PIT line is not correct
 
 mis-builder:
   defaults:
