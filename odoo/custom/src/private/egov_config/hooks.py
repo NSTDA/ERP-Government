@@ -18,6 +18,7 @@ def update_data_hooks(cr, registry):
                 "wa_fines_late_account_id": env.ref("l10n_th.1_a_income_gain").id,
                 "wa_fines_rate": 100,
                 "retention_account_id": env.ref("l10n_th.1_a_accr_exp").id,
+                "retention_receivable_account_id": env.ref("l10n_th.1_a_accr_exp").id,
                 "anglo_saxon_accounting": True,
                 "no_space_title_name": True,
                 # Tax Thai Format
@@ -75,7 +76,7 @@ def update_data_hooks(cr, registry):
                             "account_invoice_payment_retention.group_payment_retention"
                         ).id,
                     ),
-                    # Enable Analytic, Analytic Tags
+                    # Enable Analytic Account
                     (
                         4,
                         env.ref("analytic.group_analytic_accounting").id,
@@ -183,8 +184,6 @@ def update_data_hooks(cr, registry):
                 "match_journal_ids": [(6, 0, journal_bank.ids)],
                 "match_nature": "both",
                 "match_same_currency": True,
-                # "match_total_amount": True,
-                # "match_total_amount_param": 100,
                 "match_partner": False,
                 "match_text_location_label": True,
             }
