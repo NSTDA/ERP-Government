@@ -1,0 +1,2 @@
+"id","name","cash_account_code_prefix","bank_account_code_prefix","transfer_account_code_prefix","currency_id/id","country_id/id"
+"egov_coa.egov_chart","eGov - Chart of Accounts",11010100,11010200,11010400,"base.THB","base.th"

@@ -31,6 +31,31 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12 col-lg-6 o_setting_box" id="module_egov_coa">
+                            <div class="o_setting_left_pane">
+                                <field name="module_egov_coa" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_egov_coa" />
+                                <div class="text-muted">
+                                    ผังบัญชี
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_egov_config"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_egov_config" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_egov_config" />
+                                <div class="text-muted">
+                                    การตั้งค่าเบื้องต้น
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <h2>Structure</h2>
                     <div
@@ -3135,20 +3160,6 @@
                                 <label for="module_om_credit_limit" />
                                 <div class="text-muted">
                                     การกำหนด Credit Limit ในแต่ละคู่ค้า
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-12 col-lg-6 o_setting_box"
-                            id="module_egov_config"
-                        >
-                            <div class="o_setting_left_pane">
-                                <field name="module_egov_config" />
-                            </div>
-                            <div class="o_setting_right_pane">
-                                <label for="module_egov_config" />
-                                <div class="text-muted">
-                                    การตั้งค่าเบื้องต้น
                                 </div>
                             </div>
                         </div>

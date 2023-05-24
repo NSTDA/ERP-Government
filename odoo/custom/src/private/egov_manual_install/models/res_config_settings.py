@@ -9,6 +9,7 @@ class ResConfigSettings(models.TransientModel):
 
     # Install All Module
     module_egov_install = fields.Boolean(string="All Module eGov")
+    module_egov_coa = fields.Boolean(string="Chart of Account")
     # Structure
     module_account_asset_operating_unit = fields.Boolean()
     module_account_asset_operating_unit_access_all = fields.Boolean()
@@ -64,7 +65,7 @@ class ResConfigSettings(models.TransientModel):
     module_account_payment_multi_deduction_activity = fields.Boolean()
     module_account_payment_multi_deduction_budget_allocation = fields.Boolean()
     module_base_tier_validation_check_budget = fields.Boolean()
-    module_budget_activity = fields.Boolean(string="Budget Activity")
+    module_budget_activity = fields.Boolean()
     module_budget_activity_advance_clearing = fields.Boolean()
     module_budget_activity_contract = fields.Boolean()
     module_budget_activity_contract_invoice_plan = fields.Boolean()
@@ -73,7 +74,7 @@ class ResConfigSettings(models.TransientModel):
     module_budget_activity_purchase_deposit = fields.Boolean()
     module_budget_activity_purchase_request = fields.Boolean()
     module_budget_activity_purchase_requisition = fields.Boolean()
-    module_budget_allocation = fields.Boolean(string="Budget Allocation")
+    module_budget_allocation = fields.Boolean()
     module_budget_allocation_advance_clearing = fields.Boolean()
     module_budget_allocation_contract = fields.Boolean()
     module_budget_allocation_contract_invoice_plan = fields.Boolean()
@@ -83,59 +84,29 @@ class ResConfigSettings(models.TransientModel):
     module_budget_allocation_purchase_deposit = fields.Boolean()
     module_budget_allocation_purchase_request = fields.Boolean()
     module_budget_allocation_purchase_requisition = fields.Boolean()
-    module_budget_allocation_revision = fields.Boolean(
-        string="Budget Allocation Revision"
-    )
-    module_budget_control = fields.Boolean(string="Budget Control")
-    module_budget_control_account_asset_management = fields.Boolean(
-        string="Budget Control - Asset"
-    )
-    module_budget_control_advance_clearing = fields.Boolean(
-        string="Budget Control - Advance Clearing"
-    )
-    module_budget_control_contract = fields.Boolean(string="Budget Control - Contract")
-    module_budget_control_expense = fields.Boolean(string="Budget Control - Expense")
-    module_budget_control_purchase = fields.Boolean(string="Budget Control - Purchase")
-    module_budget_control_purchase_manual_currency = fields.Boolean(
-        string="Budget Control - Purchase Manual Currency"
-    )
-    module_budget_control_purchase_request = fields.Boolean(
-        string="Budget Control - Purchase Request"
-    )
-    module_budget_control_purchase_requisition = fields.Boolean(
-        string="Budget Control - Purchase Requisition"
-    )
-    module_budget_control_revision = fields.Boolean(string="Budget Control - Revision")
-    module_budget_control_revision_lock_amount = fields.Boolean(
-        string="Budget Control - Revision Lock Amount"
-    )
-    module_budget_plan = fields.Boolean(string="Budget Plan")
-    module_budget_plan_revision = fields.Boolean(string="Budget Plan - Revision")
-    module_budget_res_project_department = fields.Boolean(
-        string="Budget Project Department"
-    )
-    module_l10n_th_account_tax_expense_budget_allocation = fields.Boolean(
-        string="Budget Allocation - Tax Expense"
-    )
-    module_l10n_th_gov_account_asset_management_budget_allocation = fields.Boolean(
-        string="Budget Allocation - Asset Management"
-    )
-    module_l10n_th_gov_purchase_agreement_budget_control = fields.Boolean(
-        string="Budget Control - Purchase Agreement"
-    )
+    module_budget_allocation_revision = fields.Boolean()
+    module_budget_control = fields.Boolean()
+    module_budget_control_account_asset_management = fields.Boolean()
+    module_budget_control_advance_clearing = fields.Boolean()
+    module_budget_control_contract = fields.Boolean()
+    module_budget_control_expense = fields.Boolean()
+    module_budget_control_purchase = fields.Boolean()
+    module_budget_control_purchase_manual_currency = fields.Boolean()
+    module_budget_control_purchase_request = fields.Boolean()
+    module_budget_control_purchase_requisition = fields.Boolean()
+    module_budget_control_revision = fields.Boolean()
+    module_budget_control_revision_lock_amount = fields.Boolean()
+    module_budget_plan = fields.Boolean()
+    module_budget_plan_revision = fields.Boolean()
+    module_budget_res_project_department = fields.Boolean()
+    module_l10n_th_account_tax_expense_budget_allocation = fields.Boolean()
+    module_l10n_th_gov_account_asset_management_budget_allocation = fields.Boolean()
+    module_l10n_th_gov_purchase_agreement_budget_control = fields.Boolean()
     module_l10n_th_gov_hr_expense_activity = fields.Boolean()
-    module_l10n_th_gov_hr_expense_budget_control = fields.Boolean(
-        string="Budget Control - Expense"
-    )
-    module_l10n_th_gov_purchase_guarantee_activity = fields.Boolean(
-        string="Purchase Guarantee Activity"
-    )
-    module_l10n_th_gov_purchase_guarantee_budget_allocation = fields.Boolean(
-        string="Budget Allocation - Purchase Guarantee"
-    )
-    module_l10n_th_gov_purchase_guarantee_operating_unit = fields.Boolean(
-        string="Purchase Guarantee - Operating Unit"
-    )
+    module_l10n_th_gov_hr_expense_budget_control = fields.Boolean()
+    module_l10n_th_gov_purchase_guarantee_activity = fields.Boolean()
+    module_l10n_th_gov_purchase_guarantee_budget_allocation = fields.Boolean()
+    module_l10n_th_gov_purchase_guarantee_operating_unit = fields.Boolean()
     module_mis_builder = fields.Boolean()
     module_purchase_stock_budget_allocation = fields.Boolean()
     module_res_project = fields.Boolean()
