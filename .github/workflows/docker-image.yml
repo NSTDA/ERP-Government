@@ -1,10 +1,11 @@
-name: Docker Image CI
+name: Demo Push
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    # Publish `main` as Docker `latest` image.
+    branches:
+      - main
+      - seed
 
     # Publish `v1.2.3` tags as releases.
     tags:
