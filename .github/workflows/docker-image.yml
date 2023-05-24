@@ -1,4 +1,4 @@
-name: Demo Push
+name: Docker Image Push
 
 on:
   push:
@@ -37,7 +37,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Build image
-        run: docker build ./odoo --file ./odoo/Dockerfile --tag $IMAGE_NAME --label "runnumber=${GITHUB_RUN_ID}" --build-arg ODOO_VERSION=15.0 --build-arg UID=1000 --build-arg GID=1000
+        run: docker build ./odoo --file ./odoo/Dockerfile --tag $IMAGE_NAME --label "runnumber=${GITHUB_RUN_ID}" --build-arg ODOO_VERSION=$ODOO_VERSION --build-arg UID=$UID --build-arg GID=$GID
 
       - name: Log in to registry
         # This is where you will update the personal access token to GITHUB_TOKEN
