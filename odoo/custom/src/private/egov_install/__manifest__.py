@@ -95,6 +95,7 @@
         "budget_control_purchase_manual_currency",
         "budget_control_purchase_request",
         "budget_control_purchase_requisition",
+        "budget_control_purchase_work_acceptance_late_fines",
         "budget_control_revision",
         "budget_control_revision_lock_amount",
         "budget_plan",
