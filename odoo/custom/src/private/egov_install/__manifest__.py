@@ -144,6 +144,7 @@
         # "purchase_work_acceptance_late_fines_budget",
         # "purchase_work_acceptance_late_fines_fund",
         # Accounting
+        "account_check_printing",
         "account_financial_report",
         "account_financial_report_extension",
         "account_journal_lock_date",
