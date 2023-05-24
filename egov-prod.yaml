@@ -2,7 +2,7 @@ version: "2.4"
 
 services:
   odoo:
-    image: ecosoft/egov_odoo:15.0
+    image: ghcr.io/nstda/egov_odoo
     restart: always
     container_name: egov-odoo
     env_file:
