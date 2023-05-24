@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="egov_tax_input_vat_excl" model="account.tax.template">
+        <field name="chart_template_id" ref="egov_chart" />
+        <field name="name">Input VAT 7% (Excl.)</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="7" />
+        <field name="type_tax_use">purchase</field>
+        <field name="tax_group_id" ref="account.tax_group_taxes" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('account.account_11070001'),
+            }),
+        ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('account.account_11070001'),
+            }),
+        ]"
+        />
+    </record>
+    <record id="egov_tax_input_vat_incl" model="account.tax.template">
+        <field name="chart_template_id" ref="egov_chart" />
+        <field name="name">Input VAT 7% (Incl.)</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="7" />
+        <field name="type_tax_use">purchase</field>
+        <field name="tax_group_id" ref="account.tax_group_taxes" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('account.account_11070001'),
+            }),
+        ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('account.account_11070001'),
+            }),
+        ]"
+        />
+        <field name="price_include" eval="1" />
+    </record>
+
+    <record id="egov_tax_output_vat_excl" model="account.tax.template">
+        <field name="chart_template_id" ref="egov_chart" />
+        <field name="name">Output VAT 7% (Excl.)</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="7" />
+        <field name="type_tax_use">sale</field>
+        <field name="tax_group_id" ref="account.tax_group_taxes" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('account.account_21020005'),
+            }),
+        ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('account.account_21020005'),
+            }),
+        ]"
+        />
+    </record>
+    <record id="egov_tax_output_vat_incl" model="account.tax.template">
+        <field name="chart_template_id" ref="egov_chart" />
+        <field name="name">Output VAT 7% (Incl.)</field>
+        <field name="amount_type">percent</field>
+        <field name="amount" eval="7" />
+        <field name="type_tax_use">sale</field>
+        <field name="tax_group_id" ref="account.tax_group_taxes" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('account.account_21020005'),
+            }),
+        ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[(5, 0, 0),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'base',
+            }),
+            (0,0, {
+                'factor_percent': 100,
+                'repartition_type': 'tax',
+                'account_id': ref('account.account_21020005'),
+            }),
+        ]"
+        />
+        <field name="price_include" eval="1" />
+    </record>
+</odoo>
