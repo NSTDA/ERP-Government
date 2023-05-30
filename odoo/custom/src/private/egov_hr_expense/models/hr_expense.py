@@ -1,8 +1,9 @@
 # Copyright 2023 Ecosoft Co., Ltd. (http://ecosoft.co.th)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo import api, fields, models
+from odoo import _, api, fields, models
 from odoo.exceptions import UserError
+
 
 class HrExpense(models.Model):
     _inherit = "hr.expense"
@@ -46,16 +47,20 @@ class HrExpenseSheet(models.Model):
         return res
 
     def refuse_sheet(self, reason):
-            """Allow refuse with state draft, no permission"""
-            if not self.env.user.has_group("account.group_account_invoice") and self.filtered(lambda l: l.state in ["submit","appove"]):
-                raise UserError("You are not allow to refuse expense.")
+        """Allow refuse with state draft, no permission"""
+        if self._context.get("self_refuse", False):
+            # Accountant can refuse expense state submit, approved
+            # Employee can refuse expense state draft only
+            if not self.env.user.has_group(
+                "account.group_account_invoice"
+            ) and self.filtered(lambda l: l.state in ["submit", "appove"]):
+                raise UserError(_("Only Accountant can refuse expenses."))
 
-            if self._context.get("self_refuse", False):
-                self.write({"state": "cancel"})
-                for sheet in self:
-                    sheet.message_post_with_view(
-                        "hr_expense.hr_expense_template_refuse_reason",
-                        values={"reason": reason, "is_sheet": True, "name": sheet.name},
-                    )
-                return self.activity_update()
-            return super().refuse_sheet(reason)
+            self.write({"state": "cancel"})
+            for sheet in self:
+                sheet.message_post_with_view(
+                    "hr_expense.hr_expense_template_refuse_reason",
+                    values={"reason": reason, "is_sheet": True, "name": sheet.name},
+                )
+            return self.activity_update()
+        return super().refuse_sheet(reason)
