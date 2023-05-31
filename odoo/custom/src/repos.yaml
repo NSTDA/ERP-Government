@@ -13,7 +13,6 @@
   merges:
     - ocb $ODOO_VERSION
     - ocb refs/pull/1162/head # [15.0][FIX] hr_expense: show paid_by and message refuse duplicate
-    - odoo refs/pull/120219/head # [15.0][FIX] purchase_requisition: default representative from Agreement to RFQ
 
 account-analytic:
   defaults:
@@ -155,9 +154,6 @@ hr-expense:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/149/head # [15.0][MIG] hr_expense_sequence_option
-    - origin refs/pull/151/head # [15.0][MIG] hr_expense_pay_to_vendor
-    - origin refs/pull/153/head # [15.0][MIG] hr_expense_tier_validation
-    - origin refs/pull/154/head # [15.0][MIG] hr_expense_widget_o2m
     - origin refs/pull/163/head # [15.0][ADD] hr_expense_excluded_tax
     - origin refs/pull/167/head # [15.0][ADD] hr_expense_cancel_policy
     - origin refs/pull/168/head # [15.0][ADD] hr_expense_cancel_confirm
@@ -176,12 +172,10 @@ l10n-thailand:
     - origin refs/pull/336/head # [15.0][ADD] l10n_th_gov_hr_expense
     - origin refs/pull/337/head # [15.0][MIG] l10n_th_gov_work_acceptance
     - origin refs/pull/347/head # [15.0][ADD] l10n_th_gov_stock_request
-    - origin refs/pull/348/head # [15.0][FIX] l10n_th_gov_purchase_agreement: fix agreement report
     - origin refs/pull/350/head # [15.0][ADD] l10n_th_account_tax_expense_operating_unit
     - origin refs/pull/351/head # [15.0][FIX] l10n_th_account_tax: allow duplicate PIT Table with other year
     - origin refs/pull/352/head # [15.0][FIX] l10n_th_account_tax: fix sign tax invoice refund
     - origin refs/pull/353/head # [15.0][ADD] l10n_th_gov_purchase_report
-    - origin refs/pull/354/head # [15.0][FIX] l10n_th_account_tax_expense: only posted journal enties can reconcile
     - origin refs/pull/356/head # [WIP][15.0][ADD] l10n_th_bank_payment_export_bbl
     - origin refs/pull/357/head # [15.0][ADD] l10n_th_gov_tier_validation
     - origin refs/pull/358/head # [15.0][IMP] l10n_th_gov_account_asset_management: add fields, change display name
@@ -190,12 +184,10 @@ l10n-thailand:
     - origin refs/pull/362/head # [15.0][FIX] l10n_th_account_tax: allow reconcile undue case can't register payment
     - origin refs/pull/363/head # [15.0][ENH] l10n_th_gov_purchase_request: allow committee is not an employee
     - origin refs/pull/365/head # [15.0][ADD] l10n_th_bank
-    - origin refs/pull/366/head # [15.0][ENH] l10n_th_account_tax_report: refactor code for inherit report
     - origin refs/pull/367/head # [15.0][ADD] l10n_th_account_tax_branch_operating_unit
     - origin refs/pull/368/head # [15.0][ADD] l10n_th_account_tax_branch_report
     - origin refs/pull/369/head # [15.0][REF] change name l10n_th_sequence_refactored -> l10n_th_base_sequence
     - origin refs/pull/371/head # [15.0][FIX] l10n_th_account_tax_expense: readonly fields following standard fields
-    - origin refs/pull/372/head # [15.0][FIX] l10n_th_bank_payment_export: permission
     - origin refs/pull/374/head # [15.0][FIX] l10n_th_account_tax: fix bug space table and copy PIT line is not correct
 
 mis-builder:
@@ -217,7 +209,6 @@ operating-unit:
     - origin $ODOO_VERSION
     - origin refs/pull/480/head # [15.0][MIG] sale_stock_operating_unit
     - origin refs/pull/529/head # [15.0][MIG] account_operating_unit_access_all
-    - origin refs/pull/531/head # [15.0][MIG] account_financial_report_operating_unit
     - origin refs/pull/532/head # [15.0][MIG] analytic_operating_unit_access_all
     - origin refs/pull/536/head # [15.0][MIG] contract_operating_unit_access_all
     - origin refs/pull/537/head # [15.0][MIG] contract_operating_unit
@@ -238,9 +229,6 @@ operating-unit:
     - origin refs/pull/580/head # [15.0][MIG] sale_operating_unit
     - origin refs/pull/582/head # [15.0][IMP] account_operating_unit: add OU in move line outstanding payment
     - origin refs/pull/583/head # [15.0][MIG] mis_builder_operating_unit_access_all
-    - origin refs/pull/587/head # [15.0][MIG] mis_builder_operating_unit
-    - origin refs/pull/588/head # [15.0][MIG] hr_expense_operating_unit_access_all
-    - origin refs/pull/589/head # [15.0][MIG] stock_operating_unit_access_all
 
 partner-contact:
   defaults:
