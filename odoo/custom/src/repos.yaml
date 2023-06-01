@@ -160,6 +160,7 @@ hr-expense:
     - origin refs/pull/173/head # [15.0][ADD] hr_expense_disable_confirm_duplicate
     - origin refs/pull/176/head # [15.0][FIX] hr_expense_advance_clearing: split function create payment return advance
     - origin refs/pull/177/head # [15.0][ADD] hr_expense_advance_overdue_reminder
+    - origin refs/pull/183/head # [15.0][MIG] hr_expense_widget_o2m
 
 l10n-thailand:
   defaults:
