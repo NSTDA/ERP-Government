@@ -2146,6 +2146,24 @@
                         </div>
                         <div
                             class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_reconciliation_widget_extension"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_account_reconciliation_widget_extension"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_account_reconciliation_widget_extension"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มเงื่อนไขในการทำ Reconcile
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
                             id="module_account_sequence_option"
                         >
                             <div class="o_setting_left_pane">
@@ -2684,6 +2702,20 @@
                         </div>
                         <div
                             class="col-12 col-lg-6 o_setting_box"
+                            id="module_sale_force_invoiced"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_sale_force_invoiced" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_sale_force_invoiced" />
+                                <div class="text-muted">
+                                    เปลี่ยนสถานะของ Invoice ให้เป็น Fully Invoiced
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
                             id="module_sale_invoice_plan"
                         >
                             <div class="o_setting_left_pane">
@@ -2749,6 +2781,20 @@
                                 <label for="module_sale_order_line_stock_analytic" />
                                 <div class="text-muted">
                                     ส่งค่า Analytic Account จาก Sale Order ไปยังคลังสินค้า
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_sale_stock_cancel_restriction"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_sale_stock_cancel_restriction" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_sale_stock_cancel_restriction" />
+                                <div class="text-muted">
+                                    ไม่อนุญาตให้ยกเลิก Sale Order ที่มีการรับของไปแล้ว
                                 </div>
                             </div>
                         </div>
