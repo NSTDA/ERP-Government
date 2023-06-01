@@ -2076,6 +2076,20 @@
                         </div>
                         <div
                             class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_fiscal_year"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_fiscal_year" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_fiscal_year" />
+                                <div class="text-muted">
+                                    เพิ่มการกำหนดปีบัญชี
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
                             id="module_account_journal_lock_date"
                         >
                             <div class="o_setting_left_pane">

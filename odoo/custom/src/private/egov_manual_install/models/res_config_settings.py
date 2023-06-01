@@ -143,6 +143,7 @@ class ResConfigSettings(models.TransientModel):
     # Accounting
     module_account_financial_report = fields.Boolean()
     module_account_financial_report_extension = fields.Boolean()
+    module_account_fiscal_year = fields.Boolean()
     module_account_journal_lock_date = fields.Boolean()
     module_account_lock_date_update = fields.Boolean()
     module_account_move_line_stock_info = fields.Boolean()
