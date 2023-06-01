@@ -148,6 +148,7 @@
         "account_check_printing",
         "account_financial_report",
         "account_financial_report_extension",
+        "account_fiscal_year",
         "account_journal_lock_date",
         "account_lock_date_update",
         "account_move_line_stock_info",
