@@ -48,14 +48,13 @@ class HrExpenseSheet(models.Model):
 
     def refuse_sheet(self, reason):
         """Allow refuse with state draft, no permission"""
+        # Accountant can refuse expense state submit, approved
+        if not self.env.user.has_group(
+            "account.group_account_invoice"
+        ) and self.filtered(lambda l: l.state in ["submit", "appove"]):
+            raise UserError(_("Only Accountant can refuse expenses."))
+        # Employee can refuse expense state draft only
         if self._context.get("self_refuse", False):
-            # Accountant can refuse expense state submit, approved
-            # Employee can refuse expense state draft only
-            if not self.env.user.has_group(
-                "account.group_account_invoice"
-            ) and self.filtered(lambda l: l.state in ["submit", "appove"]):
-                raise UserError(_("Only Accountant can refuse expenses."))
-
             self.write({"state": "cancel"})
             for sheet in self:
                 sheet.message_post_with_view(
