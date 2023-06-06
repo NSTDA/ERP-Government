@@ -141,6 +141,9 @@ class ResConfigSettings(models.TransientModel):
     module_purchase_work_acceptance_late_fines = fields.Boolean()
     module_purchase_work_acceptance_tier_validation = fields.Boolean()
     # Accounting
+    module_account_check_date = fields.Boolean()
+    module_account_check_payee = fields.Boolean()
+    module_account_check_printing_report_base = fields.Boolean()
     module_account_financial_report = fields.Boolean()
     module_account_financial_report_extension = fields.Boolean()
     module_account_fiscal_year = fields.Boolean()
@@ -182,6 +185,7 @@ class ResConfigSettings(models.TransientModel):
     module_l10n_th_bank_payment_export_ktb = fields.Boolean()
     module_l10n_th_base_location = fields.Boolean()
     module_l10n_th_base_sequence = fields.Boolean()
+    module_l10n_th_check_ktb = fields.Boolean()
     module_l10n_th_gov_hr_expense = fields.Boolean()
     module_l10n_th_gov_tier_validation = fields.Boolean()
     module_l10n_th_mis_report = fields.Boolean()

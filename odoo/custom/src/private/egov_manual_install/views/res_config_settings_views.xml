@@ -2044,6 +2044,52 @@
                     >
                         <div
                             class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_check_date"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_check_date" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_check_date" />
+                                <div class="text-muted">
+                                    เพิ่มฟิลด์ Check Date
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_check_payee"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_check_payee" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_check_payee" />
+                                <div class="text-muted">
+                                    เพิ่มฟิลด์ Check Payee
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_account_check_printing_report_base"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field
+                                    name="module_account_check_printing_report_base"
+                                />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label
+                                    for="module_account_check_printing_report_base"
+                                />
+                                <div class="text-muted">
+                                    เพิ่มการตั้งค่า Layout ของเช็ค
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
                             id="module_account_financial_report"
                         >
                             <div class="o_setting_left_pane">
@@ -2641,6 +2687,20 @@
                                 <label for="module_l10n_th_base_sequence" />
                                 <div class="text-muted">
                                     การแสดง Sequence ตามปีพุทธศักราช
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_l10n_th_check_ktb"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_l10n_th_check_ktb" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_l10n_th_check_ktb" />
+                                <div class="text-muted">
+                                    เพิ่ม Layout เช็คของธนาคารกรุงไทย (KTB)
                                 </div>
                             </div>
                         </div>
