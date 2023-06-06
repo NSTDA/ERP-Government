@@ -305,7 +305,7 @@ server-backend:
 
 server-tools:
   defaults:
-    depth: $DEPTH_MERGE
+    depth: 1000
   remotes:
     origin: https://github.com/OCA/server-tools.git
   target: origin $ODOO_VERSION
