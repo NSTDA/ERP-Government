@@ -145,7 +145,9 @@
         # "purchase_work_acceptance_late_fines_budget",
         # "purchase_work_acceptance_late_fines_fund",
         # Accounting
-        "account_check_printing",
+        "account_check_date",
+        "account_check_payee",
+        "account_check_printing_report_base",
         "account_financial_report",
         "account_financial_report_extension",
         "account_fiscal_year",
@@ -189,6 +191,7 @@
         "l10n_th_bank_payment_export_ktb",
         "l10n_th_base_location",
         "l10n_th_base_sequence",
+        "l10n_th_check_ktb",
         "l10n_th_gov_hr_expense",
         "l10n_th_gov_tier_validation",
         "l10n_th_mis_report",

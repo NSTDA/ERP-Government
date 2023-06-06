@@ -80,6 +80,8 @@ account-payment:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    - origin refs/pull/601/head # [15.0][MIG] account_check_date
+    - origin refs/pull/602/head # [15.0][MIG] account_check_payee
 
 account-reconcile:
   defaults:
@@ -190,6 +192,7 @@ l10n-thailand:
     - origin refs/pull/369/head # [15.0][REF] change name l10n_th_sequence_refactored -> l10n_th_base_sequence
     - origin refs/pull/371/head # [15.0][FIX] l10n_th_account_tax_expense: readonly fields following standard fields
     - origin refs/pull/374/head # [15.0][FIX] l10n_th_account_tax: fix bug space table and copy PIT line is not correct
+    - origin refs/pull/375/head # [15.0][ADD] l10n_th_check_ktb
 
 mis-builder:
   defaults:
