@@ -260,6 +260,7 @@ queue:
 reporting-engine:
   - report_xlsx
   - report_xlsx_helper
+  - report_wkhtmltopdf_param
 
 sale-workflow:
   - sale_fixed_discount
