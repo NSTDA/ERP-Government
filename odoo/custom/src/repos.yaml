@@ -211,15 +211,12 @@ operating-unit:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/480/head # [15.0][MIG] sale_stock_operating_unit
     - origin refs/pull/529/head # [15.0][MIG] account_operating_unit_access_all
-    - origin refs/pull/532/head # [15.0][MIG] analytic_operating_unit_access_all
     - origin refs/pull/536/head # [15.0][MIG] contract_operating_unit_access_all
     - origin refs/pull/537/head # [15.0][MIG] contract_operating_unit
     - origin refs/pull/549/head # [15.0][ADD] hr_operating_unit_access_all
     - origin refs/pull/550/head # [15.0][MIG] purchase_operating_unit_access_all
     - origin refs/pull/551/head # [15.0][MIG] purchase_request_operating_unit_access_all
-    - origin refs/pull/552/head # [15.0][MIG] purchase_requisition_operating_unit
     - origin refs/pull/553/head # [15.0][MIG] purchase_requisition_operating_unit_access_all
     - origin refs/pull/554/head # [15.0][MIG] purchase_request_to_requisition_operating_unit
     - origin refs/pull/556/head # [15.0][MIG] account_asset_operating_unit_access_all
@@ -230,9 +227,7 @@ operating-unit:
     - origin refs/pull/562/head # [15.0][ENH] hr_operating_unit: add OU to department
     - origin refs/pull/564/head # [15.0][ADD] account_asset_transfer_operating_unit
     - origin refs/pull/566/head # [15.0][ADD] account_payment_multi_deduction_operating_unit
-    - origin refs/pull/580/head # [15.0][MIG] sale_operating_unit
-    - origin refs/pull/582/head # [15.0][IMP] account_operating_unit: add OU in move line outstanding payment
-    - origin refs/pull/583/head # [15.0][MIG] mis_builder_operating_unit_access_all
+    - origin refs/pull/594/head # [15.0][MIG] sale_stock_operating_unit
 
 partner-contact:
   defaults:
@@ -258,11 +253,9 @@ purchase-workflow:
     - origin refs/pull/1765/head # [15.0][MIG] purchase_manual_currency
     - origin refs/pull/1768/head # [15.0][MIG] purchase_invoice_plan_deposit
     - origin refs/pull/1774/head # [15.0][ADD] purchase_deposit_analytic
-    - origin refs/pull/1775/head # [15.0][FIX] purchase_invoice_plan: change qty after create invoiced will error
     - origin refs/pull/1786/head # [15.0][MIG] purchase_rfq_number
     - origin refs/pull/1808/head # [15.0][ADD] purchase_requisition_manual_currency
     - origin refs/pull/1809/head # [15.0][ADD] purchase_request_to_requisition_manual_currency
-    - origin refs/pull/1840/head # [15.0][ENH] purchase_work_acceptance: compute search wa_acceted field for filter
     - origin refs/pull/1860/head # [15.0][FIX] purchase_work_acceptance_late_fines: add fines late in WA tree view
 
 queue:
