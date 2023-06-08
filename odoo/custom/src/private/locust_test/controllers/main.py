@@ -6,8 +6,9 @@ from odoo.http import request
 
 
 class WebhookController(http.Controller):
-    @http.route("/create_pr", type="json", auth="user")
+    @http.route("/create_pr", type="json", auth="none")
     def create_pr_data(self, model, vals):
+        request.uid = 2
         pr_rule = request.env["exception.rule"].search(
             [("model", "=", "purchase.request")]
         )
@@ -22,8 +23,9 @@ class WebhookController(http.Controller):
         model_id.button_approved()
         return model_id
 
-    @http.route("/create_ex", type="json", auth="user")
+    @http.route("/create_ex", type="json", auth="none")
     def create_ex_data(self, model, vals):
+        request.uid = 2
         ex_tier = request.env["tier.definition"].search(
             [("model", "=", "hr.expense.sheet")]
         )

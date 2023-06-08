@@ -23,6 +23,9 @@ class OdooUser(HttpUser):
             },
             name="Login",
         )
+
+    @task
+    def create_pr(self):
         # Create PR
         data = {
             "jsonrpc": "2.0",
@@ -49,6 +52,9 @@ class OdooUser(HttpUser):
         }
         # Send the request to create the PR until approved
         self.client.post("/create_pr", json=data, name="Create PR")
+
+    @task
+    def create_ex(self):
         # Create EX
         data = {
             "jsonrpc": "2.0",
