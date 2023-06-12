@@ -11,7 +11,7 @@
     "installable": True,
     "depends": [
         "egov_install",
-        "l10n_th",
+        "egov_coa",
     ],
     "data": [
         "data/account_account_data.xml",
