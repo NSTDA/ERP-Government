@@ -1,2 +1,3 @@
 id,name,account_id:id,amount
-base.account_wht_001,Withholding tax 1%,l10n_th.1_a_wht,1
+base.account_wht_001,Withholding tax 1% (3),egov_coa.1_account_21020003,1
+base.account_wht_002,Withholding tax 1% (53),egov_coa.1_account_21020004,1

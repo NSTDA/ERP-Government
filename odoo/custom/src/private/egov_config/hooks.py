@@ -15,10 +15,12 @@ def update_data_hooks(cr, registry):
         env.ref("base.main_company").write(
             {
                 # รายได้ค่าปรับ
-                "wa_fines_late_account_id": env.ref("l10n_th.1_a_income_gain").id,
+                "wa_fines_late_account_id": env.ref("egov_coa.1_account_49910003").id,
                 "wa_fines_rate": 100,
-                "retention_account_id": env.ref("l10n_th.1_a_accr_exp").id,
-                "retention_receivable_account_id": env.ref("l10n_th.1_a_accr_exp").id,
+                "retention_account_id": env.ref("egov_coa.1_account_21030003").id,
+                "retention_receivable_account_id": env.ref(
+                    "egov_coa.1_account_12020002"
+                ).id,
                 "anglo_saxon_accounting": True,
                 "no_space_title_name": True,
                 # Tax Thai Format

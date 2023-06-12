@@ -17,7 +17,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account.account_11070001'),
+                'account_id': ref('egov_coa.account_11070001'),
             }),
         ]"
         />
@@ -31,7 +31,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account.account_11070001'),
+                'account_id': ref('egov_coa.account_11070001'),
             }),
         ]"
         />
@@ -53,7 +53,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account.account_11070001'),
+                'account_id': ref('egov_coa.account_11070001'),
             }),
         ]"
         />
@@ -67,7 +67,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account.account_11070001'),
+                'account_id': ref('egov_coa.account_11070001'),
             }),
         ]"
         />
@@ -91,7 +91,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account.account_21020005'),
+                'account_id': ref('egov_coa.account_21020005'),
             }),
         ]"
         />
@@ -105,7 +105,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account.account_21020005'),
+                'account_id': ref('egov_coa.account_21020005'),
             }),
         ]"
         />
@@ -127,7 +127,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account.account_21020005'),
+                'account_id': ref('egov_coa.account_21020005'),
             }),
         ]"
         />
@@ -141,7 +141,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account.account_21020005'),
+                'account_id': ref('egov_coa.account_21020005'),
             }),
         ]"
         />

@@ -10,6 +10,7 @@ class ResConfigSettings(models.TransientModel):
     # Install All Module
     module_egov_install = fields.Boolean(string="All Module eGov")
     module_egov_coa = fields.Boolean(string="Chart of Account")
+    module_egov_config = fields.Boolean()
     # Structure
     module_account_asset_operating_unit = fields.Boolean()
     module_account_asset_operating_unit_access_all = fields.Boolean()
@@ -230,5 +231,3 @@ class ResConfigSettings(models.TransientModel):
     module_egov_user_role = fields.Boolean()
     # Optional - Other App
     module_om_credit_limit = fields.Boolean()
-    # Optional - Demo Data
-    module_egov_config = fields.Boolean()
