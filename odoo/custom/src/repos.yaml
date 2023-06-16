@@ -71,6 +71,7 @@ account-invoicing:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/1288/head # [15.0][MIG] account_invoice_payment_retention
+    - origin refs/pull/1486/head # [15.0][ADD] account_move_manual_currency
 
 account-payment:
   defaults:
