@@ -154,6 +154,7 @@
         "account_journal_lock_date",
         "account_lock_date_update",
         "account_move_line_stock_info",
+        "account_move_manual_currency",
         "account_payment_multi_deduction",
         "account_reconciliation_widget",
         "account_reconciliation_widget_extension",
