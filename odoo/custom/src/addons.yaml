@@ -35,7 +35,7 @@ account-financial-tools:
 account-invoicing:
   - account_invoice_fixed_discount
   - account_invoice_payment_retention
-  - account_move_manual_currency
+  - account_manual_currency
 
 account-payment:
   - account_payment_multi_deduction
