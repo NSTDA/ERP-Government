@@ -26,6 +26,8 @@ def update_data_hooks(cr, registry):
             "wht_form_preprint": False,
             "tax_report_format": "rd",
             "wht_report_format": "rd",
+            # Expense
+            "disable_confirm_expense_duplicate": True,
         }
     )
     # Archive demo data
@@ -38,7 +40,9 @@ def update_data_hooks(cr, registry):
     set_inactive(env.ref("stock.picking_type_in", False))
     set_inactive(env.ref("stock.picking_type_out", False))
 
-    # Enable Work Acceptance, Invoice's Retention
+    # Enable Permission to all users
+    # - Work Acceptance, Invoice's Retention
+    # - Analytic Account
     env.ref("base.group_user").write(
         {
             "implied_ids": [
@@ -160,6 +164,7 @@ def update_data_hooks(cr, registry):
         {
             "address_id": env.ref("base.main_partner").id,
             "address_home_id": env.ref("base.partner_admin").id,
+            "default_operating_unit_id": env.ref("base.operating_unit_01").id,
         }
     )
 

@@ -27,6 +27,7 @@
         "data/budget.activity.csv",
         "data/date.range.type.csv",
         "data/res_partner_data.xml",
+        "data/res_users_data.xml",
         "data/hr_department_data.xml",
         "data/budget.template.csv",
         "data/tier_reviewer_extra_access.xml",

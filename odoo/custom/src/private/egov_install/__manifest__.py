@@ -235,6 +235,7 @@
         "egov_hr_expense",
         "egov_purchase",
         "egov_purchase_request",
+        "egov_sale",
         "egov_user_role",
         # Optional - Other App
         "om_credit_limit",
