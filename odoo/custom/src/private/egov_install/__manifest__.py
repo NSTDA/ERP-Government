@@ -151,6 +151,8 @@
         "account_financial_report",
         "account_financial_report_extension",
         "account_fiscal_year",
+        "account_invoice_origin_link",
+        "account_invoice_sale_origin_link",
         "account_journal_lock_date",
         "account_lock_date_update",
         "account_manual_currency",
