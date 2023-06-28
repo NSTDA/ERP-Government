@@ -31,6 +31,7 @@
         "data/hr_department_data.xml",
         "data/budget.template.csv",
         "data/tier_reviewer_extra_access.xml",
+        "data/ir.config_parameter.csv",
         "data/ir_model_access_data.xml",
     ],
     "post_init_hook": "update_data_hooks",
