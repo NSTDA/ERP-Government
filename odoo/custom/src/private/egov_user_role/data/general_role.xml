@@ -14,6 +14,7 @@
                            ref('base.group_user'),
                            ref('budget_control.group_budget_control_user'),
                            ref('hr_expense.group_hr_expense_user'),
+                           ref('hr_expense_widget_o2m.group_hr_expense_widget_o2m'),
                            ref('purchase_request.group_purchase_request_user'),
                            ref('res_project.group_res_project_manager'),
                            ref('stock_request.group_stock_request_user'),

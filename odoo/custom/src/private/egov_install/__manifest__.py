@@ -151,6 +151,8 @@
         "account_financial_report",
         "account_financial_report_extension",
         "account_fiscal_year",
+        "account_invoice_origin_link",
+        "account_invoice_sale_origin_link",
         "account_journal_lock_date",
         "account_lock_date_update",
         "account_manual_currency",
@@ -235,6 +237,7 @@
         "egov_hr_expense",
         "egov_purchase",
         "egov_purchase_request",
+        "egov_sale",
         "egov_user_role",
         # Optional - Other App
         "om_credit_limit",

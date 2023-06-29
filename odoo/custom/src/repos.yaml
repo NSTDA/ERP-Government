@@ -12,7 +12,7 @@
   target: ocb $ODOO_VERSION
   merges:
     - ocb $ODOO_VERSION
-    - ocb refs/pull/1162/head # [15.0][FIX] hr_expense: show paid_by and message refuse duplicate
+    - odoo refs/pull/126619/head # [15.0][FIX] hr_expense: show paid_by and message refuse duplicate
 
 account-analytic:
   defaults:
@@ -71,6 +71,7 @@ account-invoicing:
   merges:
     - origin $ODOO_VERSION
     - origin refs/pull/1288/head # [15.0][MIG] account_invoice_payment_retention
+    - origin refs/pull/1313/head # [15.0][MIG] account_invoice_origin_link & account_invoice_sale_origin_link
     - origin refs/pull/1486/head # [15.0][ADD] account_manual_currency
 
 account-payment:

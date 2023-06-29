@@ -34,7 +34,9 @@ account-financial-tools:
 
 account-invoicing:
   - account_invoice_fixed_discount
+  - account_invoice_origin_link
   - account_invoice_payment_retention
+  - account_invoice_sale_origin_link
   - account_manual_currency
 
 account-payment:
