@@ -18,7 +18,6 @@ services:
       - filestore:/var/lib/odoo:z
     networks:
       default:
-    command: -i base
     tty: true
     depends_on:
       - db
@@ -29,8 +28,6 @@ services:
     container_name: egov-db
     env_file:
       - .docker/db-creation.env
-    environment:
-      POSTGRES_DB: "prod"
     volumes:
       - db:/var/lib/postgresql/data:z
     networks:
