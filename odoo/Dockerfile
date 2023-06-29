@@ -3,5 +3,5 @@ FROM ghcr.io/tecnativa/doodba:${ODOO_VERSION}-onbuild
 
 # Change Directory Owner
 USER root
-RUN chown odoo:odoo /opt/odoo
+RUN chown -R odoo:odoo /opt/odoo
 USER odoo
