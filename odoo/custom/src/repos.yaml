@@ -300,6 +300,7 @@ server-backend:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    - origin refs/pull/223/head # [15.0][ADD] base_user_role_restrict_update
 
 server-tools:
   defaults:

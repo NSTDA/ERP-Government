@@ -1,6 +1,6 @@
 <odoo>
     <!-- For Tier Validation -->
-    <record model="ir.actions.server" id="server_action_expense_sheet_approve">
+    <record id="server_action_expense_sheet_approve" model="ir.actions.server">
         <field name="name">Expense Report: Approve</field>
         <field name="model_id" ref="hr_expense.model_hr_expense_sheet" />
         <field name="binding_type">action</field>
@@ -10,7 +10,7 @@ if record.validated:
     record.approve_expense_sheets()
 </field>
     </record>
-    <record model="ir.actions.server" id="server_action_expense_sheet_cancel">
+    <record id="server_action_expense_sheet_cancel" model="ir.actions.server">
         <field name="name">Expense Report: Cancel</field>
         <field name="model_id" ref="hr_expense.model_hr_expense_sheet" />
         <field name="binding_type">action</field>

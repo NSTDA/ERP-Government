@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- Check budget allocation limit -->
+    <record id="ir_server_action_check_budget_kpi" model="ir.actions.server">
+        <field name="name">Check Budget KPI Asset</field>
+        <field name="model_id" ref="budget_control.model_budget_constraint" />
+        <field name="state">code</field>
+        <field name="code">
+if record:
+    doclines = record._context.get("doclines", False)
+    if doclines._name == "account.move.line" and doclines.move_id.not_affect_budget:
+        action = False
+    else:
+        BudgetPeriod = env["budget.period"]
+        for line in doclines.mapped("budget_move_ids").filtered(lambda l: l.kpi_id == env.ref("base.budget_kpi_001")):
+            date_commit = line.date
+            query_data = BudgetPeriod.with_context(
+                control_level="analytic_kpi"
+            )._get_budget_avaiable(line.analytic_account_id.id, line.template_line_id)
+            balance = sum(q["amount"] for q in query_data if q["amount"] is not None)
+            if float_compare(balance, 0.0, precision_rounding=2) == -1:
+                analytic_name = "{} &amp; {}".format(
+                    line.template_line_id.display_name, line.analytic_account_id.name
+                )
+                raise UserError("%s &amp; %s, will result in %s" % (line.template_line_id.display_name, line.analytic_account_id.name, balance))
+        </field>
+    </record>
+</odoo>

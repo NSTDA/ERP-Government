@@ -270,6 +270,7 @@ sale-workflow:
 
 server-backend:
   - base_user_role
+  - base_user_role_restrict_update
 
 server-tools:
   - base_exception

@@ -13,7 +13,7 @@
         "agreement_legal_operating_unit",
         "agreement_operating_unit_access_all",
         "analytic_operating_unit_access_all",
-        "base_user_role",
+        "base_user_role_restrict_update",
         "budget_control_operating_unit_access_all",
         "contract",
         "hr_contract",
@@ -32,6 +32,7 @@
     "data": [
         "data/general_role.xml",
         "data/accounting_role.xml",
+        "data/audit_role.xml",
         "data/budget_role.xml",
         "data/procurement_role.xml",
         "data/sale_role.xml",

@@ -27,6 +27,7 @@
         "base_tier_validation_correction",
         "base_tier_validation_report",
         "base_user_role",
+        "base_user_role_restrict_update",
         "budget_allocation_operating_unit",
         "budget_allocation_operating_unit_access_all",
         "budget_control_operating_unit",

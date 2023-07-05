@@ -41,7 +41,7 @@ class SaleOrder(models.Model):
             )
 
     def action_confirm(self):
-        result = super(SaleOrder, self).action_confirm()
+        result = super().action_confirm()
         for so in self:
             if (
                 so.show_partner_credit_warning
