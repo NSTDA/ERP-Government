@@ -19,6 +19,7 @@
                            ref('budget_control.group_budget_control_user'),
                            ref('hr_expense.group_hr_expense_user'),
                            ref('purchase_request.group_purchase_request_user'),
+                           ref('purchase.group_purchase_user'),
                            ref('res_project.group_res_project_manager'),
                            ref('sales_team.group_sale_salesman_all_leads'),
                            ref('stock.group_stock_user'),

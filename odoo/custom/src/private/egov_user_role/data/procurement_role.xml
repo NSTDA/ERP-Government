@@ -47,6 +47,7 @@
             name="implied_ids"
             eval="[(6, 0, [ref('group_role_procurement_user'),
                            ref('agreement_legal.group_agreement_manager'),
+                           ref('l10n_th_gov_purchase_request.group_purchase_request_verify'),
                            ref('purchase.group_purchase_manager'),
                            ref('stock.group_stock_manager'),
                            ref('stock_request.group_stock_request_manager'),

@@ -158,6 +158,7 @@
         "account_lock_date_update",
         "account_manual_currency",
         "account_move_line_stock_info",
+        "account_move_reconcile_no_cancel",
         "account_payment_multi_deduction",
         "account_reconciliation_widget",
         "account_reconciliation_widget_extension",
@@ -239,6 +240,7 @@
         "egov_purchase",
         "egov_purchase_request",
         "egov_sale",
+        "egov_tier_validation",
         "egov_user_role",
         # Optional - Other App
         "om_credit_limit",

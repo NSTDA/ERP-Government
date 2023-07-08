@@ -120,6 +120,7 @@ contract:
 
 ecosoft-addons:
   - account_financial_report_extension
+  - account_move_reconcile_no_cancel
   - account_reconciliation_widget_extension
   - base_report_extension
 
