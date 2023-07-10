@@ -266,6 +266,7 @@ sale-workflow:
   - sale_force_invoiced
   - sale_invoice_plan
   - sale_invoice_plan_retention
+  - sale_order_restrict_cancel_existing_invoice
   - sale_stock_cancel_restriction
   - sale_tax_adjust
 

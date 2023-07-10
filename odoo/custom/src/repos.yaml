@@ -291,6 +291,7 @@ sale-workflow:
     - origin refs/pull/2408/head # [15.0][FIX] sale_invoice_plan: hide create invoice button
     - origin refs/pull/2485/head # [15.0][MIG] sale_fixed_discount
     - origin refs/pull/2543/head # [15.0][FIX] sale_invoice_plan: recompute invoice plan table
+    - origin refs/pull/2598/head # [15.0][MIG] sale_order_restrict_cancel_existing_invoice
 
 server-backend:
   defaults:

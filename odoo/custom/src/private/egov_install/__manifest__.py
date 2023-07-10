@@ -208,6 +208,7 @@
         "sale_management",
         "sale_order_line_analytic",
         "sale_order_line_stock_analytic",
+        "sale_order_restrict_cancel_existing_invoice",
         "sale_stock_cancel_restriction",
         "sale_tax_adjust",
         # Agreement & Contract
