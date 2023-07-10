@@ -123,6 +123,7 @@ ecosoft-addons:
   - account_move_reconcile_no_cancel
   - account_reconciliation_widget_extension
   - base_report_extension
+  - stock_account_visible_valuation
 
 hr:
   - hr_department_code
