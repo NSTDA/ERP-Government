@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo noupdate="1">
 
-    <!-- Business Admin -->
-    <record id="group_role_business_admin" model="res.groups">
-        <field name="name">Role: Business Admin</field>
+    <!-- Audit -->
+    <record id="group_role_audit" model="res.groups">
+        <field name="name">Role: Audit</field>
     </record>
-    <record id="role_business_admin" model="res.users.role">
-        <field name="name">Role: Business Admin</field>
-        <field name="group_id" ref="group_role_business_admin" />
+    <record id="role_audit" model="res.users.role">
+        <field name="name">Role: Audit</field>
+        <field name="group_id" ref="group_role_audit" />
         <field
             name="implied_ids"
             eval="[(6, 0, [ref('egov_user_role.group_role_accounting_manager'),
@@ -24,6 +24,7 @@
                             ref('operating_unit.group_manager_operating_unit'),
                             ])]"
         />
+        <field name="is_readonly_user" eval="1" />
     </record>
 
 </odoo>

@@ -10,28 +10,23 @@
         <field name="group_id" ref="group_role_procurement_user" />
         <field
             name="implied_ids"
-            eval="[(6, 0, [ref('agreement_legal.group_agreement_user'),
-                           ref('base.group_allow_export'),
+            eval="[(6, 0, [ref('egov_user_role.group_role_employee'),
+                           ref('agreement_legal.group_agreement_user'),
                            ref('base.group_partner_manager'),
                            ref('base.group_user'),
                            ref('budget_control.group_budget_control_user'),
                            ref('hr_expense.group_hr_expense_user'),
                            ref('purchase.group_purchase_user'),
                            ref('purchase_request.group_purchase_request_manager'),
-                           ref('res_project.group_res_project_manager'),
                            ref('stock.group_stock_user'),
-                           ref('stock_request.group_stock_request_user'),
-                           ref('operating_unit_access_all.group_all_operating_unit'),
                            ref('account_asset_operating_unit_access_all.group_all_ou_asset'),
                            ref('account_operating_unit_access_all.group_all_ou_account'),
                            ref('agreement_operating_unit_access_all.group_all_ou_agreement'),
-                           ref('analytic_operating_unit_access_all.group_all_ou_analytic'),
                            ref('hr_expense_operating_unit_access_all.group_all_ou_hr_expense'),
                            ref('hr_operating_unit_access_all.group_all_ou_hr'),
                            ref('purchase_operating_unit_access_all.group_all_ou_purchase'),
                            ref('purchase_request_operating_unit_access_all.group_all_ou_purchase_request'),
                            ref('purchase_requisition_operating_unit_access_all.group_all_ou_purchase_requisition'),
-                           ref('stock_operating_unit_access_all.group_all_ou_stock'),
                            ])]"
         />
     </record>
@@ -47,6 +42,7 @@
             name="implied_ids"
             eval="[(6, 0, [ref('group_role_procurement_user'),
                            ref('agreement_legal.group_agreement_manager'),
+                           ref('l10n_th_gov_purchase_request.group_purchase_request_verify'),
                            ref('purchase.group_purchase_manager'),
                            ref('stock.group_stock_manager'),
                            ref('stock_request.group_stock_request_manager'),

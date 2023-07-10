@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="1">
+    <record
+        id="l10n_th_gov_tier_validation.purchase_request_gov_tier_definition_1"
+        model="tier.definition"
+    >
+        <field
+            name="server_action_id"
+            ref="egov_purchase_request.ir_server_action_pr_approve"
+        />
+        <field
+            name="rejected_server_action_id"
+            ref="egov_purchase_request.ir_server_action_pr_reject"
+        />
+        <field name="check_budget" eval="1" />
+        <field name="has_comment" eval="1" />
+    </record>
+    <record
+        id="l10n_th_gov_tier_validation.purchase_request_gov_tier_definition_2"
+        model="tier.definition"
+    >
+        <field
+            name="server_action_id"
+            ref="egov_purchase_request.ir_server_action_pr_approve"
+        />
+        <field
+            name="rejected_server_action_id"
+            ref="egov_purchase_request.ir_server_action_pr_reject"
+        />
+        <field name="check_budget" eval="1" />
+        <field name="has_comment" eval="1" />
+    </record>
+    <record
+        id="l10n_th_gov_tier_validation.purchase_request_gov_tier_definition_3"
+        model="tier.definition"
+    >
+        <field
+            name="server_action_id"
+            ref="egov_purchase_request.ir_server_action_pr_approve"
+        />
+        <field
+            name="rejected_server_action_id"
+            ref="egov_purchase_request.ir_server_action_pr_reject"
+        />
+        <field name="check_budget" eval="1" />
+        <field name="has_comment" eval="1" />
+    </record>
+    <record
+        id="l10n_th_gov_tier_validation.purchase_request_gov_tier_definition_4"
+        model="tier.definition"
+    >
+        <field
+            name="server_action_id"
+            ref="egov_purchase_request.ir_server_action_pr_approve"
+        />
+        <field
+            name="rejected_server_action_id"
+            ref="egov_purchase_request.ir_server_action_pr_reject"
+        />
+        <field name="check_budget" eval="1" />
+        <field name="has_comment" eval="1" />
+    </record>
+    <record
+        id="l10n_th_gov_tier_validation.purchase_request_gov_tier_definition_5"
+        model="tier.definition"
+    >
+        <field
+            name="server_action_id"
+            ref="egov_purchase_request.ir_server_action_pr_approve"
+        />
+        <field
+            name="rejected_server_action_id"
+            ref="egov_purchase_request.ir_server_action_pr_reject"
+        />
+        <field name="check_budget" eval="1" />
+        <field name="has_comment" eval="1" />
+    </record>
+</odoo>

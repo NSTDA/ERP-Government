@@ -38,7 +38,7 @@ class AccountMove(models.Model):
             )
 
     def action_post(self):
-        result = super(AccountMove, self).action_post()
+        result = super().action_post()
         for inv in self:
             if (
                 inv.show_partner_credit_warning

@@ -10,10 +10,12 @@
     "depends": [
         "base_tier_validation_server_action",
         "l10n_th_gov_purchase_request",
+        "l10n_th_gov_tier_validation",
         "purchase_request_tier_validation",
     ],
     "data": [
         "data/ir_actions_server.xml",
+        "data/purchase_request_tier_definition.xml",
         "views/purchase_request_view.xml",
     ],
     "installable": True,

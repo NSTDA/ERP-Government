@@ -27,6 +27,7 @@
         "base_tier_validation_correction",
         "base_tier_validation_report",
         "base_user_role",
+        "base_user_role_restrict_update",
         "budget_allocation_operating_unit",
         "budget_allocation_operating_unit_access_all",
         "budget_control_operating_unit",
@@ -57,6 +58,7 @@
         "sale_stock_operating_unit",
         "sales_team_operating_unit",
         "stock_account_operating_unit",
+        "stock_account_visible_valuation",
         "stock_operating_unit",
         "stock_operating_unit_access_all",
         # Budgeting
@@ -157,6 +159,7 @@
         "account_lock_date_update",
         "account_manual_currency",
         "account_move_line_stock_info",
+        "account_move_reconcile_no_cancel",
         "account_payment_multi_deduction",
         "account_reconciliation_widget",
         "account_reconciliation_widget_extension",
@@ -206,6 +209,7 @@
         "sale_management",
         "sale_order_line_analytic",
         "sale_order_line_stock_analytic",
+        "sale_order_restrict_cancel_existing_invoice",
         "sale_stock_cancel_restriction",
         "sale_tax_adjust",
         # Agreement & Contract
@@ -238,6 +242,7 @@
         "egov_purchase",
         "egov_purchase_request",
         "egov_sale",
+        "egov_tier_validation",
         "egov_user_role",
         # Optional - Other App
         "om_credit_limit",

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- Check budget allocation limit -->
+    <record id="check_budget_kpi_asset" model="budget.constraint">
+        <field name="name">Check Budget KPI Asset</field>
+        <field
+            name="server_action_id"
+            ref="egov_config.ir_server_action_check_budget_kpi"
+        />
+        <field name="active" eval="0" />
+    </record>
+</odoo>

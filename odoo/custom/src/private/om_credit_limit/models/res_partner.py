@@ -42,4 +42,4 @@ class ResPartner(models.Model):
             partner.show_credit_limit = self.env.company.account_credit_limit
 
     def _commercial_fields(self):
-        return super(ResPartner, self)._commercial_fields() + ["amount_credit_limit"]
+        return super()._commercial_fields() + ["amount_credit_limit"]

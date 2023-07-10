@@ -120,8 +120,10 @@ contract:
 
 ecosoft-addons:
   - account_financial_report_extension
+  - account_move_reconcile_no_cancel
   - account_reconciliation_widget_extension
   - base_report_extension
+  - stock_account_visible_valuation
 
 hr:
   - hr_department_code
@@ -265,11 +267,13 @@ sale-workflow:
   - sale_force_invoiced
   - sale_invoice_plan
   - sale_invoice_plan_retention
+  - sale_order_restrict_cancel_existing_invoice
   - sale_stock_cancel_restriction
   - sale_tax_adjust
 
 server-backend:
   - base_user_role
+  - base_user_role_restrict_update
 
 server-tools:
   - base_exception

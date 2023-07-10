@@ -12,3 +12,4 @@
 "base.res_user_011","Employee B2","Employee B2","emp_b2@egov.or.th",1234,"emp_b2@egov.or.th","egov_coa.1_account_21010001","egov_coa.1_account_11020002","Operating Unit B","Operating Unit B","Role: Employee"
 "base.res_user_012","Manager B3","Manager B3","mng_b3@egov.or.th",1234,"mng_b3@egov.or.th","egov_coa.1_account_21010001","egov_coa.1_account_11020002","Operating Unit B","Operating Unit B","Role: Employee"
 "base.res_user_013","Employee B3","Employee B3","emp_b3@egov.or.th",1234,"emp_b3@egov.or.th","egov_coa.1_account_21010001","egov_coa.1_account_11020002","Operating Unit B","Operating Unit B","Role: Employee"
+"base.res_user_014","Audit","Audit","audit@egov.or.th",1234,"audit@egov.or.th","egov_coa.1_account_21010001","egov_coa.1_account_11020002","Operating Unit A","Operating Unit A,Operating Unit B","Role: Audit"

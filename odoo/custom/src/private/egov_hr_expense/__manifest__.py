@@ -12,10 +12,12 @@
         "base_tier_validation_server_action",
         "hr_expense_tier_validation",
         "hr_expense_advance_clearing",
+        "l10n_th_gov_tier_validation",
     ],
     "data": [
         "security/ir.model.access.csv",
         "data/ir_actions_server.xml",
+        "data/hr_expense_tier_definition.xml",
         "views/hr_expense_views.xml",
     ],
     "installable": True,

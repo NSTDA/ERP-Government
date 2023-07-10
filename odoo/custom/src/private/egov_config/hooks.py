@@ -26,7 +26,16 @@ def update_data_hooks(cr, registry):
             "wht_form_preprint": False,
             "tax_report_format": "rd",
             "wht_report_format": "rd",
-            # Expense
+            "asset_move_line_analytic": True,
+            # Stock
+            "stock_account_line_debit": True,
+            "stock_request_allow_virtual_loc": True,
+            "annual_inventory_day": 30,
+            "annual_inventory_month": "9",
+            # Expense Policy
+            "ex_cancel_policy": "approve",
+            "je_cancel_policy": "approve",
+            "payment_cancel_policy": "post",
             "disable_confirm_expense_duplicate": True,
         }
     )
@@ -35,6 +44,12 @@ def update_data_hooks(cr, registry):
     set_inactive(env.ref("hr.dep_sales", False))
     set_inactive(env.ref("hr.res_partner_admin_private_address", False))
     set_inactive(env.ref("operating_unit.main_operating_unit", False))
+    set_inactive(
+        env.ref(
+            "purchase_request_tier_validation.purchase_request_default_tier_definition",
+            False,
+        )
+    )
     set_inactive(env.ref("stock.warehouse0", False))
     set_inactive(env.ref("stock.stock_location_stock", False))
     set_inactive(env.ref("stock.picking_type_in", False))
@@ -51,21 +66,16 @@ def update_data_hooks(cr, registry):
                 (4, env.ref("purchase_work_acceptance.group_enforce_wa_on_in").id),
                 (
                     4,
-                    env.ref(
-                        "purchase_work_acceptance.group_enable_wa_on_invoice"
-                    ).id,
+                    env.ref("purchase_work_acceptance.group_enable_wa_on_invoice").id,
+                ),
+                (
+                    4,
+                    env.ref("purchase_work_acceptance.group_enforce_wa_on_invoice").id,
                 ),
                 (
                     4,
                     env.ref(
-                        "purchase_work_acceptance.group_enforce_wa_on_invoice"
-                    ).id,
-                ),
-                (
-                    4,
-                    env.ref(
-                        "purchase_work_acceptance_evaluation"
-                        ".group_enable_eval_on_wa"
+                        "purchase_work_acceptance_evaluation" ".group_enable_eval_on_wa"
                     ).id,
                 ),
                 (
@@ -108,6 +118,13 @@ def update_data_hooks(cr, registry):
         budget_template_line._onchange_kpi_id()
         budget_template_line._onchange_account_ids()
 
+    # Onchange Audit Role
+    env.ref("egov_user_role.role_audit").onchange_is_readonly_user()
+
+    # Update all tier for check budget
+    tier_definition = env["tier.definition"].search([("check_budget", "=", False)])
+    tier_definition.write({"check_budget": True})
+
     # Auto Create Analytic Tag Dimension
     dimensions = env["account.analytic.dimension"].search([])
     for dimension in dimensions:
@@ -122,17 +139,19 @@ def update_data_hooks(cr, registry):
     date_format = "%d/%m/%Y"
     lang.write({"date_format": date_format})
 
-    AccountAccount = env["account.account"]
+    # Update Guarantee Method Account
+    account_21030002 = env.ref("egov_coa.1_account_21030002")
+    bid_guarantee = env.ref("l10n_th_gov_purchase_guarantee.bid_guarantee")
+    bid_guarantee.account_id = account_21030002
+    performance_bond = env.ref("l10n_th_gov_purchase_guarantee.performance_bond")
+    performance_bond.account_id = account_21030002
+    advance_payment_guarantee = env.ref(
+        "l10n_th_gov_purchase_guarantee.advance_payment_guarantee"
+    )
+    advance_payment_guarantee.account_id = env.ref("egov_coa.1_account_21030001")
 
     # Update Employee Advance Data
-    advance_account = AccountAccount.create(
-        {
-            "code": "111005",
-            "name": "Employee Advance",
-            "user_type_id": env.ref("account.data_account_type_current_assets").id,
-            "reconcile": True,
-        }
-    )
+    advance_account = env.ref("egov_coa.1_account_11030001")
     advance_activity = env.ref(
         "budget_activity_advance_clearing.budget_activity_advance"
     )
@@ -141,14 +160,7 @@ def update_data_hooks(cr, registry):
     advance_product.property_account_expense_id = advance_account
 
     # Update Deposit Data
-    deposit_account = AccountAccount.create(
-        {
-            "code": "111006",
-            "name": "Deposit",
-            "user_type_id": env.ref("account.data_account_type_current_assets").id,
-            "reconcile": True,
-        }
-    )
+    deposit_account = env.ref("egov_coa.1_account_11060001")
     deposit_activity = env.ref(
         "budget_activity_purchase_deposit.budget_activity_purchase_deposit"
     )
@@ -158,6 +170,40 @@ def update_data_hooks(cr, registry):
     )
     deposit_product.property_account_income_id = deposit_account
     deposit_product.property_account_expense_id = deposit_account
+
+    # Update Template KPI (Advance, Deposit) in Budget Template
+    kpi_advance = env.ref("budget_activity_advance_clearing.budget_kpi_advance")
+    kpi_deposit = env.ref(
+        "budget_activity_purchase_deposit.budget_kpi_purchase_deposit"
+    )
+    env.ref("base.egov_budget_template_01").write(
+        {
+            "line_ids": [
+                (
+                    0,
+                    0,
+                    {
+                        "kpi_id": kpi_advance.id,
+                        "activity_ids": kpi_advance.activity_ids.ids,
+                        "account_ids": kpi_advance.activity_ids.mapped(
+                            "account_id"
+                        ).ids,
+                    },
+                ),
+                (
+                    0,
+                    0,
+                    {
+                        "kpi_id": kpi_deposit.id,
+                        "activity_ids": kpi_deposit.activity_ids.ids,
+                        "account_ids": kpi_deposit.activity_ids.mapped(
+                            "account_id"
+                        ).ids,
+                    },
+                ),
+            ]
+        }
+    )
 
     # Update Employee Admin
     env.ref("hr.employee_admin").write(
@@ -196,9 +242,7 @@ def update_data_hooks(cr, registry):
     )
 
     # Update sequence date range 20 years
-    all_sequence_date_range = env["ir.sequence"].search(
-        [("use_date_range", "=", True)]
-    )
+    all_sequence_date_range = env["ir.sequence"].search([("use_date_range", "=", True)])
     date_range = []
     for y in range(2022, 2043):
         date_from = "{}-10-01".format(y)
