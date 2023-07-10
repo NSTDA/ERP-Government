@@ -32,10 +32,10 @@
     "data": [
         "data/general_role.xml",
         "data/accounting_role.xml",
-        "data/audit_role.xml",
         "data/budget_role.xml",
         "data/procurement_role.xml",
         "data/sale_role.xml",
+        "data/audit_role.xml",
         "data/super_user_role.xml",
     ],
     "installable": True,

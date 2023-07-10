@@ -10,18 +10,9 @@
         <field name="group_id" ref="group_role_sale_user" />
         <field
             name="implied_ids"
-            eval="[(6, 0, [ref('base.group_allow_export'),
-                           ref('base.group_user'),
-                           ref('budget_control.group_budget_control_user'),
-                           ref('hr_expense.group_hr_expense_user'),
-                           ref('purchase_request.group_purchase_request_user'),
-                           ref('res_project.group_res_project_manager'),
+            eval="[(6, 0, [ref('egov_user_role.group_role_employee'),
                            ref('sales_team.group_sale_salesman'),
                            ref('stock.group_stock_user'),
-                           ref('stock_request.group_stock_request_user'),
-                           ref('operating_unit_access_all.group_all_operating_unit'),
-                           ref('analytic_operating_unit_access_all.group_all_ou_analytic'),
-                           ref('stock_operating_unit_access_all.group_all_ou_stock'),
                            ])]"
         />
     </record>
@@ -36,7 +27,7 @@
         <field
             name="implied_ids"
             eval="[(6, 0, [ref('group_role_sale_user'),
-                           ref('sales_team.group_sale_salesman_all_leads'),
+                           ref('sales_team.group_sale_manager'),
                            ref('stock.group_stock_manager'),
                            ref('sale_operating_unit_access_all.group_all_ou_sale'),
                            ])]"
