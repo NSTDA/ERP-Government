@@ -26,14 +26,17 @@ def update_data_hooks(cr, registry):
             "wht_form_preprint": False,
             "tax_report_format": "rd",
             "wht_report_format": "rd",
-            # Expense
-            "disable_confirm_expense_duplicate": True,
             "asset_move_line_analytic": True,
             # Stock
             "stock_account_line_debit": True,
             "stock_request_allow_virtual_loc": True,
             "annual_inventory_day": 30,
             "annual_inventory_month": "9",
+            # Expense Policy
+            "ex_cancel_policy": "approve",
+            "je_cancel_policy": "approve",
+            "payment_cancel_policy": "post",
+            "disable_confirm_expense_duplicate": True,
         }
     )
     # Archive demo data
