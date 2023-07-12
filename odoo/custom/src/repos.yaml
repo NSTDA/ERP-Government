@@ -27,6 +27,7 @@ account-analytic:
     - origin refs/pull/529/head # [15.0][ADD] sale_order_line_analytic
     - origin refs/pull/530/head # [15.0][ADD] sale_order_line_stock_analytic
     - origin refs/pull/544/head # [15.0][FIX] stock_analytic: add analytic tags in stock.move.line
+    - origin refs/pull/574/head # [15.0][FIX] account_tag_dimension: fix permission sudo for allow modify ir.model
 
 account-budgeting:
   defaults:
