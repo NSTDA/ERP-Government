@@ -8,5 +8,9 @@
     <record id="base.user_admin" model="res.users">
         <field name="default_operating_unit_id" ref="base.operating_unit_01" />
         <field name="operating_unit_ids" eval="[(4, ref('base.operating_unit_01'))]" />
+        <field
+            name="role_line_ids"
+            eval="[(0, 0, {'role_id': ref('egov_user_role.role_super_user')})]"
+        />
     </record>
 </odoo>

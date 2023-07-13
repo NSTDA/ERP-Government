@@ -35,8 +35,8 @@
         "data/budget_role.xml",
         "data/procurement_role.xml",
         "data/sale_role.xml",
-        "data/audit_role.xml",
         "data/super_user_role.xml",
+        "data/audit_role.xml",
     ],
     "installable": True,
 }
