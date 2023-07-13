@@ -48,10 +48,12 @@ class HrExpenseSheet(models.Model):
 
     def refuse_sheet(self, reason):
         """Allow refuse with state draft, no permission"""
-        # Accountant can refuse expense state submit, approved
-        if not self.env.user.has_group(
-            "account.group_account_invoice"
-        ) and self.filtered(lambda l: l.state in ["submit", "appove"]):
+        # Accountant and User in tier validation can refuse expense state submit, approved
+        if (
+            not self.env.user.has_group("account.group_account_invoice")
+            and self.filtered(lambda l: l.state in ["submit", "appove"])
+            and not self._context.get("default_validate_reject")
+        ):
             raise UserError(_("Only Accountant can refuse expenses."))
         # Employee can refuse expense state draft only
         if self._context.get("self_refuse", False):
