@@ -26,4 +26,18 @@
         />
     </record>
 
+    <!-- Super User -->
+    <record id="group_role_super_user" model="res.groups">
+        <field name="name">Role: Super User</field>
+    </record>
+    <record id="role_super_user" model="res.users.role">
+        <field name="name">Role: Super User</field>
+        <field name="group_id" ref="group_role_super_user" />
+        <field
+            name="implied_ids"
+            eval="[(6, 0, [ref('egov_user_role.group_role_business_admin'),
+                            ref('base.group_system'),
+                            ])]"
+        />
+    </record>
 </odoo>

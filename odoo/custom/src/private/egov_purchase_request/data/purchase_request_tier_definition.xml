@@ -19,6 +19,8 @@
         id="l10n_th_gov_tier_validation.purchase_request_gov_tier_definition_2"
         model="tier.definition"
     >
+        <field name="definition_type">formula</field>
+        <field name="python_code">rec.get_estimated_cost_currency() &gt; 30000</field>
         <field
             name="server_action_id"
             ref="egov_purchase_request.ir_server_action_pr_approve"
@@ -34,6 +36,8 @@
         id="l10n_th_gov_tier_validation.purchase_request_gov_tier_definition_3"
         model="tier.definition"
     >
+        <field name="definition_type">formula</field>
+        <field name="python_code">rec.get_estimated_cost_currency() &gt; 100000</field>
         <field
             name="server_action_id"
             ref="egov_purchase_request.ir_server_action_pr_approve"
@@ -49,6 +53,8 @@
         id="l10n_th_gov_tier_validation.purchase_request_gov_tier_definition_4"
         model="tier.definition"
     >
+        <field name="definition_type">formula</field>
+        <field name="python_code">rec.get_estimated_cost_currency() &gt; 500000</field>
         <field
             name="server_action_id"
             ref="egov_purchase_request.ir_server_action_pr_approve"
@@ -64,6 +70,8 @@
         id="l10n_th_gov_tier_validation.purchase_request_gov_tier_definition_5"
         model="tier.definition"
     >
+        <field name="definition_type">formula</field>
+        <field name="python_code">rec.get_estimated_cost_currency() &gt; 1000000</field>
         <field
             name="server_action_id"
             ref="egov_purchase_request.ir_server_action_pr_approve"

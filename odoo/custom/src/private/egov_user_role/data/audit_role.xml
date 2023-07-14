@@ -10,19 +10,7 @@
         <field name="group_id" ref="group_role_audit" />
         <field
             name="implied_ids"
-            eval="[(6, 0, [ref('egov_user_role.group_role_accounting_manager'),
-                            ref('egov_user_role.group_role_budget_manager'),
-                            ref('egov_user_role.group_role_procurement_manager'),
-                            ref('egov_user_role.group_role_sale_manager'),
-                            ref('base_exception.group_exception_rule_manager'),
-                            ref('base_substate.group_substate_manager'),
-                            ref('base_tier_validation_report.group_see_all_reviews'),
-                            ref('contract.can_terminate_contract'),
-                            ref('hr.group_hr_manager'),
-                            ref('hr_contract.group_hr_contract_manager'),
-                            ref('queue_job.group_queue_job_manager'),
-                            ref('operating_unit.group_manager_operating_unit'),
-                            ])]"
+            eval="[(6, 0, [ref('egov_user_role.group_role_business_admin')])]"
         />
         <field name="is_readonly_user" eval="1" />
     </record>
