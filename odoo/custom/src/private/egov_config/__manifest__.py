@@ -15,6 +15,7 @@
     ],
     "data": [
         "data/account_account_data.xml",
+        "data/ir.config_parameter.csv",
         "data/operating.unit.csv",
         "data/res.users.csv",
         "data/res_company_data.xml",
