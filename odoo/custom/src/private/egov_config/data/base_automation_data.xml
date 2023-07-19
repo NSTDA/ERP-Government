@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="action_account_move_reversed_lock" model="base.automation">
+        <field name="name">Account Move Reversed Lock</field>
+        <field name="model_id" ref="account.model_account_move" />
+        <field name="trigger">on_write</field>
+        <field
+            name="trigger_field_ids"
+            eval="[(4, ref('account.field_account_move__state'))]"
+        />
+        <field name="state">code</field>
+        <field name="code">
+move = env["account.move"]
+for rec in records:
+    # Not allow reversed again
+    if rec.reversed_entry_id and move.search_count([("reversed_entry_id", "=", rec.reversed_entry_id.id)]) > 1:
+        raise UserError("This document is reversed entry.")
+    # Not allow reset to draft when revered done
+    if not rec.reversed_entry_id and rec.state == "draft" and move.search_count([("reversed_entry_id", "=", rec.id)]):
+        raise UserError("Not allow reset to draft because this document is reversed")
+        </field>
+    </record>
+</odoo>
