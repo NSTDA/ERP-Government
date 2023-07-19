@@ -196,6 +196,7 @@ l10n-thailand:
     - origin refs/pull/371/head # [15.0][FIX] l10n_th_account_tax_expense: readonly fields following standard fields
     - origin refs/pull/374/head # [15.0][FIX] l10n_th_account_tax: fix bug space table and copy PIT line is not correct
     - origin refs/pull/375/head # [15.0][ADD] l10n_th_check_ktb
+    - origin refs/pull/384/head # [15.0][FIX] l10n_th_gov_purchase_request: change permission reject PR for procurement only
 
 mis-builder:
   defaults:
@@ -231,6 +232,7 @@ operating-unit:
     - origin refs/pull/564/head # [15.0][ADD] account_asset_transfer_operating_unit
     - origin refs/pull/566/head # [15.0][ADD] account_payment_multi_deduction_operating_unit
     - origin refs/pull/594/head # [15.0][MIG] sale_stock_operating_unit
+    - origin refs/pull/608/head # [15.0][FIX] stock_operating_unit_access_all: domain_force in stock move is not correct
 
 partner-contact:
   defaults:
