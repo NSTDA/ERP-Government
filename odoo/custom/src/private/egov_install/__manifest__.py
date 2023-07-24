@@ -23,6 +23,7 @@
         "agreement_operating_unit_access_all",
         "analytic_operating_unit",
         "analytic_operating_unit_access_all",
+        "base_automation",
         "base_model_restrict_update",
         "base_tier_validation_correction",
         "base_tier_validation_report",

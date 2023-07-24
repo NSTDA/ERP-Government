@@ -130,6 +130,11 @@ def update_data_hooks(cr, registry):
     for dimension in dimensions:
         dimension.create_analytic_tags()
 
+    # Create Config Parameter
+    config = env["ir.config_parameter"].get_param("report.url", False)
+    if not config:
+        env["ir.config_parameter"].create({"key": "report.url", "value": "http://0.0.0.0:8069"})
+
     # Install th_TH language
     lang_install_wizard = env["base.language.install"].create({"lang": "th_TH"})
     lang_install_wizard.lang_install()
