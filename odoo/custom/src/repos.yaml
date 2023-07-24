@@ -245,7 +245,7 @@ partner-contact:
 
 purchase-workflow:
   defaults:
-    depth: $DEPTH_MERGE
+    depth: 1000
   remotes:
     origin: https://github.com/OCA/purchase-workflow.git
   target: origin $ODOO_VERSION
