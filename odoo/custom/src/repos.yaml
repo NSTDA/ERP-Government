@@ -13,6 +13,7 @@
   merges:
     - ocb $ODOO_VERSION
     - odoo refs/pull/126619/head # [15.0][FIX] hr_expense: show paid_by and message refuse duplicate
+    - odoo refs/pull/130150/head # [15.0][FIX] purchase_requisition: create RFQ from smart button don't send default currency from purchase agreement
 
 account-analytic:
   defaults:
