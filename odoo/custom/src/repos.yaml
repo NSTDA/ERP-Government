@@ -353,7 +353,7 @@ stock-logistics-warehouse:
     # - origin refs/pull/1396/head # [15.0][MIG] stock_request_direction
     # - origin refs/pull/1397/head # [15.0][MIG] stock_request_picking_type
     # - origin refs/pull/1469/head # [15.0][MIG] stock_request_mrp
-    - origin refs/pull/1594/head # [15.0][MIG] stock_request_submit
+    # - origin refs/pull/1594/head # [15.0][MIG] stock_request_submit
     - origin refs/pull/1595/head # [15.0][MIG] stock_request_tier_validation
     - origin refs/pull/1621/head # [15.0][ADD] stock_request_separate_picking
 
