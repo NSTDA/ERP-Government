@@ -167,6 +167,7 @@ hr-expense:
     - origin refs/pull/176/head # [15.0][FIX] hr_expense_advance_clearing: split function create payment return advance
     - origin refs/pull/177/head # [15.0][ADD] hr_expense_advance_overdue_reminder
     - origin refs/pull/183/head # [15.0][MIG] hr_expense_widget_o2m
+    - origin refs/pull/196/head # [15.0][FIX] hr_expense_payment_widget_amount: back state to posted when unreconcile payment
 
 l10n-thailand:
   defaults:
@@ -234,6 +235,7 @@ operating-unit:
     - origin refs/pull/566/head # [15.0][ADD] account_payment_multi_deduction_operating_unit
     - origin refs/pull/594/head # [15.0][MIG] sale_stock_operating_unit
     - origin refs/pull/608/head # [15.0][FIX] stock_operating_unit_access_all: domain_force in stock move is not correct
+    - origin refs/pull/616/head # [15.0][FIX] account_operating_unit: domain analytic from operating unit line
 
 partner-contact:
   defaults:
