@@ -167,6 +167,7 @@ hr-expense:
     - origin refs/pull/176/head # [15.0][FIX] hr_expense_advance_clearing: split function create payment return advance
     - origin refs/pull/177/head # [15.0][ADD] hr_expense_advance_overdue_reminder
     - origin refs/pull/183/head # [15.0][MIG] hr_expense_widget_o2m
+    - origin refs/pull/196/head # [15.0][FIX] hr_expense_payment_widget_amount: back state to posted when unreconcile payment
 
 l10n-thailand:
   defaults:
