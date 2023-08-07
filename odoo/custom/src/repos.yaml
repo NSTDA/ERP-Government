@@ -235,6 +235,7 @@ operating-unit:
     - origin refs/pull/566/head # [15.0][ADD] account_payment_multi_deduction_operating_unit
     - origin refs/pull/594/head # [15.0][MIG] sale_stock_operating_unit
     - origin refs/pull/608/head # [15.0][FIX] stock_operating_unit_access_all: domain_force in stock move is not correct
+    - origin refs/pull/616/head # [15.0][FIX] account_operating_unit: domain analytic from operating unit line
 
 partner-contact:
   defaults:
