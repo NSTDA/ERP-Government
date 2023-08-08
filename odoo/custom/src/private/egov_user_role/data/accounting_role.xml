@@ -24,6 +24,7 @@
                            ref('hr_operating_unit_access_all.group_all_ou_hr'),
                            ref('hr_expense_operating_unit_access_all.group_all_ou_hr_expense'),
                            ref('mis_builder_operating_unit_access_all.group_all_ou_mis_builder'),
+                           ref('operating_unit.group_multi_operating_unit'),
                            ref('purchase_operating_unit_access_all.group_all_ou_purchase'),
                            ref('purchase_request_operating_unit_access_all.group_all_ou_purchase_request'),
                            ref('purchase_requisition_operating_unit_access_all.group_all_ou_purchase_requisition'),
