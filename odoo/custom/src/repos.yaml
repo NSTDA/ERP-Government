@@ -347,7 +347,6 @@ stock-logistics-warehouse:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/1594/head # [15.0][MIG] stock_request_submit
     - origin refs/pull/1595/head # [15.0][MIG] stock_request_tier_validation
 
 stock-logistics-workflow:
