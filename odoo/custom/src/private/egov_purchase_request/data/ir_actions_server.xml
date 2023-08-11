@@ -16,7 +16,8 @@ if record.validated:
         <field name="state">code</field>
         <field name="code">
 if record.rejected:
-    record.with_context(skip_validation_check=1, bypass_pr_reject=1).write({"cancel_confirm": True})
+    record = record.with_context(skip_validation_check=1, bypass_pr_reject=1)
+    record.write({"cancel_confirm": True})
     action = record.button_rejected()
         </field>
     </record>
