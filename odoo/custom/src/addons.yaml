@@ -40,6 +40,7 @@ account-invoicing:
   - account_manual_currency
 
 account-payment:
+  - account_payment_disable_draft
   - account_payment_multi_deduction
   - account_check_date
   - account_check_payee
