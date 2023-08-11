@@ -85,6 +85,7 @@ account-payment:
     - origin $ODOO_VERSION
     - origin refs/pull/601/head # [15.0][MIG] account_check_date
     - origin refs/pull/602/head # [15.0][MIG] account_check_payee
+    - origin refs/pull/663/head # [15.0][ADD] account_payment_disable_draft
 
 account-reconcile:
   defaults:
