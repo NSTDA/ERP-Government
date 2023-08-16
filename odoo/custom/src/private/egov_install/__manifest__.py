@@ -161,6 +161,7 @@
         "account_manual_currency",
         "account_move_line_stock_info",
         "account_move_reconcile_no_cancel",
+        "account_move_unreconcile_payment_cancel",
         "account_payment_disable_draft",
         "account_payment_multi_deduction",
         "account_reconciliation_widget",

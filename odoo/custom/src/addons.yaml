@@ -38,6 +38,7 @@ account-invoicing:
   - account_invoice_payment_retention
   - account_invoice_sale_origin_link
   - account_manual_currency
+  - account_move_unreconcile_payment_cancel
 
 account-payment:
   - account_payment_disable_draft
