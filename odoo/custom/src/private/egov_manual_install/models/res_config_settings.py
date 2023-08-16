@@ -231,3 +231,10 @@ class ResConfigSettings(models.TransientModel):
     module_egov_user_role = fields.Boolean()
     # Optional - Other App
     module_om_credit_limit = fields.Boolean()
+    # Configuration
+    module_account_payment_disable_draft = fields.Boolean(
+        string="Disable payment cancel to draft",
+    )
+    module_account_move_unreconcile_payment_cancel = fields.Boolean(
+        string="Immediatelly cancel payment when unreconcile payment",
+    )

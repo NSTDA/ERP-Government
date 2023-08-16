@@ -3285,6 +3285,47 @@
                         </div>
                     </div>
                 </div>
+                <div
+                    class="app_settings_block"
+                    data-string="eGov Configuration"
+                    string="eGov Configuration"
+                    data-key="egov_configuration"
+                >
+                    <h2>Invoicing</h2>
+                    <div
+                        class="row mt16 o_settings_container"
+                        name="egov_config_invoice"
+                    >
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_egov_config_disable_payment_draft"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_payment_disable_draft" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_payment_disable_draft" />
+                                <div class="text-muted">
+                                    ปิดการ Reset to Draft เมื่อเอกสาร Payment เป็น Cancel
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 o_setting_box"
+                            id="module_egov_config_unreconcile_move_payment"
+                        >
+                            <div class="o_setting_left_pane">
+                                <field name="module_account_move_unreconcile_payment_cancel" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="module_account_move_unreconcile_payment_cancel" />
+                                <div class="text-muted">
+                                    ยกเลิกเอกสาร Payment เมื่อ unreconcile เอกสาร Journal Entry
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </xpath>
         </field>
     </record>
