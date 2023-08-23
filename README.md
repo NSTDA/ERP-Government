@@ -37,7 +37,5 @@
 
 # Credits
 
-This project is maintained by:
-
-- NSTDA <https://www.nstda.or.th>
-- Ecosoft <https://www.ecosoft.co.th>
+Support งบประมาณ : สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (สวทช.) https://www.nstda.or.th
+Source Code : NSTDA, Ecosoft
