@@ -36,6 +36,11 @@
 **
 
 # Credits
-* พัฒนาปรับปรุงและทดสอบระบบโดย **สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (สวทช.)** และ **บริษัท ecosoft จำกัด**
-* ดำเนินโครงการโดย **สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (สวทช.)**
+
+
+# Credits
+
+Copyright © National Science and Technology Development Agency. All rights reserved.
+
+Licensed under [AGPL-3.0 license](LICENSE)
 
