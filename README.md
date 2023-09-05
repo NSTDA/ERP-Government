@@ -3,7 +3,9 @@
 [![AGPL-3.0 license](https://img.shields.io/badge/license-AGPL--3.0-success})](LICENSE)
 
 
-# โครงการพัฒนาต้นแบบ ระบบ Open source ERP สำหรับหน่วยงานภาครัฐ
+# [ โครงการพัฒนาต้นแบบ ระบบ Open source ERP สำหรับหน่วยงานภาครัฐ   ](https://www.nstda.or.th/erp-government/)
+
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ (สวทช.)  ได้ริเริ่มโครงการพัฒนาต้นแบบ ระบบ Open source ERP สำหรับหน่วยงานภาครัฐ   เพื่อเป็นระบบต้นแบบระบบสารสนเทศเพื่อการบริหารทรัพยากรขององค์กร (ERP) ที่พัฒนาโดยใช้ซอฟต์แวร์ Open source โดยใช้ชื่อเรียกว่า  [**ERP-Government (eGov)**](https://www.nstda.or.th/erp-government/)เหมาะสำหรับภาครัฐ/หน่วยงานที่มีความต้องการใช้ระบบ ERP ในการวางแผนบริหารจัดการทรัพยากรให้มีประสิทธิภาพ
 
