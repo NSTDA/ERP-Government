@@ -21,13 +21,13 @@ account-analytic:
     origin: https://github.com/OCA/account-analytic.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/498/head # [15.0][mig] analytic_tag_dimension_enhanced
-    - origin refs/pull/519/head # [15.0][MIG] purchase_stock_analytic: Migration to 15.0
-    - origin refs/pull/529/head # [15.0][ADD] sale_order_line_analytic
-    - origin refs/pull/530/head # [15.0][ADD] sale_order_line_stock_analytic
-    - origin refs/pull/544/head # [15.0][FIX] stock_analytic: add analytic tags in stock.move.line
-    - origin refs/pull/574/head # [15.0][FIX] account_tag_dimension: fix permission sudo for allow modify ir.model
+    # FIX Version 26/09/2023
+    - origin 389b2272b53fbaf96789d4899dd21e4db34e7fbd
+    - origin d7c2bf3d29c717f1b146a9684cdd63b3b1e6719c # [15.0][mig] analytic_tag_dimension_enhanced
+    - origin a659b401642f102709db6bd49840e2deb6505a19 # [15.0][ADD] sale_order_line_analytic
+    - origin 6bb4e56161fcc23e5c4243219b88ccbd87fa0c1b # [15.0][ADD] sale_order_line_stock_analytic
+    - origin 05eb51cd3dd0ebb2d7f8971daed36629d9cfd8ae # [15.0][FIX] stock_analytic: add analytic tags in stock.move.line
+    - origin 32e7aca3dcabe16b3ff59a4937316c1a1971948a # [15.0][FIX] account_tag_dimension: fix permission sudo for allow modify ir.model
 
 account-budgeting:
   defaults:
@@ -36,8 +36,9 @@ account-budgeting:
     origin: https://github.com/OCA/account-budgeting.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/64/head # [15.0][ADD] budget_control
+    # FIX Version 26/09/2023
+    - origin a7bd266c8e7025296d7860a598bc2b7f80aff436
+    - origin b447bab1678f8bea86bb0a6fd92eaa23b5f0390c # [15.0][ADD] budget_control
 
 account-financial-reporting:
   defaults:
@@ -46,7 +47,8 @@ account-financial-reporting:
     origin: https://github.com/OCA/account-financial-reporting.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
+    # FIX Version 26/09/2023
+    - origin dfdef79595e96401777550ce6afda6072aa02c0b
 
 account-financial-tools:
   defaults:
@@ -55,13 +57,13 @@ account-financial-tools:
     origin: https://github.com/OCA/account-financial-tools.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/1507/head # [15.0][MIG] account_asset_transfer
-    - origin refs/pull/1567/head # [15.0][ENH] account_asset_management: default salvage value
-    - origin refs/pull/1590/head # [15.0][MIG] account_asset_compute_batch
-    - origin refs/pull/1591/head # [15.0][MIG] account_asset_compute_batch_job
-    - origin refs/pull/1613/head # [15.0][MIG] account_asset_from_expense
-    - origin refs/pull/1635/head # [15.0][MIG] account_sequence_option
+    # FIX Version 26/09/2023
+    - origin 3bd0064b002af78f0d56745c6480d1f3c4fe0d76
+    - origin 6f9db980f9c5df3c66fed1f89fd2e2f16ab883cc # [15.0][ENH] account_asset_management: default salvage value
+    - origin 89e5bb9a8a2c5534aa092d467e1cc3d1de06e8c8 # [15.0][MIG] account_asset_compute_batch
+    - origin e8c0047e358e0a5ae765f01c462a0b94d0e868cc # [15.0][MIG] account_asset_compute_batch_job
+    - origin f0acb32cdd917f29bdec4b7f9af43a7ddca76606 # [15.0][MIG] account_asset_from_expense
+    - origin a14bfa25b754eb3e96998ec4e6aeb734f63546fa # [15.0][MIG] account_sequence_option
 
 account-invoicing:
   defaults:
@@ -70,11 +72,12 @@ account-invoicing:
     origin: https://github.com/OCA/account-invoicing.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/1288/head # [15.0][MIG] account_invoice_payment_retention
-    - origin refs/pull/1313/head # [15.0][MIG] account_invoice_origin_link & account_invoice_sale_origin_link
-    - origin refs/pull/1486/head # [15.0][ADD] account_manual_currency
-    - origin refs/pull/1530/head # [15.0][ADD] account_move_unreconcile_payment_cancel
+    # FIX Version 26/09/2023
+    - origin 54e08d5f0bbbf8742a68b7b2fbe1b501979b19a5
+    - origin 82652f4b7747702c42cf5b3b95b9201fc427837e # [15.0][MIG] account_invoice_payment_retention
+    - origin 965473a1e1fe49927c4b8a0c38fead3d91ab4bb1 # [15.0][MIG] account_invoice_origin_link & account_invoice_sale_origin_link
+    - origin df322b979086bb199440e644e8ef49ad6619f616 # [15.0][ADD] account_manual_currency
+    - origin c25f295aadf7cb4f0a68981923193b5cb18d6ef0 # [15.0][ADD] account_move_unreconcile_payment_cancel
 
 account-payment:
   defaults:
@@ -83,10 +86,11 @@ account-payment:
     origin: https://github.com/OCA/account-payment.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/601/head # [15.0][MIG] account_check_date
-    - origin refs/pull/602/head # [15.0][MIG] account_check_payee
-    - origin refs/pull/663/head # [15.0][ADD] account_payment_disable_draft
+    # FIX Version 26/09/2023
+    - origin 1180c437eeb9525125c13c928aed3a8c820d39f6
+    - origin c3a8e258ccd17157a67cc1964ffba8d3d5469285 # [15.0][MIG] account_check_date
+    - origin baeea17c3afd062d2606526239bdb5baad89b813 # [15.0][MIG] account_check_payee
+    - origin 16f661384d67d2e704f14ce2a62c168d7266fb97 # [15.0][ADD] account_payment_disable_draft
 
 account-reconcile:
   defaults:
@@ -95,7 +99,8 @@ account-reconcile:
     origin: https://github.com/OCA/account-reconcile.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
+    # FIX Version 26/09/2023
+    - origin 524dd99372045bc9c4a25fdf9f273c0910374967
 
 agreement:
   defaults:
@@ -104,7 +109,8 @@ agreement:
     origin: https://github.com/OCA/agreement.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
+    # FIX Version 26/09/2023
+    - origin 8e18e0da1e277b793c5dc288d9ebc5fe08783e87
 
 bank-statement-import:
   defaults:
@@ -113,7 +119,8 @@ bank-statement-import:
     origin: https://github.com/OCA/bank-statement-import.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
+    # FIX Version 26/09/2023
+    - origin 3a84868f600206a4b2a4e606a10cf4ba4f9e6a22
 
 budgeting:
   defaults:
@@ -122,7 +129,8 @@ budgeting:
     origin: https://github.com/ecosoft-odoo/budgeting.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
+    # FIX Version 26/09/2023
+    - origin 08842c565308de3b7259a34b391164c6ce4d0605
 
 contract:
   defaults:
@@ -131,8 +139,9 @@ contract:
     origin: https://github.com/OCA/contract.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/927/head # [15.0][ADD] contract_invoice_plan, contract_invoice_plan_selection
+    # FIX Version 26/09/2023
+    - origin dd986a073c1ecfca3fbe35bdbc8c696ae5abefe8
+    - origin 944dcbeaa513c242c7df31452c54801b764ebf54 # [15.0][ADD] contract_invoice_plan, contract_invoice_plan_selection
 
 ecosoft-addons:
   defaults:
@@ -141,7 +150,8 @@ ecosoft-addons:
     origin: https://github.com/ecosoft-odoo/ecosoft-addons.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
+    # FIX Version 26/09/2023
+    - origin aa3e51a72be947c36d36ee8e4ec3823dc87c5429
 
 hr:
   defaults:
@@ -150,7 +160,8 @@ hr:
     origin: https://github.com/OCA/hr.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
+    # FIX Version 26/09/2023
+    - origin fd1eefc8f14a0b22d9c5370dedc56e0079b7e7b4
 
 hr-expense:
   defaults:
@@ -159,16 +170,17 @@ hr-expense:
     origin: https://github.com/OCA/hr-expense.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/149/head # [15.0][MIG] hr_expense_sequence_option
-    - origin refs/pull/163/head # [15.0][ADD] hr_expense_excluded_tax
-    - origin refs/pull/167/head # [15.0][ADD] hr_expense_cancel_policy
-    - origin refs/pull/168/head # [15.0][ADD] hr_expense_cancel_confirm
-    - origin refs/pull/173/head # [15.0][ADD] hr_expense_disable_confirm_duplicate
-    - origin refs/pull/176/head # [15.0][FIX] hr_expense_advance_clearing: split function create payment return advance
-    - origin refs/pull/177/head # [15.0][ADD] hr_expense_advance_overdue_reminder
-    - origin refs/pull/183/head # [15.0][MIG] hr_expense_widget_o2m
-    - origin refs/pull/196/head # [15.0][FIX] hr_expense_payment_widget_amount: back state to posted when unreconcile payment
+    # FIX Version 26/09/2023
+    - origin 25ccd0820aec84c33644739626a95dfbe42931be
+    - origin 6d59f1c33f1adbde6f88c9da6121a03b795cd1db # [15.0][MIG] hr_expense_sequence_option
+    - origin 2cddadc7f3ecd73960ec9440105e8a03efa065b0 # [15.0][ADD] hr_expense_excluded_tax
+    - origin 972a95de21a1a1bd44555c3f5fb7f16c70187a00 # [15.0][ADD] hr_expense_cancel_policy
+    - origin 472c89a2964a926b10dd0016a019c5ceedfb4ced # [15.0][ADD] hr_expense_cancel_confirm
+    - origin 34d9bd160395d2b3fd450dbef8fd72c789376969 # [15.0][ADD] hr_expense_disable_confirm_duplicate
+    - origin c15f5f4a31763882a62b411fb6a4ff47bbda683c # [15.0][FIX] hr_expense_advance_clearing: split function create payment return advance
+    - origin dd9624ef6374a6a2dfaf5ed0b680762ac3faf2bf # [15.0][ADD] hr_expense_advance_overdue_reminder
+    - origin c7c1507c0c607f2d3a07348afcb3827e632b7de5 # [15.0][MIG] hr_expense_widget_o2m
+    - origin 5d60a3e7c0434efea986531f5caef3f65a71ee1a # [15.0][FIX] hr_expense_payment_widget_amount: back state to posted when unreconcile payment
 
 l10n-thailand:
   defaults:
@@ -177,29 +189,22 @@ l10n-thailand:
     origin: https://github.com/OCA/l10n-thailand.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/336/head # [15.0][ADD] l10n_th_gov_hr_expense
-    - origin refs/pull/337/head # [15.0][MIG] l10n_th_gov_work_acceptance
-    - origin refs/pull/347/head # [15.0][ADD] l10n_th_gov_stock_request
-    - origin refs/pull/350/head # [15.0][ADD] l10n_th_account_tax_expense_operating_unit
-    - origin refs/pull/351/head # [15.0][FIX] l10n_th_account_tax: allow duplicate PIT Table with other year
-    - origin refs/pull/352/head # [15.0][FIX] l10n_th_account_tax: fix sign tax invoice refund
-    - origin refs/pull/353/head # [15.0][ADD] l10n_th_gov_purchase_report
-    - origin refs/pull/356/head # [WIP][15.0][ADD] l10n_th_bank_payment_export_bbl
-    - origin refs/pull/357/head # [15.0][ADD] l10n_th_gov_tier_validation
-    - origin refs/pull/358/head # [15.0][IMP] l10n_th_gov_account_asset_management: add fields, change display name
-    - origin refs/pull/360/head # [15.0][ENH] l10n_th_account_asset_management: add parent asset
-    - origin refs/pull/361/head # [15.0][ADD] l10n_th_mis_report
-    - origin refs/pull/362/head # [15.0][FIX] l10n_th_account_tax: allow reconcile undue case can't register payment
-    - origin refs/pull/363/head # [15.0][ENH] l10n_th_gov_purchase_request: allow committee is not an employee
-    - origin refs/pull/365/head # [15.0][ADD] l10n_th_bank
-    - origin refs/pull/367/head # [15.0][ADD] l10n_th_account_tax_branch_operating_unit
-    - origin refs/pull/368/head # [15.0][ADD] l10n_th_account_tax_branch_report
-    - origin refs/pull/369/head # [15.0][REF] change name l10n_th_sequence_refactored -> l10n_th_base_sequence
-    - origin refs/pull/371/head # [15.0][FIX] l10n_th_account_tax_expense: readonly fields following standard fields
-    - origin refs/pull/374/head # [15.0][FIX] l10n_th_account_tax: fix bug space table and copy PIT line is not correct
-    - origin refs/pull/375/head # [15.0][ADD] l10n_th_check_ktb
-    - origin refs/pull/384/head # [15.0][FIX] l10n_th_gov_purchase_request: change permission reject PR for procurement only
+    # FIX Version 26/09/2023
+    - origin fe71580093d68b83c52136be6fd198ec0a7535ec
+    - origin f793617ebabe618969c119dd68017bb120c3453f # [15.0][ADD] l10n_th_gov_hr_expense
+    - origin b7cd787e4aee25a4657f502c90e8b15900d5573a # [15.0][ADD] l10n_th_gov_stock_request
+    - origin 517b233a78e9917070b4f2fd0aa973381b74731f # [15.0][ADD] l10n_th_account_tax_expense_operating_unit
+    - origin 6b06c5bbb2ed884fa9073e5b7a4dcdf9ceaf829c # [15.0][ADD] l10n_th_gov_purchase_report
+    - origin 711f4420df348cbaf9d5f1e6efcd8e2d4e0a88da # [WIP][15.0][ADD] l10n_th_bank_payment_export_bbl
+    - origin c045c8d6443ce6fb1efecd8d0e2daf2c858675b2 # [15.0][ADD] l10n_th_gov_tier_validation
+    - origin c20c664798af2b2fb4474f958bf52b399796c27a # [15.0][ADD] l10n_th_mis_report
+    - origin 7fee2305285e49682a3831625734584eefbe556d # [15.0][ADD] l10n_th_bank
+    - origin 8ef769a403027a2e37b7c2496ff78098045087a6 # [15.0][ADD] l10n_th_account_tax_branch_operating_unit
+    - origin ce6cbb7c2c525d741bb38b4c195048f4fd5e4495 # [15.0][ADD] l10n_th_account_tax_branch_report
+    - origin 1bddbfe0bafd248e7916270756eb3c3fe82644ac # [15.0][REF] change name l10n_th_sequence_refactored -> l10n_th_base_sequence
+    - origin e5da5fb7ed4818d07a2a39ce4b529b288d3f92f0 # [15.0][FIX] l10n_th_account_tax_expense: readonly fields following standard fields
+    - origin 01dc7da6a4a06e5114e69cdafdd327740c35c7da # [15.0][ADD] l10n_th_check_ktb
+    - origin 5ebe30a8be970d2d0b9504e18606a5d0b90df1e6 # [15.0][FIX] l10n_th_gov_purchase_request: change permission reject PR for procurement only
 
 mis-builder:
   defaults:
@@ -208,7 +213,8 @@ mis-builder:
     origin: https://github.com/OCA/mis-builder.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
+    # FIX Version 26/09/2023
+    - origin fcd20425339ee516f22478fb375a72dad9e4f1ad
 
 operating-unit:
   defaults:
@@ -217,25 +223,22 @@ operating-unit:
     origin: https://github.com/OCA/operating-unit.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/529/head # [15.0][MIG] account_operating_unit_access_all
-    - origin refs/pull/536/head # [15.0][MIG] contract_operating_unit_access_all
-    - origin refs/pull/537/head # [15.0][MIG] contract_operating_unit
-    - origin refs/pull/549/head # [15.0][ADD] hr_operating_unit_access_all
-    - origin refs/pull/550/head # [15.0][MIG] purchase_operating_unit_access_all
-    - origin refs/pull/551/head # [15.0][MIG] purchase_request_operating_unit_access_all
-    - origin refs/pull/553/head # [15.0][MIG] purchase_requisition_operating_unit_access_all
-    - origin refs/pull/554/head # [15.0][MIG] purchase_request_to_requisition_operating_unit
-    - origin refs/pull/556/head # [15.0][MIG] account_asset_operating_unit_access_all
-    - origin refs/pull/557/head # [15.0][ADD] purchase_deposit_operating_unit
-    - origin refs/pull/558/head # [15.0][ADD] sale_operating_unit_access_all
-    - origin refs/pull/560/head # [15.0][MIG][REF] agreement_operating_unit, agreement_legal_operating_unit and agreement_serviceprofile_operating_unit
-    - origin refs/pull/561/head # [15.0][ADD] agreement_operating_unit_access_all
-    - origin refs/pull/562/head # [15.0][ENH] hr_operating_unit: add OU to department
-    - origin refs/pull/564/head # [15.0][ADD] account_asset_transfer_operating_unit
-    - origin refs/pull/566/head # [15.0][ADD] account_payment_multi_deduction_operating_unit
-    - origin refs/pull/594/head # [15.0][MIG] sale_stock_operating_unit
-    - origin refs/pull/608/head # [15.0][FIX] stock_operating_unit_access_all: domain_force in stock move is not correct
+    # FIX Version 26/09/2023
+    - origin c0a59793150959eddd02d149e45e9fa39f94173b
+    - origin 3b55b958e305db154ddbebbdec019f022841134b # [15.0][MIG] account_operating_unit_access_all
+    - origin 17cbed901ccf1d197da021ab68a1c0531bcde40d # [15.0][MIG] contract_operating_unit_access_all
+    - origin 004015bd4b69cc84c7892650818ab210903f3a78 # [15.0][MIG] contract_operating_unit
+    - origin 9711a1c63c4810729f905c20a2d8ef6822a00821 # [15.0][MIG] purchase_operating_unit_access_all
+    - origin 065828db180efd8cf45239a406e6cb92ffaac874 # [15.0][MIG] purchase_requisition_operating_unit_access_all
+    - origin d2c9dbe4caa5a4faf05a92baab85ecb5e47aa7fe # [15.0][MIG] purchase_request_to_requisition_operating_unit
+    - origin 1da9206f16edfce97422cb2cd53c83a079419a32 # [15.0][MIG] account_asset_operating_unit_access_all
+    - origin 789122ffa0171183dcbf6ba72cf42cbe2ae3c034 # [15.0][ADD] purchase_deposit_operating_unit
+    - origin a97f658ced900759600ad1ea09b0e2ec253be2d3 # [15.0][ADD] sale_operating_unit_access_all
+    - origin daff660a175e17a63edbbe53bc523b4e85f9e791 # [15.0][MIG][REF] agreement_operating_unit, agreement_legal_operating_unit and agreement_serviceprofile_operating_unit
+    - origin 6b5ade8ca47c4f0523cd46a831e15f16da73933e # [15.0][ADD] agreement_operating_unit_access_all
+    - origin 3c5f7c01727bd784f29da9b215de387228f7ee86 # [15.0][ENH] hr_operating_unit: add OU to department
+    - origin 902005e577f354a854dd5752544a6f376f870538 # [15.0][ADD] account_asset_transfer_operating_unit
+    - origin 966949751015187397cd985dbebf1c8c56a79c6e # [15.0][ADD] account_payment_multi_deduction_operating_unit
 
 partner-contact:
   defaults:
@@ -244,7 +247,8 @@ partner-contact:
     origin: https://github.com/OCA/partner-contact.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
+    # FIX Version 26/09/2023
+    - origin 497dc2d3a75a8f43c855a5068d768841784a1027
 
 purchase-workflow:
   defaults:
@@ -253,18 +257,18 @@ purchase-workflow:
     origin: https://github.com/OCA/purchase-workflow.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/1728/head # [15.0][ADD] purchase_request_manual_currency
-    - origin refs/pull/1737/head # [15.0][MIG] purchase_invoice_plan_retention
-    - origin refs/pull/1744/head # [15.0][ADD] purchase_tax_adjust
-    - origin refs/pull/1748/head # [15.0][MIG] purchase_request_cancel_confirm
-    - origin refs/pull/1765/head # [15.0][MIG] purchase_manual_currency
-    - origin refs/pull/1768/head # [15.0][MIG] purchase_invoice_plan_deposit
-    - origin refs/pull/1774/head # [15.0][ADD] purchase_deposit_analytic
-    - origin refs/pull/1786/head # [15.0][MIG] purchase_rfq_number
-    - origin refs/pull/1808/head # [15.0][ADD] purchase_requisition_manual_currency
-    - origin refs/pull/1809/head # [15.0][ADD] purchase_request_to_requisition_manual_currency
-    - origin refs/pull/1860/head # [15.0][FIX] purchase_work_acceptance_late_fines: add fines late in WA tree view
+    # FIX Version 26/09/2023
+    - origin 7eed5d2dd34d14edd74c6c80c235d0c75619f1d8
+    - origin a3e92125a7805a41f661030fb825bba616ecc79e # [15.0][ADD] purchase_request_manual_currency
+    - origin 4721ed2c2a6dd64b09ce55c2b3abb94ac51a829c # [15.0][MIG] purchase_invoice_plan_retention
+    - origin b3f3a3a2888f2faae356f5717ff84ea0df4abf4d # [15.0][ADD] purchase_tax_adjust
+    - origin 945e2c67ac47790ce5642fb57803a8889174d134 # [15.0][MIG] purchase_request_cancel_confirm
+    - origin 4012fe28b04480019a08b41e1651f5c030cb23c2 # [15.0][MIG] purchase_manual_currency
+    - origin 2ce8d48946011cb38d25d15a6d876703a48eb1c3 # [15.0][MIG] purchase_invoice_plan_deposit
+    - origin 6ab47efa86b3d7650dae911d12a6cf3769d5bac8 # [15.0][ADD] purchase_deposit_analytic
+    - origin b56cc9a8511112a0e7d9a5a47be9da165d9c51e3 # [15.0][ADD] purchase_requisition_manual_currency
+    - origin 183b056a241e07f8eec0f2d4719faa6731f9a537 # [15.0][ADD] purchase_request_to_requisition_manual_currency
+    - origin 92afdc257bc60d9b1967d4ad8caee2495b2bce8c # [15.0][FIX] purchase_work_acceptance_late_fines: add fines late in WA tree view
 
 queue:
   defaults:
@@ -273,7 +277,8 @@ queue:
     origin: https://github.com/OCA/queue.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
+    # FIX Version 26/09/2023
+    - origin f03af7cbfcb66b83521fa1d66c6bfb436594df94
 
 reporting-engine:
   defaults:
@@ -282,7 +287,8 @@ reporting-engine:
     origin: https://github.com/OCA/reporting-engine.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
+    # FIX Version 26/09/2023
+    - origin afc9fadffce308c1962bc18f9c58c7279d73d75f
 
 sale-workflow:
   defaults:
@@ -291,13 +297,13 @@ sale-workflow:
     origin: https://github.com/OCA/sale-workflow.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/2351/head # [15.0][ADD] sale_invoice_plan_retention
-    - origin refs/pull/2362/head # [15.0][ADD] sale_tax_adjust
-    - origin refs/pull/2408/head # [15.0][FIX] sale_invoice_plan: hide create invoice button
-    - origin refs/pull/2543/head # [15.0][FIX] sale_invoice_plan: recompute invoice plan table
-    - origin refs/pull/2598/head # [15.0][MIG] sale_order_restrict_cancel_existing_invoice
-    - origin refs/pull/2606/head # [15.0][IMP] sale_invoice_plan: add select type down payment of invoice plan
+    # FIX Version 26/09/2023
+    - origin 822be58ad9909870c0f055a78d151e1609017676
+    - origin 1758db75b242db56137b27fd3e3f70df0f30eba2 # [15.0][ADD] sale_invoice_plan_retention
+    - origin c4a352b9685f9f83cb798ca1fa411fa89419e16d # [15.0][ADD] sale_tax_adjust
+    - origin 8c6617fab0ad0f349b9b3e3b31d4afa4759c8a3f # [15.0][FIX] sale_invoice_plan: recompute invoice plan table
+    - origin f92b1078f9218abbb435e4334b07c9bddb7ddc01 # [15.0][MIG] sale_order_restrict_cancel_existing_invoice
+    - origin f3bf9d25cbbec68a28fa4cdbf884af845086f816 # [15.0][IMP] sale_invoice_plan: add select type down payment of invoice plan
 
 server-backend:
   defaults:
@@ -306,8 +312,9 @@ server-backend:
     origin: https://github.com/OCA/server-backend.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/223/head # [15.0][ADD] base_user_role_restrict_update
+    # FIX Version 26/09/2023
+    - origin 0a493bf39e3ee6dce4ff4423755868aa09b0c740
+    - origin 995ad9e9ef32bc6b7ddddc7a01ddfc3235e8ad18 # [15.0][ADD] base_user_role_restrict_update
 
 server-tools:
   defaults:
@@ -316,8 +323,9 @@ server-tools:
     origin: https://github.com/OCA/server-tools.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/2275/head # [15.0][MIG] base_sequence_option
+    # FIX Version 26/09/2023
+    - origin c10024bc0cacabfc9a790055d2deb1304f13e886
+    - origin 4ca2f189fc0ef72df43334e19eb953854887d3c3 # [15.0][MIG] base_sequence_option
 
 server-ux:
   defaults:
@@ -327,9 +335,9 @@ server-ux:
     ecosoft: https://github.com/ecosoft-odoo/server-ux.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/655/head # [15.0][MIG] base_tier_validation_correction
-    - origin refs/pull/656/head # [15.0][IMP] base_tier_validation, approve by sequence with option to bypass for same reviewer
+    # FIX Version 26/09/2023
+    - origin 8ee3b00ca4206f8e37723e242f86c6d6687e576f
+    - origin 2b10d7707b747696fe41dd76bb84f2d85924074f # [15.0][MIG] base_tier_validation_correction
     - ecosoft refs/pull/3/head # [15.0][FIX] base_tier_validation_server_action: fix reject tier error
 
 stock-logistics-reporting:
@@ -339,7 +347,8 @@ stock-logistics-reporting:
     origin: https://github.com/OCA/stock-logistics-reporting.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
+    # FIX Version 26/09/2023
+    - origin 280c2096c10a75e6a78934f4d83f0e3d4f4eddb8
 
 stock-logistics-warehouse:
   defaults:
@@ -348,8 +357,8 @@ stock-logistics-warehouse:
     origin: https://github.com/OCA/stock-logistics-warehouse.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/1595/head # [15.0][MIG] stock_request_tier_validation
+    # FIX Version 26/09/2023
+    - origin 3a15b9daa121dcc163a4b1cc6c1bebd47a37e126
 
 stock-logistics-workflow:
   defaults:
@@ -358,7 +367,8 @@ stock-logistics-workflow:
     origin: https://github.com/OCA/stock-logistics-workflow.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
+    # FIX Version 26/09/2023
+    - origin c0cf073b531ad5b3e28b241df7aba558ca5d9035
 
 web:
   defaults:
@@ -367,4 +377,5 @@ web:
     origin: https://github.com/OCA/web.git
   target: origin $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
+    # FIX Version 26/09/2023
+    - origin 13e67d4dc39a00b160af370d93b3934112d376e2
